@@ -1,0 +1,41 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.5
+  A license.txt has been created to ensure all parties have the MIT license text available to them when they download this mod.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+  Immortalizing Laserwei's butthurt in this changelog:
+	1. Ensured license notification was included stating which parts are MIT licensed and which aren't (reasonable).
+	2. Demanding I changed the thumbnail, and threating copyright violation if I didn't (petty, but amusing).
+	3. Genearlly being clearly mad that I called him a jackass, but thankfully he gracefully obliged a mountain of evidence that I was correct in my adjective choice.
+
+
+Laserzwei
+- 25 minutes ago
+(updated 25 minutes ago)
+
+Writing my name in any description or other notice is not enough to fulfill the MIT License. I wrote the specific things you have to do.
+"Originally created by Laserzwei, who is too much of a jackass to be thankful for help."
+Does not fulfill said criteria
+
+
+Laserzwei
+- 28 minutes ago
+
+The Title says it: Please remove the thumbnail. It doesn't show your changes and it's shameful copy-paste from my Mod (https://mods.factorio.com/mod/BigDrills).
+I also forbid you to further share this picture without any official statement from me stating otherwise.
+(The picture doesn't fall under the MIT License as it's only for the Software. So regular copyright laws apply)
+Laserzwei
+- 21 minutes ago
+
+I didn't see your awesome and creative "Originally created by Laserzwei, who is too much of a jackass to be thankful for help." When writing the 1st. Post. So as a reminder: Slightly modifying the picture is not enough
+
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+  I'm a dummy and didn't rename things to match folder names.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+  Added attribution to original created to comply with original license terms.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+  Initial release
+---------------------------------------------------------------------------------------------------

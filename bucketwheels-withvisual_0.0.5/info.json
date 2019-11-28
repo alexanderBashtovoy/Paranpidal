@@ -1,0 +1,10 @@
+{
+  "name": "bucketwheels-withvisual",
+  "version": "0.0.5",
+  "title": "Bucket Wheel Excavators - with visual markers",
+  "author": "Kingdud",
+  "homepage": "",
+  "dependencies": ["base >= 0.17.0", "? bobplates >= 0.17.0"],
+  "factorio_version": "0.17",
+  "description": "Adds 3 types of large Bucket Wheel Excavators. Includes visual marker for easier placement. Originally created by Laserzwei, who is too much of a jackass to be thankful for help. All files in this zip, save thumbnail.png, BigWheelMinerSheet2.png, and HR-BigWheelMinerSheet2.png are under MIT license owned by Laserzwei. You must include the previous sentence and this one to avoid his wrath (and legit legal problems). thumbnail.png, BigWheelMinerSheet2.png, and HR-BigWheelMinerSheet2.png are not under any copyright and may be reused freely."
+}
