@@ -8,11 +8,11 @@ data:extend(
     enabled = "false",
     energy_required = 2,
     ingredients ={
-      {type="item", name="wood", amount=1},
+      {type="item", name="raw-wood", amount=1},
     },
     results=
     {
-      {type="item", name="cellulose-fiber", amount=3}, --DrD 4
+      {type="item", name="cellulose-fiber", amount=4},
     },
     icon = "__angelsbioprocessing__/graphics/icons/cellulose-fiber-raw-wood.png",
     icon_size = 32,
@@ -26,12 +26,12 @@ data:extend(
     enabled = "false",
     energy_required = 2,
     ingredients ={
-      {type="item", name="cellulose-fiber", amount=7}, --DrD 4
-      {type="item", name="paste-cellulose", amount=3}, --DrD 2
+      {type="item", name="cellulose-fiber", amount=4},
+      {type="item", name="paste-cellulose", amount=2},
     },
     results=
     {
-      {type="item", name="wood", amount=2}, --DrD 2
+      {type="item", name="wood", amount=3},
     },
     icon = "__angelsbioprocessing__/graphics/icons/wood-cellulose.png",
     icon_size = 32,
@@ -45,11 +45,11 @@ data:extend(
     enabled = "false",
     energy_required = 4,
     ingredients ={
-      {type="item", name="cellulose-fiber", amount=10}, --DrD 12
+      {type="item", name="cellulose-fiber", amount=12},
     },
     results=
     {
-      {type="item", name="wood-pellets", amount=1}, --DrD 2
+      {type="item", name="wood-pellets", amount=2},
     },
     icon = "__angelsbioprocessing__/graphics/icons/wood-pellets.png",
     icon_size = 32,
@@ -180,14 +180,14 @@ data:extend(
     enabled = "false",
     energy_required = 6,
     ingredients ={
-      {type="item", name="cellulose-fiber", amount=20},
+      {type="item", name="cellulose-fiber", amount=4},
       {type="fluid", name="liquid-pulping-liquor", amount=75},
       {type="fluid", name="gas-ammonia", amount=25},
       {type="fluid", name="water", amount=50},
     },
     results=
     {
-      {type="item", name="solid-wood-pulp", amount=20},
+      {type="item", name="solid-wood-pulp", amount=4},
       {type="fluid", name="liquid-brown-liquor", amount=75},
     },
     icons = {
@@ -518,11 +518,11 @@ data:extend(
     },
     results=
     {
-      {type="item", name="wood", amount=26},
+      {type="item", name="raw-wood", amount=26},
     },
     icons = {
       {
-        icon = "__base__/graphics/icons/wood.png",
+        icon = "__base__/graphics/icons/raw-wood.png",
       },
       {
         icon = "__angelspetrochem__/graphics/icons/num_1.png",
@@ -553,11 +553,11 @@ data:extend(
     },
     results=
     {
-      {type="item", name="wood", amount=35},
+      {type="item", name="raw-wood", amount=35},
     },
     icons = {
       {
-        icon = "__base__/graphics/icons/wood.png",
+        icon = "__base__/graphics/icons/raw-wood.png",
       },
       {
         icon = "__angelspetrochem__/graphics/icons/num_2.png",
@@ -588,11 +588,11 @@ data:extend(
     },
     results=
     {
-      {type="item", name="wood", amount=52},
+      {type="item", name="raw-wood", amount=52},
     },
     icons = {
       {
-        icon = "__base__/graphics/icons/wood.png",
+        icon = "__base__/graphics/icons/raw-wood.png",
       },
       {
         icon = "__angelspetrochem__/graphics/icons/num_3.png",
@@ -716,7 +716,7 @@ data:extend(
     results=
     {
       {type="item", name="bio-resin", amount=2},
-      {type="item", name="wood", amount=10},
+      {type="item", name="raw-wood", amount=10},
     },
     icons = {
       {
@@ -752,7 +752,7 @@ data:extend(
     results=
     {
       {type="item", name="bio-resin", amount=4},
-      {type="item", name="wood", amount=10},
+      {type="item", name="raw-wood", amount=10},
     },
     icons = {
       {
@@ -921,7 +921,7 @@ data:extend(
     results=
     {
       {type="item", name="bio-plastic", amount=2},
-      {type="item", name="wood", amount=10},
+      {type="item", name="raw-wood", amount=10},
     },
     icons = {
       {
@@ -957,7 +957,7 @@ data:extend(
     results=
     {
       {type="item", name="bio-plastic", amount=4},
-      {type="item", name="wood", amount=10},
+      {type="item", name="raw-wood", amount=10},
     },
     icons = {
       {
@@ -1126,7 +1126,7 @@ data:extend(
     results=
     {
       {type="item", name="bio-rubber", amount=2},
-      {type="item", name="wood", amount=10},
+      {type="item", name="raw-wood", amount=10},
     },
     icons = {
       {
@@ -1162,7 +1162,7 @@ data:extend(
     results=
     {
       {type="item", name="bio-rubber", amount=2},
-      {type="item", name="wood", amount=10},
+      {type="item", name="raw-wood", amount=10},
     },
     icons = {
       {

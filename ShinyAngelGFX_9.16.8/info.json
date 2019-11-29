@@ -1,9 +1,9 @@
 {
   "name": "ShinyAngelGFX",
-  "version": "9.16.8",
-  "factorio_version": "0.17",
+  "version": "0.16.8",
+  "factorio_version": "0.16",
   "title": "ShinyAngelGFX",
-  "author": "Coloring by Zombiee, nastyslave, all original graphics by Arch666Angel",
+  "author": "Coloring by Zombiee, all original graphics by Arch666Angel",
   "dependencies": [ "base >= 0.15.0",
 					"? angelspetrochem >= 0.7.0",
 					"? angelsrefining >= 0.9.2",

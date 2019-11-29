@@ -2304,7 +2304,7 @@ filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furna
 		line_length = 6,
         frame_count = 36,
         shift = {0, -0.5},
-		animation_speed = 0.2,
+		animation_speed = 0.5,
 		},{
 		filename = "__ShinyAngelGFX__/graphics/entity/induction-furnace/induction-furnace-1.png",
         width = 224,
@@ -2312,7 +2312,7 @@ filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furna
 		line_length = 6,
         frame_count = 36,
         shift = {0, -0.5},
-		animation_speed = 0.2,
+		animation_speed = 0.5,
 		}}}
 data.raw["assembling-machine"]["induction-furnace"].fluid_boxes =
     {
@@ -2338,7 +2338,7 @@ filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furna
 		line_length = 6,
         frame_count = 36,
         shift = {0, -0.5},
-		animation_speed = 0.2,
+		animation_speed = 0.5,
 		},{
 		filename = "__ShinyAngelGFX__/graphics/entity/induction-furnace/induction-furnace-2.png",
         width = 224,
@@ -2346,7 +2346,7 @@ filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furna
 		line_length = 6,
         frame_count = 36,
         shift = {0, -0.5},
-		animation_speed = 0.2,
+		animation_speed = 0.5,
 		}}}
 data.raw["assembling-machine"]["induction-furnace-2"].fluid_boxes =
     {
@@ -2372,7 +2372,7 @@ filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furna
 		line_length = 6,
         frame_count = 36,
         shift = {0, -0.5},
-		animation_speed = 0.2,
+		animation_speed = 0.5,
 		},{
 		filename = "__ShinyAngelGFX__/graphics/entity/induction-furnace/induction-furnace-3.png",
         width = 224,
@@ -2380,7 +2380,7 @@ filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furna
 		line_length = 6,
         frame_count = 36,
         shift = {0, -0.5},
-		animation_speed = 0.2,
+		animation_speed = 0.5,
 		}}}
 data.raw["assembling-machine"]["induction-furnace-3"].fluid_boxes =
     {
@@ -2406,7 +2406,7 @@ filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furna
 		line_length = 6,
         frame_count = 36,
         shift = {0, -0.5},
-		animation_speed = 0.2,
+		animation_speed = 0.5,
 		},{
 		filename = "__ShinyAngelGFX__/graphics/entity/induction-furnace/induction-furnace-4.png",
         width = 224,
@@ -2414,7 +2414,7 @@ filename = "__angelssmelting__/graphics/entity/induction-furnace/induction-furna
 		line_length = 6,
         frame_count = 36,
         shift = {0, -0.5},
-		animation_speed = 0.2,
+		animation_speed = 0.5,
 		}}}
 data.raw["assembling-machine"]["induction-furnace-4"].fluid_boxes =
     {

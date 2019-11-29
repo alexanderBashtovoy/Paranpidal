@@ -45,8 +45,6 @@ else
 	end
 end
 
---table.insert(data.raw["lab"]["lab"].inputs, "advanced-logistic-science-pack") --DrD
-
 --ADD TILE RESTRICTION FOR ALIEN BIOMES
 if data.raw.tile["frozen-snow-0"] then
 	data.raw.tree["temperate-garden"].autoplace.tile_restriction = alien_biomes.list_tiles(alien_biomes.exclude_tags(alien_biomes.all_tiles(), {'frozen', 'volcanic'}))

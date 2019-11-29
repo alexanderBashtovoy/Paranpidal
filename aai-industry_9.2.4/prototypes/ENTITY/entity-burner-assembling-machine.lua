@@ -2,7 +2,6 @@ local burner_assembling_machine = table.deepcopy(data.raw["assembling-machine"][
 burner_assembling_machine.name = "burner-assembling-machine"
 burner_assembling_machine.icon = "__aai-industry__/graphics/icons/burner-assembling-machine.png"
 burner_assembling_machine.minable.result = "burner-assembling-machine"
-burner_assembling_machine.ingredient_count = 4
 burner_assembling_machine.energy_source = {
   type = "burner",
   fuel_category = "chemical",

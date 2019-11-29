@@ -23,7 +23,7 @@ end
 bobmods.lib.machine.type_if_add_category("assembling-machine", "crafting", "crafting-machine")
 
 -- add new electronics crafting categories
-bobmods.lib.machine.type_if_add_category("character", "crafting", "electronics")
+bobmods.lib.machine.type_if_add_category("player", "crafting", "electronics")
 bobmods.lib.machine.type_if_add_category("god-controller", "crafting", "electronics")
 bobmods.lib.machine.type_if_add_category("assembling-machine", "crafting", "electronics")
 bobmods.lib.machine.type_if_add_category("assembling-machine", "crafting", "electronics-machine")

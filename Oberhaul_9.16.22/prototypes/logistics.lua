@@ -10,5 +10,5 @@ bobmods.lib.tech.add_new_science_pack("logistic-silos","logistic-science-pack",1
 bobmods.lib.tech.add_new_science_pack("logistic-silos","production-science-pack",1)
 bobmods.lib.tech.add_new_science_pack("angels-logistic-warehouses","logistic-science-pack",1)
 bobmods.lib.tech.add_new_science_pack("angels-logistic-warehouses","production-science-pack",1)
-bobmods.lib.tech.add_new_science_pack("angels-logistic-warehouses","utility-science-pack",1)
+bobmods.lib.tech.add_new_science_pack("angels-logistic-warehouses","high-tech-science-pack",1)
 end

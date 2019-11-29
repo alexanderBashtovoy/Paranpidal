@@ -33,15 +33,15 @@ function angelsmods.functions.modify_trees()
 		--CHECK FOR SINGLE RESULTS
 		if tree.minable.result then
 			--CHECK FOR VANILLA TREES RAW WOOD x 4
-			if tree.minable.result == "wood" and tree.minable.count == 4 then
-				tree.minable = {mining_particle = "wooden-particle", mining_time = 1.5, results = {{type = "item", name = "wood", amount_min = 1, amount_max = 6}}}
+			if tree.minable.result == "raw-wood" and tree.minable.count == 4 then
+				tree.minable = {mining_particle = "wooden-particle", mining_time = 1.5, results = {{type = "item", name = "raw-wood", amount_min = 1, amount_max = 6}}}
 			end
 		else
 			--CHECK FOR RESULTS TABLE
 			if tree.minable.results then
 				for k, results in pairs(tree.minable.results) do
 					--CHECK FOR RESULT RAW-WOOD x 4
-					if results.name == "wood" and results.amount == 4 then
+					if results.name == "raw-wood" and results.amount == 4 then
 						results.amount = nil
 						results.amount_min = 1
 						results.amount_max = 6

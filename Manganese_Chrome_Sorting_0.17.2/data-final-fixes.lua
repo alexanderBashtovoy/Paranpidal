@@ -6,7 +6,7 @@ data:extend({
         name = "angelsore-crushed-manganese-processing",
         category = "ore-sorting",
         subgroup = "ore-sorting-advanced",
-        enabled = false,
+        enabled = "false",
         allow_decomposition = false,
         normal =
         {
@@ -45,7 +45,7 @@ data:extend({
         name = "angelsore-pure-chrome-processing",
         category = "ore-sorting",
         subgroup = "ore-sorting-advanced",
-        enabled = false,
+        enabled = "false",
         allow_decomposition = false,
         normal =
         {

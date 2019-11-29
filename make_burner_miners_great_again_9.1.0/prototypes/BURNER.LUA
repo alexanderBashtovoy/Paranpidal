@@ -16,8 +16,6 @@ burnerMiner.input_fluid_box =
         { position = {0.5, 1.5} },
       }
     }
-	
---[[	
 burnerMiner.output_fluid_box =
 	{
 	  base_area = 1,
@@ -30,7 +28,5 @@ burnerMiner.output_fluid_box =
         { position = {0.5, 1.5} },
       }
     }
-
-]]
 
 data:extend{burnerMiner}

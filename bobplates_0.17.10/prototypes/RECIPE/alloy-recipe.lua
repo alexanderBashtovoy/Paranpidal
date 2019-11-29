@@ -13,7 +13,7 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="bronze-alloy", amount=2} --DrD 5
+      {type="item", name="bronze-alloy", amount=5}
     },
     allow_decomposition = false
   },
@@ -30,7 +30,7 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="brass-alloy", amount=2} --DrD 5
+      {type="item", name="brass-alloy", amount=5}
     },
     allow_decomposition = false
   },
@@ -47,7 +47,7 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="copper-tungsten-alloy", amount=2} --DrD 5
+      {type="item", name="copper-tungsten-alloy", amount=5}
     },
     allow_decomposition = false
   },
@@ -60,11 +60,11 @@ data:extend(
     ingredients =
     {
       {type="item", name="carbon", amount=1},
-      {type="item", name="tungsten-oxide", amount=3}, --DrD 1
+      {type="item", name="tungsten-oxide", amount=1},
     },
     results = 
     {
-      {type="item", name="tungsten-carbide", amount=1} --DrD 2
+      {type="item", name="tungsten-carbide", amount=2}
     },
     allow_decomposition = false
   },
@@ -77,11 +77,11 @@ data:extend(
     ingredients =
     {
       {type="item", name="carbon", amount=1},
-      {type="item", name="powdered-tungsten", amount=2}, --DrD 1
+      {type="item", name="powdered-tungsten", amount=1},
     },
     results = 
     {
-      {type="item", name="tungsten-carbide", amount=1} --DrD 2
+      {type="item", name="tungsten-carbide", amount=2}
     },
     allow_decomposition = false
   },
@@ -99,7 +99,7 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="gunmetal-alloy", amount=5} --DrD 10
+      {type="item", name="gunmetal-alloy", amount=10}
     },
     allow_decomposition = false
   },
@@ -117,7 +117,7 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="invar-alloy", amount=2} --DrD 5
+      {type="item", name="invar-alloy", amount=5}
     },
     allow_decomposition = false
   },
@@ -134,7 +134,7 @@ data:extend(
     },
     results = 
     {
-      {type="item", name="nitinol-alloy", amount=2} --DrD 5
+      {type="item", name="nitinol-alloy", amount=5}
     },
     allow_decomposition = false
   },
@@ -150,10 +150,8 @@ data:extend(
       {type="item", name="iron-plate", amount=14},
       {type="item", name="cobalt-plate", amount=1},
     },
-    results = 
-    {
-      {type="item", name="cobalt-steel-alloy", amount=5} --DrD 10
-    },
+    result = "cobalt-steel-alloy",
+    result_count = 10,
     allow_decomposition = false
   },
 }

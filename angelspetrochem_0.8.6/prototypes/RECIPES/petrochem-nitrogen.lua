@@ -55,26 +55,6 @@ data:extend(
 			{type="fluid", name="gas-nitrogen-monoxide", amount=100},
 			{type="item", name="catalyst-metal-carrier", amount=1},
 		},
-		icon = "__angelspetrochem__/graphics/icons/nitrogen-03-2.png", --DrD
-		icon_size = 32,
-		order = "c[gas-nitrogen-dioxide]",
-	},
-	--kreyser_waryag --DrD
-	{
-		type = "recipe",
-		name = "gas-nitrogen-monoxide-2",
-		category = "chemistry",
-		subgroup = "petrochem-nitrogen",
-		energy_required = 2,
-		enabled = "false",
-		ingredients ={
-			{type="fluid", name="gas-ammonia", amount=60},
-			{type="fluid", name="gas-oxygen", amount=40},
-		},
-		results=
-		{
-			{type="fluid", name="gas-nitrogen-monoxide", amount=10},
-		},
 		icon = "__angelspetrochem__/graphics/icons/nitrogen-03.png",
 		icon_size = 32,
 		order = "c[gas-nitrogen-dioxide]",

@@ -9,7 +9,7 @@ data:extend({
 			enabled = false,
 			ingredients = 
 			{
-			  {"wood", 10},    
+			  {"wood", 5},    
 			  {"small-electric-pole", 2},  
 			},
 		  result = "bi-big-wooden-pole"
@@ -19,7 +19,7 @@ data:extend({
 			enabled = false,
 			ingredients = 
 			{
-			  {"wood", 20},    
+			  {"wood", 10},    
 			  {"small-electric-pole", 4},  
 			},
 		  result = "bi-big-wooden-pole"
@@ -35,7 +35,7 @@ data:extend({
 			enabled = false,
 			ingredients = 
 			{
-			  {"wood", 10}, 
+			  {"wood", 5}, 
 			  {"concrete", 100},   			  
 			  {"bi-big-wooden-pole", 6},  
 			},
@@ -46,7 +46,7 @@ data:extend({
 			enabled = false,
 			ingredients = 
 			{
-			  {"wood", 20},  
+			  {"wood", 10},  
 			  {"concrete", 150},   				  
 			  {"bi-big-wooden-pole", 10},  
 			},
@@ -87,10 +87,10 @@ data:extend({
 			enabled = false,
 			ingredients = 
 			{		
-				{"wood", 8},
+				{"wood", 6},
 				{"stone", 1},
-				{"steel-plate", 2},
-				{"iron-stick", 2},	  
+				{"steel-plate", 1},
+				{"iron-stick", 1},	  
 			},
 			result = "bi-rail-wood",
 			result_count = 2,
@@ -101,10 +101,10 @@ data:extend({
 			enabled = false,
 			ingredients = 
 			{			
-				{"wood", 8},
+				{"wood", 6},
 				{"stone", 1},
-				{"steel-plate", 2},			 
-				{"iron-stick", 2},
+				{"steel-plate", 1},			 
+				{"iron-stick", 1},
 			},
 			result = "bi-rail-wood",
 			result_count = 1,
@@ -147,7 +147,8 @@ data:extend({
 		order = "a[train-system]-aa1[rail-upgrade]",		
 
 	}, 
---- Wooden Bridge Rail
+	
+	--- Wooden Bridge Rail
     {
 		type = "recipe",
 		name = "bi_recipe_rail_wood_bridge",	
@@ -192,7 +193,7 @@ data:extend({
 			ingredients = 
 			{		
 				{"rail", 2},
-				{"copper-cable", 6},
+				{"copper-cable", 4},
 
 			},
 			result = "bi-rail-power",
@@ -205,7 +206,7 @@ data:extend({
 			ingredients = 
 			{			
 				{"rail", 1},
-				{"copper-cable", 6},
+				{"copper-cable", 4},
 
 			},
 			result = "bi-rail-power",
@@ -225,8 +226,8 @@ data:extend({
 			enabled = true,
 			ingredients = 
 			{	  
-			  --{"copper-plate", 1},
-			  {"wood", 12}
+			  {"copper-plate", 1},
+			  {"wood", 8}
 			},
 		  result = "bi-wood-pipe",
 		  result_count = 4,
@@ -238,8 +239,8 @@ data:extend({
 			enabled = true,
 			ingredients = 
 			{	  
-			  --{"copper-plate", 1},
-			  {"wood", 16}
+			  {"copper-plate", 1},
+			  {"wood", 12}
 			},
 		  result = "bi-wood-pipe",
 		  result_count = 4,
@@ -257,8 +258,8 @@ data:extend({
 			enabled = true,
 			ingredients = 
 			{	  
-			  --{"copper-plate", 4},
-			  {"bi-wood-pipe", 10}
+			  {"copper-plate", 4},
+			  {"bi-wood-pipe", 5}
 			},
 		  result = "bi-pipe-to-ground-wood",
 		  result_count = 2,
@@ -269,8 +270,8 @@ data:extend({
 			enabled = true,
 			ingredients = 
 			{	  
-			  --{"copper-plate", 5},
-			  {"bi-wood-pipe", 16}
+			  {"copper-plate", 5},
+			  {"bi-wood-pipe", 6}
 			},
 		  result = "bi-pipe-to-ground-wood",
 		  result_count = 2,
@@ -286,7 +287,7 @@ data:extend({
 			enabled = false,
 			ingredients = 
 			{
-			  {"copper-cable", 10},    
+			  {"copper-cable", 2},    
 			  {"medium-electric-pole", 1},  
 			},
 		  result = "bi-power-to-rail-pole"
@@ -296,7 +297,7 @@ data:extend({
 			enabled = false,
 			ingredients = 
 			{
-			  {"copper-cable", 25},
+			  {"copper-cable", 4},
 			  {"medium-electric-pole", 1},  
 			},
 		  result = "bi-power-to-rail-pole"
@@ -309,12 +310,12 @@ data:extend({
     name = "bi_recipe_large_wooden_chest",
 	normal =
 		{
-			energy_required = 4,
+			energy_required = 2,
 			enabled = false,
 			ingredients = 
 			{	  
 			  {"copper-plate", 16},
-			  {"resin", 32},
+			  {"resin", 24},
 			  {"wooden-chest", 8}
 			},
 		  result = "bi-large-wooden-chest",
@@ -323,12 +324,12 @@ data:extend({
 		},
 	expensive =
 		{
-			energy_required = 8,
+			energy_required = 4,
 			enabled = false,
 			ingredients = 
 			{	  
 			  {"copper-plate", 24},
-			  {"resin", 48},
+			  {"resin", 32},
 			  {"wooden-chest", 8}
 			},
 		  result = "bi-large-wooden-chest",
@@ -344,7 +345,7 @@ data:extend({
     name = "bi_recipe_huge_wooden_chest",
 	normal =
 		{
-			energy_required = 8,
+			energy_required = 2,
 			enabled = false,
 			ingredients = 
 			{	  
@@ -358,7 +359,7 @@ data:extend({
 		},
 	expensive =
 		{
-			energy_required = 16,
+			energy_required = 4,
 			enabled = false,
 			ingredients = 
 			{	  
@@ -379,7 +380,7 @@ data:extend({
     name = "bi_recipe_giga_wooden_chest",
 	normal =
 		{
-			energy_required = 16,
+			energy_required = 4,
 			enabled = false,
 			ingredients = 
 			{	  
@@ -393,7 +394,7 @@ data:extend({
 		},
 	expensive =
 		{
-			energy_required = 32,
+			energy_required = 6,
 			enabled = false,
 			ingredients = 
 			{	  

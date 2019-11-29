@@ -53,7 +53,7 @@ data:extend(
 		{type="fluid", name="gas-oxygen", amount=30},
 		{type="fluid", name="gas-hydrogen", amount=40},
 		{type="item", name="slag", amount=1},
-		{type="item", name="angels-electrode", amount=1, catalyst_amount=1, probability=0.8}
+		{type="item", name="angels-electrode-used", amount=1, catalyst_amount=1}
     },
     icons = {
 		{
@@ -125,7 +125,7 @@ data:extend(
     {
 		{type="fluid", name="gas-oxygen", amount=40},
 		{type="fluid", name="gas-hydrogen", amount=60},
-		{type="item", name="angels-electrode", amount=1, catalyst_amount=1, probability=0.8}
+		{type="item", name="angels-electrode-used", amount=1, catalyst_amount=1}
     },
     icons = {
 		{
@@ -395,7 +395,7 @@ data:extend(
 	enabled = "false",
     ingredients ={
 		{type="item", name="solid-coke", amount=2},
-		{type="fluid", name="gas-carbon-dioxide", amount=40},
+		{type="fluid", name="steam", amount=30},
 	},
     results=
     {
@@ -444,42 +444,6 @@ data:extend(
 			icon = "__angelspetrochem__/graphics/icons/solid-carbon.png",
 		},
 		{
-			icon = "__angelspetrochem__/graphics/icons/num_3.png", --DrD num_2
-			tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
-			scale = 0.32,
-			shift = {-12, -12},
-		}
-	},
-	icon_size = 32,
-    order = "d[coke-purification]",
-	crafting_machine_tint =
-    {
-      primary = {r = 1, g = 0.5, b = 0.5, a = 0},
-      secondary = {r = 1, g = 0.5, b = 0.5, a = 0},
-      tertiary = {r = 167/255, g = 75/255, b = 5/255, a = 0/255},
-    }
-	},
-	
-		{
-    type = "recipe",
-    name = "coke-purification-steam",   --DrD  name = "coke-purification",
-    category = "liquifying",
-	subgroup = "petrochem-coal",
-    energy_required = 2,
-	enabled = "false",
-    ingredients ={
-		{type="item", name="solid-coke", amount=2},
-		{type="fluid", name="steam", amount=30},
-	},
-    results=
-    {
-		{type="item", name="solid-carbon", amount=3},
-    },
-    icons = {
-		{
-			icon = "__angelspetrochem__/graphics/icons/solid-carbon.png",
-		},
-		{
 			icon = "__angelspetrochem__/graphics/icons/num_2.png",
 			tint = {r = 0.8, g = 0.8, b = 0.8, a = 0.5},
 			scale = 0.32,
@@ -495,8 +459,6 @@ data:extend(
       tertiary = {r = 167/255, g = 75/255, b = 5/255, a = 0/255},
     }
 	},
-	
-	
 	{
     type = "recipe",
     name = "coal-crushed",

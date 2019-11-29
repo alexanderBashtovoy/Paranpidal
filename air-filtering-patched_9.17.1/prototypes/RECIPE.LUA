@@ -14,8 +14,7 @@ data:extend({
     {
       {"assembling-machine-2", 1},
       {"electronic-circuit", 5},
-      {"steel-plate", 10},
-	  {"steel-pipe", 10}
+      {"steel-plate", 10}
     },
     result = "air-filter-machine-mk1"
   },
@@ -29,8 +28,7 @@ data:extend({
     ingredients =
     {
       {"air-filter-machine-mk1", 2},
-      {"advanced-circuit", 10},
-	  {"invar-alloy", 10}
+      {"advanced-circuit", 10}
     },
     result = "air-filter-machine-mk2"
   },
@@ -44,9 +42,7 @@ data:extend({
     ingredients =
     {
       {"air-filter-machine-mk2", 2},
-      {"advanced-circuit", 25},
-	  {"engine-unit", 10},
-	  {"aluminium-plate", 10},
+      {"processing-unit", 10}
     },
     result = "air-filter-machine-mk3"
   },
@@ -60,8 +56,8 @@ data:extend({
     ingredients =
     {
       {"air-filter-machine-mk3", 2},
-      {"processing-unit", 10},
-	  {"titanium-plate", 25}
+      {"processing-unit", 100},
+	  {"engine-unit", 1}
     },
     result = "air-filter-machine-mk4"
   },
@@ -75,9 +71,8 @@ data:extend({
     ingredients =
     {
       {"air-filter-machine-mk4", 2},
-      {"processing-unit", 50},
-	  {"electric-engine-unit", 10},
-	  {"nitinol-alloy", 20}
+      {"processing-unit", 200},
+	  {"electric-engine-unit", 5}
     },
     result = "air-filter-machine-mk5"
   },
@@ -92,7 +87,7 @@ data:extend({
     {
       {"air-filter-machine-mk5", 2},
       {"processing-unit", 200},
-	  {"copper-tungsten-alloy", 50},
+	  {"steel-plate", 50},
 	  {"electric-engine-unit", 25}
     },
     result = "air-filter-machine-mk6"
@@ -110,7 +105,8 @@ data:extend({
     ingredients =
     {
       {"coal", 10},
-      {"steel-plate", 5}
+      {"plastic-bar", 4},
+      {"steel-plate", 2}
     },
     result = "unused-air-filter"
   },
@@ -129,7 +125,6 @@ data:extend({
     },
     result = "used-air-filter"
   },
-  ------------------
   {
     type = "recipe",
     name = "air-filter-recycling",
@@ -164,26 +159,5 @@ data:extend({
     },
     result = "unused-air-filter",
     result_count = 5,
-  },
-  
-    {
-		type = "recipe",
-		name = "advanced-air-filter-recycling-2",
-		category = "crafting-with-fluid",
-		subgroup = "raw-material",
-		energy_required = 12,
-		enabled = "false",
-		ingredients ={
-			{type="item", name="used-air-filter", amount=5},
-			{type="fluid", name="water-purified", amount=100},
-		},
-		results=
-		{
-			{type="item", name="unused-air-filter", amount=5},
-			{type="fluid", name="water-yellow-waste", amount=80},
-		},
-		icon = "__air-filtering-patched__/graphics/icons/advanced-air-filter-recycling-2.png",
-		icon_size = 32,
-		order = "f[unused-air-filter]-f[air-filter-recycling]",
-	}
+  }
 })

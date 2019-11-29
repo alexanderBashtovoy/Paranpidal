@@ -9,24 +9,24 @@ data:extend({
 		normal =
 		{
 			enabled = true,
+			energy_required = 4,
+			ingredients = 
+			{
+				{"wood", 10},
+			},
+		  result = "bi-basic-dart-magazine",
+		  result_count = 10,
+		},
+		expensive =
+		{
+			enabled = true,
 			energy_required = 6,
 			ingredients = 
 			{
 				{"wood", 10},
 			},
 		  result = "bi-basic-dart-magazine",
-		  result_count = 20,
-		},
-		expensive =
-		{
-			enabled = true,
-			energy_required = 8,
-			ingredients = 
-			{
-				{"wood", 10},
-			},
-		  result = "bi-basic-dart-magazine",
-		  result_count = 16,
+		  result_count = 8,
 		},
 	}, 	
 

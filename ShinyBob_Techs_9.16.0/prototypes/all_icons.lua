@@ -356,12 +356,10 @@ local technologies_icons = {
 	{"bob-armoured-railway-2",   				"railway-armoured-2.png",   				}, 		
 
 	{"bob-boiler-1",   						"boiler-2.png",   						}, 		
-	{"bob-boiler-2",   						"boiler-2.png",   						}, 		
-	{"bob-boiler-3",   						"boiler-3.png",   						}, 
-	{"bob-boiler-4",   						"boiler-4.png",   						}, 
-	{"bob-boiler-5",   						"boiler-5.png",   						}, 
+	{"bob-boiler-2",   						"boiler-3.png",   						}, 		
+	{"bob-boiler-3",   						"boiler-4.png",   						}, 
 
-	{"electric-energy-accumulators",   		"electric-energy-accumulators-0.png",   	}, 		
+	{"electric-energy-accumulators-1",   		"electric-energy-accumulators-0.png",   	}, 		
 	{"bob-electric-energy-accumulators-2",   	"electric-energy-accumulators-1.png",   	}, 		
 	{"bob-electric-energy-accumulators-3",   	"electric-energy-accumulators-2.png",   	}, 		
 	{"bob-electric-energy-accumulators-4",   	"electric-energy-accumulators-3.png",   	}, 		

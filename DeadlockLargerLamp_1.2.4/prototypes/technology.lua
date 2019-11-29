@@ -1,4 +1,4 @@
-require("prototypes.globals")
+local DLL = require("prototypes.globals")
 
 local tech = data.raw.technology["optics"]
 

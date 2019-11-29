@@ -5,13 +5,12 @@ data:extend(
   {
     type = "recipe",
     name = "steam-engine-2",
-    energy_required = 50, --DrD
     normal =
     {
       enabled = "false",
       ingredients =
       {
-        {"steam-engine", 2},
+        {"steam-engine", 1},
         {"steel-plate", 5},
         {"pipe", 5},
         {"iron-gear-wheel", 5},
@@ -23,7 +22,7 @@ data:extend(
       enabled = "false",
       ingredients =
       {
-        {"steam-engine", 2},
+        {"steam-engine", 1},
         {"steel-plate", 25},
         {"pipe", 5},
         {"iron-gear-wheel", 10},
@@ -34,13 +33,12 @@ data:extend(
   {
     type = "recipe",
     name = "steam-engine-3",
-	energy_required = 40, --DrD
     normal =
     {
       enabled = "false",
       ingredients =
       {
-        {"steam-engine-2", 2},
+        {"steam-engine-2", 1},
         {"pipe", 5},
         {"steel-plate", 5},
         {"iron-gear-wheel", 5},
@@ -52,7 +50,7 @@ data:extend(
       enabled = "false",
       ingredients =
       {
-        {"steam-engine-2", 2},
+        {"steam-engine-2", 1},
         {"pipe", 5},
         {"steel-plate", 25},
         {"iron-gear-wheel", 10},
@@ -63,13 +61,12 @@ data:extend(
   {
     type = "recipe",
     name = "steam-engine-4",
-	energy_required = 30, --DrD
     normal =
     {
       enabled = "false",
       ingredients =
       {
-        {"steam-engine-3", 2},
+        {"steam-engine-3", 1},
         {"pipe", 5},
         {"steel-plate", 5},
         {"iron-gear-wheel", 5},
@@ -81,7 +78,7 @@ data:extend(
       enabled = "false",
       ingredients =
       {
-        {"steam-engine-3", 2},
+        {"steam-engine-3", 1},
         {"pipe", 5},
         {"steel-plate", 25},
         {"iron-gear-wheel", 10},
@@ -92,13 +89,12 @@ data:extend(
   {
     type = "recipe",
     name = "steam-engine-5",
-	energy_required = 20, --DrD
     normal =
     {
       enabled = "false",
       ingredients =
       {
-        {"steam-engine-4", 2},
+        {"steam-engine-4", 1},
         {"pipe", 5},
         {"steel-plate", 5},
         {"iron-gear-wheel", 5},
@@ -110,7 +106,7 @@ data:extend(
       enabled = "false",
       ingredients =
       {
-        {"steam-engine-4", 2},
+        {"steam-engine-4", 1},
         {"pipe", 5},
         {"steel-plate", 25},
         {"iron-gear-wheel", 10},

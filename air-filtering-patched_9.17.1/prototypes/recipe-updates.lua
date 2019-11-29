@@ -117,11 +117,10 @@ end  --Assembling-3
 if data.raw.technology["advanced-electronics"] then
   bobmods.lib.tech.add_prerequisite("air-filtering-mk3", "advanced-electronics")
 end  --White+/Transistor
---[[
 if data.raw.technology["steel-processing"] then
   bobmods.lib.tech.add_prerequisite("air-filtering-mk3", "steel-processing")
 end  --Steel
-]]
+
 --MK4
 if data.raw.technology["automation-4"] then
   bobmods.lib.tech.add_prerequisite("air-filtering-mk4", "automation-4")

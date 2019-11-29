@@ -295,7 +295,6 @@ data:extend({
 	 icon_size = 32,
 	 order = "l"
 	},
-	--[[ already exist in angelpetrochem (DrD)
 	{
      type = "recipe",
      name = "water-gas-shift-reaction",
@@ -336,7 +335,6 @@ data:extend({
 	 icon_size = 32,
      order = "g[reverse-water-gas-shift-reaction]",
 	},
-	]]
 	{
      type = "recipe",
      name = "liquid-plastic-pmma",

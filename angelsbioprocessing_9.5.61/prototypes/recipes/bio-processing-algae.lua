@@ -99,7 +99,7 @@ data:extend(
     energy_required = 20,
     ingredients ={
 	  {type="fluid", name="water-mineralized", amount=100},
-	  {type="fluid", name="gas-carbon-dioxide", amount=60}
+	  {type="fluid", name="gas-carbon-dioxide", amount=100}
 	},
     results=
     {
@@ -115,7 +115,7 @@ data:extend(
     category = "liquifying",
 	subgroup = "bio-processing-green",
 	enabled = "false",
-    energy_required = 4,
+    energy_required = 3,
     ingredients ={
 	{type="item", name="algae-green", amount=10},
 	},
@@ -133,7 +133,7 @@ data:extend(
     category = "liquifying",
 	subgroup = "bio-processing-green",
 	enabled = "false",
-    energy_required = 5,
+    energy_required = 4,
     ingredients ={
 	{type="item", name="cellulose-fiber", amount=5},
 	{type="item", name="solid-sodium-hydroxide", amount=3},
@@ -266,7 +266,7 @@ data:extend(
     energy_required = 20,
     ingredients ={
 	  {type="fluid", name="water-yellow-waste", amount=100},
-	  {type="fluid", name="gas-carbon-dioxide", amount=60}
+	  {type="fluid", name="gas-carbon-dioxide", amount=100}
 	},
     results=
     {

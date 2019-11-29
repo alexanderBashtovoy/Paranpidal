@@ -76,13 +76,3 @@ for rk,rv in pairs(data.raw) do
 		end
 	end
 end
-
---from DrD
-data.raw["utility-sounds"]["default"]["game_lost"] =
-{
-  {
-	filename = "__SlightlyBetterSounds__/sounds/you_died.ogg",
-	volume = 1.5
-  }
-}
-

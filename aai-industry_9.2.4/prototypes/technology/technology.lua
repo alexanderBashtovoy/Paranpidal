@@ -24,13 +24,13 @@ data:extend{
     {
         type = "technology",
         name = "basic-automation",
-        icon = "__aai-industry__/graphics/technology/automation-0.png",
+        icon = "__base__/graphics/technology/automation.png",
         icon_size = 128,
         order = "a",
         unit = {
             count = 10,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
@@ -38,28 +38,28 @@ data:extend{
     {
         type = "technology",
         name = "basic-logistics",
-        icon = "__aai-industry__/graphics/technology/logistics-0.png",
+        icon = "__base__/graphics/technology/logistics.png",
         icon_size = 128,
         order = "a",
         unit = {
             count = 10,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
     },
     {
         type = "technology",
-        name = "electricity", 
-        icon = "__aai-industry__/graphics/technology/electricity.png",
+        name = "electricity",
+        icon = "__base__/graphics/technology/electric-engine.png",
         icon_size = 128,
         order = "a",
         prerequisites = {"basic-automation"},
         unit = {
             count = 50,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
@@ -74,7 +74,7 @@ data:extend{
         unit = {
             count = 150,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
@@ -89,7 +89,7 @@ data:extend{
         unit = {
             count = 40,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
@@ -104,7 +104,7 @@ data:extend{
         unit = {
             count = 50,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
@@ -119,7 +119,7 @@ data:extend{
         unit = {
             count = 100,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
@@ -134,7 +134,7 @@ data:extend{
         unit = {
             count = 100,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
@@ -149,12 +149,11 @@ data:extend{
         unit = {
             count = 150,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
     },
-	--[[
     {
         type = "technology",
         name = "concrete-walls",
@@ -165,8 +164,8 @@ data:extend{
         unit = {
             count = 200,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
+                {"science-pack-1", 1},
+                {"science-pack-2", 1},
             },
             time = 20
         },
@@ -181,16 +180,13 @@ data:extend{
         unit = {
             count = 100,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"military-science-pack", 2},
+                {"science-pack-1", 1},
+                {"science-pack-2", 1},
+                {"military-science-pack", 1},
             },
             time = 30
         },
     },
-	
-	
-	
     {
         type = "technology",
         name = "fuel-processing",
@@ -201,11 +197,9 @@ data:extend{
         unit = {
             count = 20,
             ingredients = {
-                {"automation-science-pack", 1},
+                {"science-pack-1", 1},
             },
             time = 10
         },
     },
-	
-	]]
 }

@@ -5,7 +5,7 @@ data:extend(
     name = "temperate-tree",
     icon = "__angelsbioprocessing__/graphics/icons/tree-temperate.png",
 	icon_size = 64,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "bio-aboretum",
     order = "a",
     stack_size = 10
@@ -21,7 +21,7 @@ data:extend(
       mining_particle = "wooden-particle",
       mining_time = 1,
 	  results = {
-			{type = "item", name = "wood", amount = 100},
+			{type = "item", name = "raw-wood", amount = 100},
 			{type = "item", name = "temperate-tree", amount = 1},
 		}
     },
@@ -76,7 +76,7 @@ data:extend(
     name = "swamp-tree",
     icon = "__angelsbioprocessing__/graphics/icons/tree-swamp.png",
 	icon_size = 64,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "bio-aboretum",
     order = "b",
     stack_size = 10
@@ -92,7 +92,7 @@ data:extend(
       mining_particle = "wooden-particle",
       mining_time = 1,
 	  results = {
-			{type = "item", name = "wood", amount = 100},
+			{type = "item", name = "raw-wood", amount = 100},
 			{type = "item", name = "swamp-tree", amount = 1},
 		}
     },
@@ -153,7 +153,7 @@ data:extend(
     name = "desert-tree",
     icon = "__angelsbioprocessing__/graphics/icons/tree-desert.png",
 	icon_size = 64,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "bio-aboretum",
     order = "b",
     stack_size = 10
@@ -169,7 +169,7 @@ data:extend(
       mining_particle = "wooden-particle",
       mining_time = 1,
 	  results = {
-			{type = "item", name = "wood", amount = 100},
+			{type = "item", name = "raw-wood", amount = 100},
 			{type = "item", name = "desert-tree", amount = 1},
 		}
     },

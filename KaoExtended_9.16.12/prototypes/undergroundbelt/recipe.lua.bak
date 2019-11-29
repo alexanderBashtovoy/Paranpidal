@@ -1,0 +1,129 @@
+local a = false
+data:extend ({
+{ type = "recipe",
+    name = "alt-underground-belt",
+    category = "crafting",
+	enabled = a,
+    ingredients =
+    {
+		{"underground-belt", 4},
+    },
+    result = "alt-underground-belt",
+	result_count = 2
+  },
+  { type = "recipe",
+    name = "fast-alt-underground-belt",
+    category = "crafting",
+	enabled = a,
+    ingredients =
+    {
+		{"fast-underground-belt", 4},
+    },
+    result = "fast-alt-underground-belt",
+	result_count = 2
+  },
+  { type = "recipe",
+    name = "express-alt-underground-belt",
+    category = "crafting",
+	enabled = a,
+    ingredients =
+    {
+		{"express-underground-belt", 4},
+    },
+    result = "express-alt-underground-belt",
+	result_count = 2
+  },
+  { type = "recipe",
+    name = "green-alt-underground-belt",
+    category = "crafting",
+	enabled = a,
+    ingredients =
+    {
+		{"green-underground-belt", 4},
+    },
+    result = "green-alt-underground-belt",
+	result_count = 2
+  },
+  { type = "recipe",
+    name = "purple-alt-underground-belt",
+    category = "crafting",
+	enabled = a,
+    ingredients =
+    {
+		{"purple-underground-belt", 4},
+    },
+    result = "purple-alt-underground-belt",
+	result_count = 2
+  },
+  
+  })
+  
+  --reverse
+  data:extend({
+  	{
+    type = "item-subgroup",
+    name = "bob-belt-ground-rev",
+    group = "logistics",
+    order = "b-c",
+    },
+	{ type = "recipe",
+    name = "rev-underground-belt",
+    category = "crafting",
+	enabled = a,
+	subgroup = "bob-belt-ground-rev",
+    order = "a[alt-belt]",
+    ingredients =
+    {
+		{"alt-underground-belt", 1},
+    },
+    result = "underground-belt",
+  },
+  { type = "recipe",
+    name = "rev-fast-underground-belt",
+    category = "crafting",
+	enabled = a,
+	subgroup = "bob-belt-ground-rev",
+    order = "b[alt-belt]",
+    ingredients =
+    {
+		{"fast-alt-underground-belt", 1},
+    },
+    result = "fast-underground-belt",
+  },
+  { type = "recipe",
+    name = "rev-express-underground-belt",
+    category = "crafting",
+	enabled = a,
+	subgroup = "bob-belt-ground-rev",
+    order = "c[alt-belt]",
+    ingredients =
+    {
+		{"express-alt-underground-belt", 1},
+    },
+    result = "express-underground-belt",
+  },
+  { type = "recipe",
+    name = "rev-green-underground-belt",
+    category = "crafting",
+	enabled = a,
+	subgroup = "bob-belt-ground-rev",
+    order = "c[alt-belt]",
+    ingredients =
+    {
+		{"green-alt-underground-belt", 1},
+    },
+    result = "green-underground-belt",
+  },
+  { type = "recipe",
+    name = "rev-purple-underground-belt",
+    category = "crafting",
+	enabled = a,
+	subgroup = "bob-belt-ground-rev",
+    order = "c[alt-belt]",
+    ingredients =
+    {
+		{"purple-alt-underground-belt", 1},
+    },
+    result = "purple-underground-belt",
+  },
+  })

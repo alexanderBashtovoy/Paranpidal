@@ -97,22 +97,5 @@ exclusions =
 			-- "reactor-interface",
 		-- }
 	-- },
-	{  -- DrD
-		apply_when_object_exists = {
-			type = "pipe",
-			name = "bi-wood-pipe"
-		},
-		excluded_prototype_names = {
-			"bi-wood-pipe"
-		}
-	},
-	{  -- DrD
-		apply_when_object_exists = {
-			type = "pipe-to-ground",
-			name = "bi-pipe-to-ground-wood"
-		},
-		excluded_prototype_names = {
-			"bi-pipe-to-ground-wood"
-		}
-	},	
+
 }

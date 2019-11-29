@@ -1,9 +1,9 @@
 {
   "name": "ShinyBob_Techs",
-  "version": "9.16.0",
-  "factorio_version": "0.17",
+  "version": "0.16.0",
+  "factorio_version": "0.16",
   "title": "ShinyBob_Techs",
-  "author": "Qumojo/qjm123, Nexela, Inequalitix, Zombiee, nastyslave",
+  "author": "Qumojo/qjm123, Nexela, Inequalitix, Zombiee",
   "dependencies": [ "base >= 0.16.0", 
   				"? Laser_Beam_Turrets >= 0.1.8",
   				"? ModuleInserter >= 1.0.0",  				

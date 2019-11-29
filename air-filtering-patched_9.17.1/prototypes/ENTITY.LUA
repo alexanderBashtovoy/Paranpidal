@@ -13,15 +13,13 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-	      filename = "__air-filtering-patched__/graphics/entity/ppm-t1.png",
-          priority="high",
-          width = 99,
-          height = 112,
-          frame_count = 8,
-          line_length = 4,
-		  animation_speed = 0.15,
-          shift = util.by_pixel(8, -13),
-          repeat_count = 4
+      filename = "__air-filtering-patched__/graphics/entity/air-filter-machine-mk1.png",
+      priority = "high",
+      width = 99,
+      height = 102,
+      frame_count = 32,
+      line_length = 8,
+      shift = {0.4, -0.06}
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -39,7 +37,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = -0.08
+      emissions = -0.06
     },
     energy_usage = "250kW",
     ingredient_count = 1,
@@ -59,15 +57,13 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-	      filename = "__air-filtering-patched__/graphics/entity/ppm-t2.png",
-          priority="high",
-          width = 99,
-          height = 112,
-          frame_count = 8,
-          line_length = 4,
-		  animation_speed = 0.12,
-          shift = util.by_pixel(8, -13),
-          repeat_count = 4
+      filename = "__air-filtering-patched__/graphics/entity/air-filter-machine-mk2.png",
+      priority = "high",
+      width = 99,
+      height = 102,
+      frame_count = 32,
+      line_length = 8,
+      shift = {0.4, -0.06}
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -78,13 +74,6 @@ data:extend({
       apparent_volume = 1.5,
     },
     crafting_categories = {"crafting-air-filter"},
-	
-	module_specification =
-    {
-      module_slots = 1
-    },
-	allowed_effects = {"consumption", "speed"},	
-	
     source_inventory_size = 1,
     result_inventory_size = 1,
     crafting_speed = 2.0,
@@ -92,11 +81,11 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = -0.085
+      emissions = -0.06
     },
     energy_usage = "500kW",
-    ingredient_count = 1
-    --module_slots = 0
+    ingredient_count = 1,
+    module_slots = 0
   },
   {
     type = "furnace",
@@ -112,15 +101,13 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-	      filename = "__air-filtering-patched__/graphics/entity/ppm-t3.png",
-          priority="high",
-          width = 99,
-          height = 112,
-          frame_count = 8,
-          line_length = 4,
-		  animation_speed = 0.10,
-          shift = util.by_pixel(8, -13),
-          repeat_count = 4
+      filename = "__air-filtering-patched__/graphics/entity/air-filter-machine-mk3.png",
+      priority = "high",
+      width = 99,
+      height = 102,
+      frame_count = 32,
+      line_length = 8,
+      shift = {0.4, -0.06}
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -131,13 +118,6 @@ data:extend({
       apparent_volume = 1.5,
     },
     crafting_categories = {"crafting-air-filter"},
-	
-	module_specification =
-    {
-      module_slots = 1
-    },
-	allowed_effects = {"consumption", "speed"},	
-	
     source_inventory_size = 1,
     result_inventory_size = 1,
     crafting_speed = 5.0,
@@ -145,11 +125,11 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = -0.09
+      emissions = -0.06
     },
     energy_usage = "1.25MW",
-    ingredient_count = 1
-    --module_slots = 0
+    ingredient_count = 1,
+    module_slots = 0
   },
   {
     type = "furnace",
@@ -165,15 +145,13 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-	      filename = "__air-filtering-patched__/graphics/entity/ppm-t4.png",
-          priority="high",
-          width = 99,
-          height = 112,
-          frame_count = 8,
-          line_length = 4,
-		  animation_speed = 0.8,
-          shift = util.by_pixel(8, -13),
-          repeat_count = 4
+      filename = "__air-filtering-patched__/graphics/entity/air-filter-machine-mk4.png",
+      priority = "high",
+      width = 99,
+      height = 102,
+      frame_count = 32,
+      line_length = 8,
+      shift = {0.4, -0.06}
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -184,13 +162,6 @@ data:extend({
       apparent_volume = 1.5,
     },
     crafting_categories = {"crafting-air-filter"},
-	
-	module_specification =
-    {
-      module_slots = 2
-    },
-	allowed_effects = {"consumption", "speed"},	
-	
     source_inventory_size = 1,
     result_inventory_size = 1,
     crafting_speed = 7.5,
@@ -198,11 +169,11 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = -0.095
+      emissions = -0.06
     },
     energy_usage = "1.875MW",
-    ingredient_count = 1
-    --module_slots = 0
+    ingredient_count = 1,
+    module_slots = 0
   },
   {
     type = "furnace",
@@ -218,15 +189,13 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-	      filename = "__air-filtering-patched__/graphics/entity/ppm-t5.png",
-          priority="high",
-          width = 99,
-          height = 112,
-          frame_count = 8,
-          line_length = 4,
-		  animation_speed = 0.06,
-          shift = util.by_pixel(8, -13),
-          repeat_count = 4
+      filename = "__air-filtering-patched__/graphics/entity/air-filter-machine-mk5.png",
+      priority = "high",
+      width = 99,
+      height = 102,
+      frame_count = 32,
+      line_length = 8,
+      shift = {0.4, -0.06}
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -237,14 +206,6 @@ data:extend({
       apparent_volume = 1.5,
     },
     crafting_categories = {"crafting-air-filter"},
-	
-	module_specification =
-    {
-      module_slots = 2
-    },
-	allowed_effects = {"consumption", "speed"},	
-	
-	
     source_inventory_size = 1,
     result_inventory_size = 1,
     ingredient_count = 1,
@@ -254,12 +215,12 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = -0.1
+      emissions = -0.06
     },
-    --module_specification =
-    --{
-    --  module_slots = 0,
-    --},
+     module_specification =
+    {
+      module_slots = 0,
+    },
   },
   {
     type = "furnace",
@@ -275,15 +236,13 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-	      filename = "__air-filtering-patched__/graphics/entity/ppm-t6.png",
-          priority="high",
-          width = 99,
-          height = 112,
-          frame_count = 8,
-          line_length = 4,
-		  animation_speed = 0.04,
-          shift = util.by_pixel(8, -13),
-          repeat_count = 4
+      filename = "__air-filtering-patched__/graphics/entity/air-filter-machine-mk6.png",
+      priority = "high",
+      width = 99,
+      height = 102,
+      frame_count = 32,
+      line_length = 8,
+      shift = {0.4, -0.06}
     },
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
@@ -303,12 +262,12 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = -0.11
+      emissions = -0.06
     },
     module_specification =
     {
-      module_slots = 3,
+      module_slots = 1,
     },
-	allowed_effects = {"consumption", "speed", "pollution"}
+    allowed_effects = {"pollution"}
   }
 })

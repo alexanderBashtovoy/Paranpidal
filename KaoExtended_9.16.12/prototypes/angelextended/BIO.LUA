@@ -2,7 +2,6 @@ data:extend({
     { type = "recipe",
     name = "wood-brick-to-thermal-water",
     icon = data.raw["fluid"]["thermal-water"].icon,
-	icon_size = 32,
     category = "liquifying",
     enabled = false,
     subgroup = "bio-processing",

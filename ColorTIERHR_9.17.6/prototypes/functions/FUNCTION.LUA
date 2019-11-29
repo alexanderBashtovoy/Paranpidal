@@ -31,14 +31,13 @@ function replaceASSEMBLERS1(name,type)
 	data.raw["assembling-machine"][name]["animation"]["layers"] = 
 	{
     {
-      filename = ColorTIER_path.."/graphics/high-res/entity/assembling-machine/assembling-machine-"..type..".png",
-        priority="high",
-        width = 214,
-        height = 226,
-        frame_count = 32,
-        line_length = 8,
-        shift = util.by_pixel(0, 2),
-        scale = 0.5,
+      filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
+      priority="high",
+      width = 108,
+      height = 114,
+      frame_count = 32,
+      line_length = 8,
+      shift = util.by_pixel(0, 2),
       hr_version =
       {
         filename = ColorTIER_path.."/graphics/high-res/entity/assembling-machine/assembling-machine-"..type..".png",
@@ -52,16 +51,15 @@ function replaceASSEMBLERS1(name,type)
       }
     },
     {
-      filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
-        priority="high",
-        width = 190,
-        height = 165,
-        frame_count = 1,
-        line_length = 1,
-        repeat_count = 32,
-        draw_as_shadow = true,
-        shift = util.by_pixel(8.5, 5),
-        scale = 0.5,
+      filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
+      priority="high",
+      width = 95,
+      height = 83,
+      frame_count = 1,
+      line_length = 1,
+      repeat_count = 32,
+      draw_as_shadow = true,
+      shift = util.by_pixel(8.5, 5.5),
       hr_version =
       {
         filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
@@ -84,14 +82,13 @@ function replaceASSEMBLERS2(name,type)
 	data.raw["assembling-machine"][name]["animation"]["layers"] = 
     {
     {
-      filename = ColorTIER_path.."/graphics/high-res/entity/assembling-machine/assembling-machine-"..type..".png",
-        priority = "high",
-        width = 214,
-        height = 218,
-        frame_count = 32,
-        line_length = 8,
-        shift = util.by_pixel(0, 4),
-        scale = 0.5,
+      filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2.png",
+      priority = "high",
+      width = 108,
+      height = 110,
+      frame_count = 32,
+      line_length = 8,
+      shift = util.by_pixel(0, 4),
       hr_version =
       {
         filename = ColorTIER_path.."/graphics/high-res/entity/assembling-machine/assembling-machine-"..type..".png",
@@ -105,15 +102,14 @@ function replaceASSEMBLERS2(name,type)
       }
     },
     {
-      filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
-        priority = "high",
-        width = 196,
-        height = 163,
-        frame_count = 32,
-        line_length = 8,
-        draw_as_shadow = true,
-        shift = util.by_pixel(12, 4.75),
-        scale = 0.5,
+      filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow.png",
+      priority = "high",
+      width = 98,
+      height = 82,
+      frame_count = 32,
+      line_length = 8,
+      draw_as_shadow = true,
+      shift = util.by_pixel(12, 5),
       hr_version =
       {
         filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
@@ -135,14 +131,13 @@ function replaceASSEMBLERS3(name,type)
 	data.raw["assembling-machine"][name]["animation"]["layers"] = 
     {    
 		{
-      filename = ColorTIER_path.."/graphics/high-res/entity/assembling-machine/assembling-machine-"..type..".png",
-        priority = "high",
-        width = 214,
-        height = 237,
-        frame_count = 32,
-        line_length = 8,
-        shift = util.by_pixel(0, -0.75),
-        scale = 0.5,
+      filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3.png",
+      priority = "high",
+      width = 108,
+      height = 119,
+      frame_count = 32,
+      line_length = 8,
+      shift = util.by_pixel(0, -0.5),
       hr_version =
       {
         filename = ColorTIER_path.."/graphics/high-res/entity/assembling-machine/assembling-machine-"..type..".png",
@@ -156,15 +151,14 @@ function replaceASSEMBLERS3(name,type)
       }
     },
     {
-      filename = "__base__/graphics/entity/assembling-machine-3/hr-assembling-machine-3-shadow.png",
-        priority = "high",
-        width = 260,
-        height = 162,
-        frame_count = 32,
-        line_length = 8,
-        draw_as_shadow = true,
-        shift = util.by_pixel(28, 4),
-        scale = 0.5,
+      filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3-shadow.png",
+      priority = "high",
+      width = 130,
+      height = 82,
+      frame_count = 32,
+      line_length = 8,
+      draw_as_shadow = true,
+      shift = util.by_pixel(28, 4),
       hr_version =
       {
         filename = "__base__/graphics/entity/assembling-machine-3/hr-assembling-machine-3-shadow.png",
@@ -188,14 +182,14 @@ function replaceELECTRONICMACHINES(name,type)
 	data.raw["assembling-machine"][name]["animation"]["layers"] = 
     {    
 		{
-      filename = ColorTIER_path.."/graphics/high-res/entity/assembling-machine/electric-machine-"..type..".png",
-        priority = "high",
-        width = 214,
-        height = 237,
-        frame_count = 32,
-        line_length = 8,
-        shift = util.by_pixel(0, -0.75),
-        scale = 0.34,
+      filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3.png",
+      priority = "high",
+      width = 108,
+      height = 119,
+      frame_count = 32,
+      line_length = 8,
+      shift = util.by_pixel(0, -0.5),
+	  scale = 0.67,
       hr_version =
       {
         filename = ColorTIER_path.."/graphics/high-res/entity/assembling-machine/electric-machine-"..type..".png",
@@ -209,15 +203,15 @@ function replaceELECTRONICMACHINES(name,type)
       }
     },
     {
-      filename = "__base__/graphics/entity/assembling-machine-3/hr-assembling-machine-3-shadow.png",
-        priority = "high",
-        width = 260,
-        height = 162,
-        frame_count = 32,
-        line_length = 8,
-        draw_as_shadow = true,
-        shift = util.by_pixel(28, 4),
-        scale = 0.34,
+      filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3-shadow.png",
+      priority = "high",
+      width = 130,
+      height = 82,
+      frame_count = 32,
+      line_length = 8,
+      draw_as_shadow = true,
+      shift = util.by_pixel(28, 4),
+	  scale = 0.67,
       hr_version =
       {
         filename = "__base__/graphics/entity/assembling-machine-3/hr-assembling-machine-3-shadow.png",

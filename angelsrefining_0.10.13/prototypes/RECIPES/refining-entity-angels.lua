@@ -3,7 +3,7 @@ local buildingtime = angelsmods.marathon.buildingtime
 
 angelsmods.functions.RB.build({
 --ORE CRUSHER
-		{
+	{
     type = "recipe",
     name = "burner-ore-crusher",
     energy_required = 5,
@@ -43,7 +43,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"crusher-1", 2},
+		{"crusher-1", 1},
 		{"t0-plate", 3},
 		{"t0-brick", 3},
 		{"t0-gears", 2},
@@ -56,7 +56,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"crusher-1", 2},
+		{"crusher-1", 1},
 		{"t0-plate", 3 * buildingmulti},
 		{"t0-brick", 3 * buildingmulti},
 		{"t0-gears", 2 * buildingmulti},
@@ -75,7 +75,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"crusher-2", 2},
+		{"crusher-2", 1},
 		{"t2-plate", 3},
 		{"t2-brick", 3},
 		{"t2-gears", 2},
@@ -88,7 +88,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"crusher-2", 2},
+		{"crusher-2", 1},
 		{"t2-plate", 3 * buildingmulti},
 		{"t2-brick", 3 * buildingmulti},
 		{"t2-gears", 2 * buildingmulti},
@@ -107,7 +107,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"crusher-3", 2},
+		{"crusher-3", 1},
 		{"t3-plate", 3},
 		{"t3-brick", 3},
 		{"t3-gears", 2},
@@ -120,7 +120,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"crusher-3", 2},
+		{"crusher-3", 1},
 		{"t3-plate", 3 * buildingmulti},
 		{"t3-brick", 3 * buildingmulti},
 		{"t3-gears", 2 * buildingmulti},
@@ -140,7 +140,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cell-1", 2},
+		{"cell-1", 1},
 		{"t2-plate", 4},
 		{"t2-circuit", 8},
 		{"t2-pipe", 4},	
@@ -154,7 +154,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cell-1", 2},	  
+		{"cell-1", 1},	  
 		{"t2-plate", 4 * buildingmulti},
 		{"t2-circuit", 8 * buildingmulti},
 		{"t2-pipe", 4 * buildingmulti},	
@@ -174,7 +174,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cell-2", 2},
+		{"cell-2", 1},
 		{"t3-plate", 4},
 		{"t3-circuit", 8},
 		{"t3-pipe", 4},	
@@ -188,7 +188,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cell-2", 2},
+		{"cell-2", 1},
 		{"t3-plate", 4 * buildingmulti},
 		{"t3-circuit", 8 * buildingmulti},
 		{"t3-pipe", 4 * buildingmulti},	
@@ -208,7 +208,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cell-3", 2},
+		{"cell-3", 1},
 		{"t4-plate", 4},
 		{"t4-circuit", 8},
 		{"t4-pipe", 4},	
@@ -222,7 +222,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cell-3", 2},
+		{"cell-3", 1},
 		{"t4-plate", 4 * buildingmulti},
 		{"t4-circuit", 8 * buildingmulti},
 		{"t4-pipe", 4 * buildingmulti},	
@@ -243,7 +243,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"leach-1", 2},
+		{"leach-1", 1},
 		{"t3-plate", 4},
 		{"t3-circuit", 8},
 		{"t3-pipe", 4},	
@@ -257,7 +257,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"leach-1", 2},
+		{"leach-1", 1},
 		{"t3-plate", 4 * buildingmulti},
 		{"t3-circuit", 8 * buildingmulti},
 		{"t3-pipe", 4 * buildingmulti},	
@@ -277,7 +277,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"leach-2", 2},
+		{"leach-2", 1},
 		{"t4-plate", 4},
 		{"t4-circuit", 8},
 		{"t4-pipe", 4},	
@@ -291,7 +291,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"leach-2", 2},
+		{"leach-2", 1},
 		{"t4-plate", 4 * buildingmulti},
 		{"t4-circuit", 8 * buildingmulti},
 		{"t4-pipe", 4 * buildingmulti},	
@@ -311,7 +311,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"leach-3", 2},
+		{"leach-3", 1},
 		{"t5-plate", 4},
 		{"t5-circuit", 8},
 		{"t5-pipe", 4},	
@@ -325,7 +325,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"leach-3", 2},
+		{"leach-3", 1},
 		{"t5-plate", 4 * buildingmulti},
 		{"t5-circuit", 8 * buildingmulti},
 		{"t5-pipe", 4 * buildingmulti},	
@@ -346,7 +346,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreref-1", 2},
+		{"oreref-1", 1},
 		{"t4-plate", 12},
 		{"t4-circuit", 12},
 		{"t4-brick", 20},
@@ -359,7 +359,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreref-1", 2},
+		{"oreref-1", 1},
 		{"t4-plate", 12 * buildingmulti},
 		{"t4-circuit", 12 * buildingmulti},
 		{"t4-brick", 20 * buildingmulti},
@@ -378,7 +378,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreref-2", 2},
+		{"oreref-2", 1},
 		{"t5-plate", 12},
 		{"t5-circuit", 12},
 		{"t5-brick", 20},
@@ -391,7 +391,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreref-2", 2},
+		{"oreref-2", 1},
 		{"t5-plate", 12 * buildingmulti},
 		{"t5-circuit", 12 * buildingmulti},
 		{"t5-brick", 20 * buildingmulti},
@@ -411,7 +411,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"sorter-1", 2},
+		{"sorter-1", 1},
 		{"t0-plate", 12},
 		{"t0-circuit", 12},
 		{"t0-brick", 12},
@@ -425,7 +425,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"sorter-1", 2},	  
+		{"sorter-1", 1},	  
 		{"t0-plate", 12 * buildingmulti},
 		{"t0-circuit", 12 * buildingmulti},
 		{"t0-brick", 12 * buildingmulti},
@@ -445,7 +445,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"sorter-2", 2},
+		{"sorter-2", 1},
 		{"t2-plate", 12},
 		{"t2-circuit", 12},
 		{"t2-brick", 12},
@@ -459,7 +459,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"sorter-2", 2},
+		{"sorter-2", 1},
 		{"t2-plate", 12 * buildingmulti},
 		{"t2-circuit", 12 * buildingmulti},
 		{"t2-brick", 12 * buildingmulti},
@@ -479,7 +479,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"sorter-3", 2},
+		{"sorter-3", 1},
 		{"t3-plate", 12},
 		{"t3-circuit", 12},
 		{"t3-brick", 12},
@@ -493,7 +493,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"sorter-3", 2},
+		{"sorter-3", 1},
 		{"t3-plate", 12 * buildingmulti},
 		{"t3-circuit", 12 * buildingmulti},
 		{"t3-brick", 12 * buildingmulti},
@@ -513,7 +513,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"sorter-4", 2},
+		{"sorter-4", 1},
 		{"t4-plate", 12},
 		{"t4-circuit", 12},
 		{"t4-brick", 12},
@@ -527,7 +527,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"sorter-4", 2},
+		{"sorter-4", 1},
 		{"t4-plate", 12 * buildingmulti},
 		{"t4-circuit", 12 * buildingmulti},
 		{"t4-brick", 12 * buildingmulti},
@@ -548,7 +548,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"filter-1", 2},
+		{"filter-1", 1},
 		{"t2-plate", 2},
 		{"t2-circuit", 5},
 		{"t2-pipe", 8},	
@@ -562,7 +562,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"filter-1", 2},
+		{"filter-1", 1},
 		{"t2-plate", 2 * buildingmulti},
 		{"t2-circuit", 5 * buildingmulti},
 		{"t2-pipe", 8 * buildingmulti},	
@@ -580,7 +580,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"filter-2", 2},
+		{"filter-2", 1},
 		{"t4-plate", 2},
 		{"t4-circuit", 5},
 		{"t4-pipe", 8},	
@@ -594,7 +594,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"filter-2", 2},
+		{"filter-2", 1},
 		{"t4-plate", 2 * buildingmulti},
 		{"t4-circuit", 5 * buildingmulti},
 		{"t4-pipe", 8 * buildingmulti},	
@@ -613,7 +613,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cryst-1", 2},
+		{"cryst-1", 1},
 		{"t2-plate", 10},
 		{"t2-circuit", 5},
 		{"t2-pipe", 5},	
@@ -627,7 +627,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cryst-1", 2},
+		{"cryst-1", 1},
 		{"t2-plate", 10 * buildingmulti},
 		{"t2-circuit", 5 * buildingmulti},
 		{"t2-pipe", 5 * buildingmulti},	
@@ -645,7 +645,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cryst-2", 2},
+		{"cryst-2", 1},
 		{"t4-plate", 10},
 		{"t4-circuit", 5},
 		{"t4-pipe", 5},	
@@ -659,7 +659,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"cryst-2", 2},
+		{"cryst-2", 1},
 		{"t4-plate", 10 * buildingmulti},
 		{"t4-circuit", 5 * buildingmulti},
 		{"t4-pipe", 5 * buildingmulti},	
@@ -678,10 +678,10 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"liqui-1", 2},
-		{"t0-plate", 8}, --2 DrD
+		{"liqui-1", 1},
+		{"t0-plate", 2},
 		{"t0-circuit", 2},
-		{"t0-pipe", 20},	--2 DrD
+		{"t0-pipe", 2},	
 		{"t0-brick", 2},
       },
       result="liquifier",
@@ -692,7 +692,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"liqui-1", 2},
+		{"liqui-1", 1},
 		{"t0-plate", 2 * buildingmulti},
 		{"t0-circuit", 2 * buildingmulti},
 		{"t0-pipe", 2 * buildingmulti},	
@@ -711,7 +711,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"liqui-2", 2},
+		{"liqui-2", 1},
 		{"t2-plate", 2},
 		{"t2-circuit", 2},
 		{"t2-pipe", 2},	
@@ -725,7 +725,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"liqui-2", 2},
+		{"liqui-2", 1},
 		{"t2-plate", 2 * buildingmulti},
 		{"t2-circuit", 2 * buildingmulti},
 		{"t2-pipe", 2 * buildingmulti},	
@@ -743,7 +743,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"liqui-3", 2},
+		{"liqui-3", 1},
 		{"t3-plate", 2},
 		{"t3-circuit", 2},
 		{"t3-pipe", 2},	
@@ -757,7 +757,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"liqui-3", 2},
+		{"liqui-3", 1},
 		{"t3-plate", 2 * buildingmulti},
 		{"t3-circuit", 2 * buildingmulti},
 		{"t3-pipe", 2 * buildingmulti},	
@@ -775,7 +775,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"liqui-4", 2},
+		{"liqui-4", 1},
 		{"t4-plate", 2},
 		{"t4-circuit", 2},
 		{"t4-pipe", 2},	
@@ -789,7 +789,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"liqui-4", 2},
+		{"liqui-4", 1},
 		{"t4-plate", 2 * buildingmulti},
 		{"t4-circuit", 2 * buildingmulti},
 		{"t4-pipe", 2 * buildingmulti},	
@@ -808,7 +808,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"thermal-1", 2},
+		{"thermal-1", 1},
 		{"t4-plate", 6},
 		{"t4-circuit", 4},
 		{"t4-pipe", 4},	
@@ -823,7 +823,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"thermal-1", 2},
+		{"thermal-1", 1},
 		{"t4-plate", 6 * buildingmulti},
 		{"t4-circuit", 4 * buildingmulti},
 		{"t4-pipe", 4 * buildingmulti},	
@@ -873,7 +873,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"treatment-1", 2},
+		{"treatment-1", 1},
 		{"t1-plate", 4},
 		{"t1-circuit", 12},
 		{"t1-pipe", 16},	
@@ -887,7 +887,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"treatment-1", 2},
+		{"treatment-1", 1},
 		{"t1-plate", 4 * buildingmulti},
 		{"t1-circuit", 12 * buildingmulti},
 		{"t1-pipe", 16 * buildingmulti},	
@@ -905,7 +905,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"treatment-2", 2},
+		{"treatment-2", 1},
 		{"t3-plate", 4},
 		{"t3-circuit", 12},
 		{"t3-pipe", 16},	
@@ -919,7 +919,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"treatment-2", 2},
+		{"treatment-2", 1},
 		{"t3-plate", 4 * buildingmulti},
 		{"t3-circuit", 12 * buildingmulti},
 		{"t3-pipe", 16 * buildingmulti},	
@@ -938,7 +938,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"salination-1", 2},
+		{"salination-1", 1},
 		{"t3-plate", 14},
 		{"t3-circuit", 12},
 		{"t3-pipe", 8},	
@@ -952,7 +952,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"salination-1", 2},
+		{"salination-1", 1},
 		{"t3-plate", 14 * buildingmulti},
 		{"t3-circuit", 12 * buildingmulti},
 		{"t3-pipe", 8 * buildingmulti},	
@@ -970,7 +970,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"salination-2", 2},
+		{"salination-2", 1},
 		{"t4-plate", 14},
 		{"t4-circuit", 12},
 		{"t4-pipe", 8},	
@@ -984,7 +984,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"salination-2", 2},
+		{"salination-2", 1},
 		{"t4-plate", 14 * buildingmulti},
 		{"t4-circuit", 12 * buildingmulti},
 		{"t4-pipe", 8 * buildingmulti},	
@@ -1003,7 +1003,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"wash-1", 2},
+		{"wash-1", 1},
 		{"t1-plate", 4},
 		{"t1-circuit", 4},
 		{"t1-pipe", 9},	
@@ -1017,7 +1017,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"wash-1", 2},
+		{"wash-1", 1},
 		{"t1-plate", 4 * buildingmulti},
 		{"t1-circuit", 4 * buildingmulti},
 		{"t1-pipe", 9 * buildingmulti},	
@@ -1035,7 +1035,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"wash-2", 2},
+		{"wash-2", 1},
 		{"t2-plate", 4},
 		{"t2-circuit", 4},
 		{"t2-pipe", 9},	
@@ -1049,7 +1049,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"wash-2", 2},
+		{"wash-2", 1},
 		{"t2-plate", 4 * buildingmulti},
 		{"t2-circuit", 4 * buildingmulti},
 		{"t2-pipe", 9 * buildingmulti},	
@@ -1159,7 +1159,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"orepowder-1", 2},
+		{"orepowder-1", 1},
 		{"t2-plate", 1},
 		{"t2-brick", 1},
 		{"t2-gears", 1},
@@ -1172,7 +1172,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"orepowder-1", 2},
+		{"orepowder-1", 1},
 		{"t2-plate", 1 * buildingmulti},
 		{"t2-gears", 1 * buildingmulti},
 		{"t2-brick", 1 * buildingmulti},
@@ -1189,7 +1189,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"orepowder-2", 2},
+		{"orepowder-2", 1},
 		{"t3-plate", 1},
 		{"t3-gears", 1},
 		{"t3-brick", 1},
@@ -1202,7 +1202,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"orepowder-2", 2},
+		{"orepowder-2", 1},
 		{"t3-plate", 1 * buildingmulti},
 		{"t3-circuit", 1 * buildingmulti},
 		{"t3-brick", 1 * buildingmulti},
@@ -1219,7 +1219,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"orepowder-3", 2},
+		{"orepowder-3", 1},
 		{"t4-plate", 1},
 		{"t4-gears", 1},
 		{"t4-brick", 1},
@@ -1232,7 +1232,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"orepowder-3", 2},
+		{"orepowder-3", 1},
 		{"t4-plate", 1 * buildingmulti},
 		{"t4-gears", 1 * buildingmulti},
 		{"t4-brick", 1 * buildingmulti},
@@ -1250,7 +1250,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreelectro-1", 2},
+		{"oreelectro-1", 1},
 		{"t3-plate", 4},
 		{"t3-circuit", 8},
 		{"t3-brick", 4},
@@ -1264,7 +1264,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreelectro-1", 2},
+		{"oreelectro-1", 1},
 		{"t3-plate", 4 * buildingmulti},
 		{"t3-circuit", 8 * buildingmulti},
 		{"t3-brick", 4 * buildingmulti},
@@ -1282,7 +1282,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreelectro-2", 2},
+		{"oreelectro-2", 1},
 		{"t4-plate", 4},
 		{"t4-circuit", 8},
 		{"t4-brick", 4},
@@ -1296,7 +1296,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreelectro-2", 2},
+		{"oreelectro-2", 1},
 		{"t4-plate", 4 * buildingmulti},
 		{"t4-circuit", 8 * buildingmulti},
 		{"t4-brick", 4 * buildingmulti},
@@ -1314,7 +1314,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreelectro-3", 2},
+		{"oreelectro-3", 1},
 		{"t5-plate", 4},
 		{"t5-circuit", 8},
 		{"t5-brick", 4},
@@ -1328,7 +1328,7 @@ angelsmods.functions.RB.build({
 	  enabled = "false",
       ingredients =
       {
-		{"oreelectro-3", 2},
+		{"oreelectro-3", 1},
 		{"t5-plate", 4 * buildingmulti},
 		{"t5-circuit", 8 * buildingmulti},
 		{"t5-brick", 4 * buildingmulti},

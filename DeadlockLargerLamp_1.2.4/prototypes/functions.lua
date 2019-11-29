@@ -1,4 +1,4 @@
-require("prototypes.globals")
+local DLL = require("prototypes.globals")
 
 -- work with incredibly annoying fuel value string
 

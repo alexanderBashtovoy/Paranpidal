@@ -3,9 +3,6 @@ local resistances = {
   { type = "explosion", percent = 50 },
   { type = "impact", percent = 50 }
 }
---{"floor-layer", "player-layer", "water-tile", "object-layer"},
-local collision_mask_blocking = {"player-layer", "object-layer"}
-local collision_mask_nonblocking = {"item-layer"}
 data:extend({
   {
     type = "container",
@@ -18,17 +15,16 @@ data:extend({
     order = "d[remnants]-d[ship-wreck]-a[big]-a",
     max_health = 300,
     minable = {
-      mining_time = 0.5 * 10,
+      mining_time = 0.5 * 2,
       results={
-        {name="iron-plate", amount = 62},
-        {name="copper-plate", amount = 38},
-        {name="steel-plate", amount = 7},
-        {name="electronic-circuit", amount = 2}
+        {name="iron-plate", amount = 2},
+        {name="steel-plate", amount = 1},
+        {name="electronic-circuit", amount = 1}
       }
     },
     resistances = resistances,
     collision_box = {{-1.8, -1.5}, {1.8, 1.5}},
-    collision_mask = collision_mask_blocking,
+    collision_mask = {"floor-layer", "player-layer", "water-tile", "object-layer"},
     selection_box = {{-2.7, -1.5}, {2.7, 1.5}},
     inventory_size = 3,
     picture =
@@ -50,17 +46,14 @@ data:extend({
     order = "d[remnants]-d[ship-wreck]-a[big]-b",
     max_health = 300,
     minable = {
-      mining_time = 0.5 * 10,
+      mining_time = 0.5 * 2,
       results={
-        {name="iron-plate", amount = 58},
-        {name="copper-plate", amount = 36},
-        {name="steel-plate", amount = 3},
-        {name="electronic-circuit", amount = 1}
+        {name="iron-plate", amount = 1},
+        {name="copper-plate", amount = 1},
       }
     },
     resistances = resistances,
     collision_box = {{-1.4, -1.2}, {1.4, 1.2}},
-    collision_mask = collision_mask_blocking,
     selection_box = {{-2, -1.5}, {2, 1.5}},
     inventory_size = 3,
     picture =
@@ -82,17 +75,14 @@ data:extend({
     order = "d[remnants]-d[ship-wreck]-a[big]-c",
     max_health = 300,
     minable = {
-      mining_time = 0.5 * 10,
+      mining_time = 0.5 * 2,
       results={
-        {name="iron-plate", amount = 38},
-        {name="copper-plate", amount = 44},
-        {name="steel-plate", amount = 2},
+        {name="iron-plate", amount = 2},
         {name="electronic-circuit", amount = 1}
       }
     },
     resistances = resistances,
     collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
-    collision_mask = collision_mask_blocking,
     selection_box = {{-2, -1.5}, {2, 1.5}},
     inventory_size = 3,
     picture =
@@ -113,14 +103,14 @@ data:extend({
     order = "d[remnants]-d[ship-wreck]-b[medium]-a",
     max_health = 200,
     minable = {
-      mining_time = 0.5 * 5,
+      mining_time = 0.5 * 2,
       results={
-        {name="iron-plate", amount = 24},
+        {name="iron-plate", amount = 1},
       }
     },
     resistances = resistances,
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
-    collision_mask = collision_mask_nonblocking,
+    collision_mask = {"floor-layer", "water-tile"},
     selection_box = {{-1.5, -1.2}, {1.5, 1.2}},
     inventory_size = 1,
     picture =
@@ -140,14 +130,14 @@ data:extend({
     order = "d[remnants]-d[ship-wreck]-b[medium]-a",
     max_health = 200,
     minable = {
-      mining_time = 0.5 * 5,
+      mining_time = 0.5 * 2,
       results={
-        {name="copper-plate", amount = 18},
+        {name="iron-plate", amount = 1},
       }
     },
     resistances = resistances,
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
-    collision_mask = collision_mask_nonblocking,
+    collision_mask = {"floor-layer", "water-tile"},
     selection_box = {{-1.5, -1.2}, {1.5, 1.2}},
     inventory_size = 1,
     picture =
@@ -169,15 +159,15 @@ data:extend({
     order = "d[remnants]-d[ship-wreck]-c[small]-a",
     max_health = 100,
     minable = {
-      mining_time = 0.5 * 3,
+      mining_time = 0.5 * 1,
       results={
-        {name="iron-plate", probability = 0.75, amount_min=5, amount_max=25},
-        {name="copper-plate", probability = 0.25, amount_min=5, amount_max=25}
+        {name="iron-plate", probability = 0.75, amount_min=0, amount_max=1},
+        {name="copper-plate", probability = 0.25, amount_min=0, amount_max=1}
       }
     },
     resistances = resistances,
     collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
-    collision_mask = collision_mask_nonblocking,
+    collision_mask = {"floor-layer"},
     selection_box = {{-1.3, -1.1}, {1.3, 1.1}},
     pictures =
     {

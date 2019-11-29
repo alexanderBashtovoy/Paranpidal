@@ -1,8 +1,8 @@
-require("prototypes.globals")
+local DLL = require("prototypes.globals")
 
 -- look for any item with a fuel value and make a copper lamp recipe
 
-local day = 416.667
+local day = 416.6667
 
 data:extend({{
 	type = "item",
@@ -43,7 +43,9 @@ for _,item in pairs(data.raw.item) do
 	end
 end
 
--- undo Squeak Through's bullshit and any other mod that messes with collision boxes unasked
-data.raw.lamp[DLL.name].collision_box = { {-0.6,-0.6}, {0.6,0.6} }
-data.raw.furnace[DLL.copper_name].collision_box = { {-0.6,-0.6}, {0.6,0.6} }
+-- re-apply signal colours from vanilla lamp in case any other mod has added more
 
+local signal_colours = data.raw.lamp["small-lamp"].signal_to_color_mapping
+if signal_colours then
+	data.raw.lamp[DLL.name].signal_to_color_mapping = signal_colours
+end

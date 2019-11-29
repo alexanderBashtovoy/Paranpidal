@@ -60,9 +60,6 @@ data:extend(
     icon_size = 32,
     subgroup = "petrochem-raw",
     order = "a[solid-rubber]",
-	fuel_value = "5MJ", --DrD 30
-	fuel_category = "chemical", --DrD
-	fuel_emissions_multiplier = 3.5, --DrD
     stack_size = 200
   },
   {

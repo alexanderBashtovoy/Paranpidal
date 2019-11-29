@@ -1,9 +1,13 @@
+
+
+
+
 data:extend({
 --Item
    {
 		type = "item",
 		name = "big-lab",
-		icon = "__BigLab__/graphics/icon/biglab.png",
+		icon = "__BigLab__/biglab.png",
 		icon_size = 32,
 		--- flags = {"goes-to-quickbar"},
 		subgroup = "production-machine",
@@ -15,12 +19,11 @@ data:extend({
 	{
 		type = "recipe",
 		name = "big-lab",
-		energy_required = 20,
-		enabled = "false",
+		energy_required = 2,
 		ingredients =
 		{
-		  {"processing-unit", 50},
-		  {"lab-2", 30},
+		  {"electronic-circuit", 30},
+		  {"lab", 30},
 		},
 		result = "big-lab"
 	},
@@ -28,7 +31,7 @@ data:extend({
 	{
 		type = "lab",
 		name = "big-lab",
-		icon = "__BigLab__/graphics/icon/biglab.png",
+		icon = "__BigLab__/biglab.png",
 		icon_size = 32,
 		flags = {"placeable-player", "player-creation"},
 		minable = {mining_time = 1, result = "big-lab"},
@@ -223,16 +226,15 @@ data.raw["lab"]["big-lab"].inputs =
 		  "production-science-pack",
 		  "utility-science-pack",
 		  "space-science-pack",
-		  "advanced-logistic-science-pack",  --DrD
-	---	  "transport-science-pack",
-		  "science-pack-gold",
-		  "alien-science-pack",
-		  "alien-science-pack-blue",
-		  "alien-science-pack-orange",
-		  "alien-science-pack-purple",
-		  "alien-science-pack-yellow",
-		  "alien-science-pack-green",
-		  "alien-science-pack-red"
+	---	  "logistic-science-pack",
+	---	  "science-pack-gold",
+	---	  "alien-science-pack",
+	---	  "alien-science-pack-blue",
+	---	  "alien-science-pack-orange",
+	---	  "alien-science-pack-purple",
+	---	  "alien-science-pack-yellow",
+	---	  "alien-science-pack-green",
+	---	  "alien-science-pack-red"
 		}
 end
 
@@ -259,3 +261,5 @@ data.raw["lab"]["big-lab"].inputs =
 	---	  "alien-science-pack-red"
 		}
 end
+
+

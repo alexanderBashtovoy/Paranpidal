@@ -1,4 +1,3 @@
---DrD
 data:extend(
 {
   {
@@ -8,7 +7,7 @@ data:extend(
     energy_required = 1,
     ingredients =
     {
-      {"ruby-ore", 5},
+      {"ruby-ore", 1},
     },
     result = "ruby-3",
     result_count = 4
@@ -20,7 +19,7 @@ data:extend(
     energy_required = 1,
     ingredients =
     {
-      {"sapphire-ore", 5},
+      {"sapphire-ore", 1},
     },
     result = "sapphire-3",
     result_count = 4
@@ -32,7 +31,7 @@ data:extend(
     energy_required = 1,
     ingredients =
     {
-      {"emerald-ore", 5},
+      {"emerald-ore", 1},
     },
     result = "emerald-3",
     result_count = 4
@@ -44,7 +43,7 @@ data:extend(
     energy_required = 1,
     ingredients =
     {
-      {"amethyst-ore", 5},
+      {"amethyst-ore", 1},
     },
     result = "amethyst-3",
     result_count = 4
@@ -56,7 +55,7 @@ data:extend(
     energy_required = 1,
     ingredients =
     {
-      {"topaz-ore", 5},
+      {"topaz-ore", 1},
     },
     result = "topaz-3",
     result_count = 4
@@ -68,7 +67,7 @@ data:extend(
     energy_required = 1,
     ingredients =
     {
-      {"diamond-ore", 5},
+      {"diamond-ore", 1},
     },
     result = "diamond-3",
     result_count = 4
@@ -83,7 +82,7 @@ data:extend(
     energy_required = 3.5,
     ingredients =
     {
-      {"ruby-3", 5},
+      {"ruby-3", 1},
       {"grinding-wheel", 1},
       {type="fluid", name="water", amount=10},
     },
@@ -97,7 +96,7 @@ data:extend(
     energy_required = 3.5,
     ingredients =
     {
-      {"sapphire-3", 5},
+      {"sapphire-3", 1},
       {"grinding-wheel", 1},
       {type="fluid", name="water", amount=10},
     },
@@ -111,7 +110,7 @@ data:extend(
     energy_required = 3.5,
     ingredients =
     {
-      {"emerald-3", 5},
+      {"emerald-3", 1},
       {"grinding-wheel", 1},
       {type="fluid", name="water", amount=10},
     },
@@ -125,7 +124,7 @@ data:extend(
     energy_required = 3.5,
     ingredients =
     {
-      {"amethyst-3", 5},
+      {"amethyst-3", 1},
       {"grinding-wheel", 1},
       {type="fluid", name="water", amount=10},
     },
@@ -139,7 +138,7 @@ data:extend(
     energy_required = 3.5,
     ingredients =
     {
-      {"topaz-3", 5},
+      {"topaz-3", 1},
       {"grinding-wheel", 1},
       {type="fluid", name="water", amount=10},
     },
@@ -153,7 +152,7 @@ data:extend(
     energy_required = 3.5,
     ingredients =
     {
-      {"diamond-3", 5},
+      {"diamond-3", 1},
       {"grinding-wheel", 1},
       {type="fluid", name="water", amount=10},
     },
@@ -169,7 +168,7 @@ data:extend(
     energy_required = 17.5,
     ingredients =
     {
-      {"ruby-4", 5},
+      {"ruby-4", 1},
       {"polishing-wheel", 1},
       {"polishing-compound", 1},
     },
@@ -183,7 +182,7 @@ data:extend(
     energy_required = 17.5,
     ingredients =
     {
-      {"sapphire-4", 5},
+      {"sapphire-4", 1},
       {"polishing-wheel", 1},
       {"polishing-compound", 1},
     },
@@ -197,7 +196,7 @@ data:extend(
     energy_required = 17.5,
     ingredients =
     {
-      {"emerald-4", 5},
+      {"emerald-4", 1},
       {"polishing-wheel", 1},
       {"polishing-compound", 1},
     },
@@ -211,7 +210,7 @@ data:extend(
     energy_required = 17.5,
     ingredients =
     {
-      {"amethyst-4", 5},
+      {"amethyst-4", 1},
       {"polishing-wheel", 1},
       {"polishing-compound", 1},
     },
@@ -225,7 +224,7 @@ data:extend(
     energy_required = 17.5,
     ingredients =
     {
-      {"topaz-4", 5},
+      {"topaz-4", 1},
       {"polishing-wheel", 1},
       {"polishing-compound", 1},
     },
@@ -239,7 +238,7 @@ data:extend(
     energy_required = 17.5,
     ingredients =
     {
-      {"diamond-4", 5},
+      {"diamond-4", 1},
       {"polishing-wheel", 1},
       {"polishing-compound", 1},
     },

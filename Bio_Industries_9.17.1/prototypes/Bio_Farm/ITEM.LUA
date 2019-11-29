@@ -1,5 +1,5 @@
-data:extend({
-
+data:extend(
+{
 	---- Seed
 	{
 		type = "item",
@@ -7,6 +7,7 @@ data:extend({
 		icon = "__Bio_Industries__/graphics/icons/bio_seed.png",
 		icon_size = 32,
 		category = "biofarm-mod-greenhouse",
+		----flags = {"goes-to-main-inventory"},
 		subgroup = "bio-bio-farm",
 		order = "x[bi]-a[bi-seed]",
 		fuel_value = "0.5MJ",
@@ -21,6 +22,7 @@ data:extend({
 		name = "seedling",
 		icon = "__Bio_Industries__/graphics/icons/Seedling.png",
 		icon_size = 32,
+		----flags = {"goes-to-main-inventory"},
 		subgroup = "bio-bio-farm",
 		order = "x[bi]-b[bi-seedling]",
 		place_result="seedling",
@@ -35,6 +37,7 @@ data:extend({
 		name= "bi-bio-farm",
 		icon = "__Bio_Industries__/graphics/icons/Bio_Farm_Icon.png",
 		icon_size = 32,
+		--flags = { "goes-to-quickbar" },
 		subgroup = "production-machine",
 		order = "x[bi]-ab[bi-bio-farm]",
 		place_result = "bi-bio-farm",
@@ -47,6 +50,7 @@ data:extend({
 		name= "bi-bio-greenhouse",
 		icon = "__Bio_Industries__/graphics/icons/bio_greenhouse.png",
 		icon_size = 32,
+		--flags = { "goes-to-quickbar" },
 		subgroup = "production-machine",
 		order = "x[bi]-aa[bi_bio_greenhouse]",
 		place_result = "bi-bio-greenhouse",
@@ -59,6 +63,7 @@ data:extend({
 		name = "bi-cokery",
 		icon = "__Bio_Industries__/graphics/icons/cokery.png",
 		icon_size = 32,
+		----flags = {"goes-to-quickbar"},
 		subgroup = "production-machine",
 		order = "x[bi]-b[bi-cokery]",
 		place_result = "bi-cokery",
@@ -71,6 +76,7 @@ data:extend({
 		name = "bi-stone-crusher",
 		icon = "__Bio_Industries__/graphics/icons/stone_crusher.png",
 		icon_size = 32,
+		----flags = {"goes-to-quickbar"},
 		subgroup = "production-machine",
 		order = "x[bi]-c[bi-stone-crusher]",
 		place_result = "bi-stone-crusher",
@@ -83,6 +89,7 @@ data:extend({
 		name = "bi-woodpulp",
 		icon = "__Bio_Industries__/graphics/icons/Woodpulp_32.png",
 		icon_size = 32,
+		----flags = {"goes-to-main-inventory"},
 		fuel_value = "2MJ",
 		fuel_category = "chemical",
 		fuel_emissions_multiplier = 1.15,
@@ -98,7 +105,8 @@ data:extend({
 		name = "bi-ash",
 		icon = "__Bio_Industries__/graphics/icons/ash.png",
 		icon_size = 32,
-		fuel_value = "1MJ",
+		----flags = {"goes-to-main-inventory"},
+		fuel_value = "2MJ",
 		fuel_category = "chemical",
 		fuel_emissions_multiplier = 1.1,
 		subgroup = "raw-material",
@@ -112,7 +120,8 @@ data:extend({
 		name = "bi-charcoal",
 		icon = "__Bio_Industries__/graphics/icons/charcoal.png",
 		icon_size = 32,
-		fuel_value = "5MJ", --DrD 6
+		----flags = {"goes-to-main-inventory"},
+		fuel_value = "6MJ",
 		fuel_category = "chemical",
 		subgroup = "raw-material",
 		fuel_emissions_multiplier = 1.05,
@@ -126,7 +135,8 @@ data:extend({
 		name = "pellet-coke",
 		icon = "__Bio_Industries__/graphics/icons/coke-coal.png",
 		icon_size = 32,
-		fuel_value = "19MJ", --DrD 30
+		----flags = {"goes-to-main-inventory"},
+		fuel_value = "28MJ",
 		fuel_category = "chemical",
 		fuel_emissions_multiplier = 0.85,
 		fuel_acceleration_multiplier = 1.1,
@@ -143,6 +153,7 @@ data:extend({
 		name = "stone-crushed",
 		icon = "__Bio_Industries__/graphics/icons/crushed-stone.png",
 		icon_size = 32,
+		----flags = {"goes-to-main-inventory"},
 		subgroup = "raw-material",
 		order = "a[bi]-a-z[stone-crushed]",
 		stack_size = 800
@@ -155,6 +166,7 @@ data:extend({
     name = "bi-seed-bomb-basic",
     icon = "__Bio_Industries__/graphics/icons/Seed_bomb_icon_b.png",
     icon_size = 32,
+    ----flags = {"goes-to-main-inventory"},
     ammo_type =
     {
       range_modifier = 3,
@@ -184,6 +196,7 @@ data:extend({
     name = "bi-seed-bomb-standard",
     icon = "__Bio_Industries__/graphics/icons/Seed_bomb_icon_s.png",
     icon_size = 32,
+    ----flags = {"goes-to-main-inventory"},
     ammo_type =
     {
       range_modifier = 3,
@@ -213,6 +226,7 @@ data:extend({
     name = "bi-seed-bomb-advanced",
     icon = "__Bio_Industries__/graphics/icons/Seed_bomb_icon_a.png",
     icon_size = 32,
+    ----flags = {"goes-to-main-inventory"},
     ammo_type =
     {
       range_modifier = 3,
@@ -241,7 +255,7 @@ data:extend({
 		name= "bi-arboretum-area",
 		icon = "__Bio_Industries__/graphics/icons/Arboretum_Icon.png",
 		icon_size = 32,
-
+		--flags = { "goes-to-quickbar" },
 		subgroup = "production-machine",
 		order = "x[bi]-a[bi-arboretum]",
 		place_result = "bi-arboretum-area",
@@ -321,6 +335,7 @@ if mods["alien-biomes"] then
 			name = "fertiliser",
 			icon = "__Bio_Industries__/graphics/icons/fertiliser_32.png",
 			icon_size = 32,
+			----flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
 			order = "b[fertiliser]",
 			stack_size = 200,
@@ -338,6 +353,7 @@ if mods["alien-biomes"] then
 			name = "bi-adv-fertiliser",
 			icon = "__Bio_Industries__/graphics/icons/advanced_fertiliser_32.png",
 			icon_size = 32,
+			----flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
 			order = "b[fertiliser]-b[bi-adv-fertiliser]",
 			stack_size = 200,
@@ -361,6 +377,7 @@ else
 			name = "fertiliser",
 			icon = "__Bio_Industries__/graphics/icons/fertiliser_32.png",
 			icon_size = 32,
+			----flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
 			order = "b[fertiliser]",
 			stack_size = 200,
@@ -378,6 +395,7 @@ else
 			name = "bi-adv-fertiliser",
 			icon = "__Bio_Industries__/graphics/icons/advanced_fertiliser_32.png",
 			icon_size = 32,
+			----flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
 			order = "b[fertiliser]-b[bi-adv-fertiliser]",
 			stack_size = 200,

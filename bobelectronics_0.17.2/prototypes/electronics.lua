@@ -620,7 +620,7 @@ data:extend(
       ingredients =
       {
         {"superior-circuit-board", 1},
-        --{"basic-electronic-components", 2},  --DrD
+        {"basic-electronic-components", 2},
         {"electronic-components", 4},
         {"intergrated-electronics", 2},
       },
@@ -633,7 +633,7 @@ data:extend(
       ingredients =
       {
         {"superior-circuit-board", 1},
-        --{"basic-electronic-components", 3},  --DrD
+        {"basic-electronic-components", 3},
         {"electronic-components", 6},
         {"intergrated-electronics", 3},
       },
@@ -667,7 +667,7 @@ data:extend(
       ingredients =
       {
         {"multi-layer-circuit-board", 1},
-        --{"basic-electronic-components", 1},  --DrD
+        {"basic-electronic-components", 1},
         {"electronic-components", 2},
         {"intergrated-electronics", 4},
         {"processing-electronics", 1},
@@ -681,7 +681,7 @@ data:extend(
       ingredients =
       {
         {"multi-layer-circuit-board", 1},
-        --{"basic-electronic-components", 3},  --DrD
+        {"basic-electronic-components", 3},
         {"electronic-components", 3},
         {"intergrated-electronics", 6},
         {"processing-electronics", 3},

@@ -81,9 +81,9 @@ data:extend(
       type = "electric",
       usage_priority = "secondary-input",
       emissions = 0.01,
-	  drain = "160kW",
+	  drain = "25kW",
     },
-    energy_usage = "1900KW",
+    energy_usage = "400kW",
     working_sound =
     {
       sound =
@@ -110,14 +110,14 @@ data:extend(
 	{
 		type = "recipe",
 		name = "dpa",
-		energy_required = 15,
+		energy_required = 10,
 		enabled = false,
 		ingredients =
 		{
-			{"iron-plate", 56},
-			{"iron-gear-wheel", 30},
-			{"engine-unit", 16},
-			{"pipe", 25},
+			{"iron-stick", 36},
+			{"iron-gear-wheel", 12},
+			{"engine-unit", 8},
+			{"pipe", 6},
 		},
 		result = "dpa"
 	},
@@ -130,7 +130,7 @@ data:extend(
 		name = "dpa",
 		icon = "__DewPointAggregator__/graphics/icon2.png",
 		icon_size = 32,
-		--flags = {},
+		flags = {"goes-to-quickbar"},
 		subgroup = "extraction-machine",
 		order = "b[fluids]-a[dpa]",
 		place_result = "dpa",
@@ -158,8 +158,8 @@ data:extend(
 		  count = 40,
 		  ingredients =
 		  {
-			{"automation-science-pack", 1},
-			{"logistic-science-pack", 1},
+			{"science-pack-1", 1},
+			{"science-pack-2", 1},
 		  },
 		  time = 30
 		},

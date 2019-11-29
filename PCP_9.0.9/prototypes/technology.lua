@@ -21,9 +21,9 @@ data:extend({
      {
        count = 75,
        ingredients = {
-	    {"automation-science-pack", 1},
-		{"logistic-science-pack", 1},
-		{"chemical-science-pack", 1},
+	    {"science-pack-1", 1},
+		{"science-pack-2", 1},
+		{"science-pack-3", 1},
 		--{"alien-science-pack", 1}
 	 },
        time = 30
@@ -51,9 +51,9 @@ data:extend({
      {
        count = 75,
        ingredients = {
-	    {"automation-science-pack", 1},
-		{"logistic-science-pack", 1},
-		{"chemical-science-pack", 1}
+	    {"science-pack-1", 1},
+		{"science-pack-2", 1},
+		{"science-pack-3", 1}
 	 },
        time = 30
     },
@@ -88,9 +88,9 @@ data:extend({
      {
        count = 75,
        ingredients = {
-	    {"automation-science-pack", 1},
-		{"logistic-science-pack", 1},
-		{"chemical-science-pack", 1},
+	    {"science-pack-1", 1},
+		{"science-pack-2", 1},
+		{"science-pack-3", 1},
 		--{"alien-science-pack", 1}
 	 },
        time = 30
@@ -126,9 +126,9 @@ data:extend({
      {
        count = 100,
        ingredients = {
-	    {"automation-science-pack", 1},
-		{"logistic-science-pack", 1},
-		--{"chemical-science-pack", 1},
+	    {"science-pack-1", 1},
+		{"science-pack-2", 1},
+		--{"science-pack-3", 1},
 		--{"alien-science-pack", 1}
 	 },
        time = 30
@@ -164,8 +164,8 @@ data:extend({
      {
        count = 50,
        ingredients = {
-	    {"automation-science-pack", 1},
-		{"logistic-science-pack", 1}
+	    {"science-pack-1", 1},
+		{"science-pack-2", 1}
 	 },
        time = 30
     },
@@ -212,8 +212,8 @@ data:extend({
      {
        count = 50,
        ingredients = {
-	    {"automation-science-pack", 1},
-		{"logistic-science-pack", 1}
+	    {"science-pack-1", 1},
+		{"science-pack-2", 1}
 	 },
        time = 30
     },
@@ -240,9 +240,9 @@ data:extend({
      {
        count = 150,
        ingredients = {
-	    {"automation-science-pack", 1},
-		{"logistic-science-pack", 1},
-		{"chemical-science-pack", 1},
+	    {"science-pack-1", 1},
+		{"science-pack-2", 1},
+		{"science-pack-3", 1},
 		{"alien-science-pack", 1}
 	 },
        time = 30

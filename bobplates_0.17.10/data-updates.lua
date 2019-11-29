@@ -29,12 +29,11 @@ else
 end
 
 
---[[ small storage tank recipe move. --DrD
+-- small storage tank recipe move.
 if data.raw["item-subgroup"]["bob-storage-tank"] then
   data.raw.item["bob-small-storage-tank"].subgroup = "bob-storage-tank"
   data.raw.item["bob-small-inline-storage-tank"].subgroup = "bob-storage-tank"
 end
---]]
 
 -- add Assembling Machine catagory.
 bobmods.lib.machine.type_if_add_category("assembling-machine", "crafting", "crafting-machine")

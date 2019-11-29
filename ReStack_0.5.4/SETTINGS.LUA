@@ -163,7 +163,7 @@ data:extend({
     name = "ReStack-pipe",
     order = "ec",
     setting_type = "startup",
-    default_value = 200,
+    default_value = 0,
     minimum_value = 0,
     maximum_value = 10000,
   },

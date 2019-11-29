@@ -1,0 +1,70 @@
+local icon1 = "__KaoExtended__/graphics/green-transport-belt-to-ground.png"
+local icon2 = "__KaoExtended__/graphics/purple-transport-belt-to-ground.png"
+
+  icon1 = "__KaoExtended__/graphics/purple-transport-belt-to-ground.png"
+  icon2 = "__KaoExtended__/graphics/green-transport-belt-to-ground.png"
+data:extend(
+{
+	{
+    type = "item-subgroup",
+    name = "bob-belt-ground",
+    group = "logistics",
+    order = "b-b",
+    },
+	{
+    type = "item",
+    name = "alt-underground-belt",
+    icon = "__KaoExtended__/graphics/underground-belt.png",
+    icon_size = 32,
+    flags = {"goes-to-quickbar"},
+	subgroup = "bob-belt-ground",
+    order = "a[alt-belt]",
+	place_result = "alt-underground-belt",
+    stack_size = 50
+    },
+	{
+    type = "item",
+    name = "fast-alt-underground-belt",
+    icon = "__KaoExtended__/graphics/fast-underground-belt.png",
+    icon_size = 32,
+    flags = {"goes-to-quickbar"},
+	subgroup = "bob-belt-ground",
+	place_result = "fast-alt-underground-belt",
+    order = "b[alt-belt]",
+    stack_size = 50
+    },
+	{
+    type = "item",
+    name = "express-alt-underground-belt",
+    icon = "__KaoExtended__/graphics/express-underground-belt.png",
+    icon_size = 32,
+    flags = {"goes-to-quickbar"},
+	subgroup = "bob-belt-ground",
+    order = "c[alt-belt]",
+	place_result = "express-alt-underground-belt";
+    stack_size = 50
+    },
+	{
+    type = "item",
+    name = "green-alt-underground-belt",
+    icon = icon1,
+    flags = {"goes-to-quickbar"},
+    icon_size = 32,
+	subgroup = "bob-belt-ground",
+    order = "c[alt-belt]",
+	place_result = "green-alt-underground-belt",
+    stack_size = 50
+    },
+	{
+    type = "item",
+    name = "purple-alt-underground-belt",
+    icon_size = 32,
+    icon = icon2,
+    flags = {"goes-to-quickbar"},
+	subgroup = "bob-belt-ground",
+    order = "c[alt-belt]",
+	place_result = "purple-alt-underground-belt",
+    stack_size = 50
+    },
+	
+})

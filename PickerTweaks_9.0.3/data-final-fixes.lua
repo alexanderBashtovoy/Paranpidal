@@ -13,9 +13,7 @@ require 'prototypes/stack-tweaks'
 require 'prototypes/ui-tweaks'
 require 'prototypes/weapon-tweaks'
 require 'prototypes/wire-tweaks'
---require 'prototypes/wood-tweaks'
+require 'prototypes/wood-tweaks'
 require 'prototypes/entity-tweaks'
 require 'prototypes/quiet-belts'
 require 'prototypes/ghost-tweaks'
-require 'prototypes/cleanest-concrete' --from DrD
-require 'prototypes/unminable-logistic-bots' --from DrD

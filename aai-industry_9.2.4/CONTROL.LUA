@@ -1,4 +1,4 @@
-local version = 000312 -- 0.3.12
+local version = 000104 -- 0.1.4
 
 local util = require("util")
 local fx_search_range = 50
@@ -61,7 +61,6 @@ local function burner_turbine_setup (entity)
       direction=entity.direction,
       force=entity.force
     }
-    generator.destructible = false
   end
 
   local struct = {
@@ -75,8 +74,8 @@ local function burner_turbine_setup (entity)
 end
 
 local function on_entity_created(event)
-  local entity = event.created_entity or event.entity
-  if entity and entity.valid then
+  if event.created_entity and event.created_entity.valid then
+    local entity = event.created_entity
     if entity.name == "offshore-pump" then
       offshore_pump_setup(entity)
     elseif entity.name == "burner-turbine" then
@@ -143,9 +142,9 @@ local function dump_player_inventory_to_containers(player_index)
   local containers = global.starting_containers or {}
   local player = game.players[player_index]
   if not player then return end
-  player.print({"player-has-crash-landed", get_player_name(player)}, {r=1, g=0.85, b=0})
+  player.print{"player-has-crash-landed", get_player_name(player)}
   local item_data = {} -- stored as [type][name] = {signal = signal, count = count}
-  for _, inv_name in pairs({defines.inventory.character_main}) do
+  for _, inv_name in pairs({defines.inventory.player_quickbar, defines.inventory.player_main}) do
       if player.get_inventory(inv_name) then
         util.signal_container_add_inventory(item_data, player, inv_name)
         player.get_inventory(inv_name).clear()
@@ -159,7 +158,7 @@ local function dump_player_inventory_to_containers(player_index)
       while stack.count > 0 and loop < 100 do
         loop = loop + 1
         local container = containers[1]
-        if container and container.valid then
+        if container then
           if container.can_insert(stack) then
             local inserted = container.insert(stack)
             stack.count = stack.count - inserted
@@ -218,7 +217,7 @@ local function starting_fx(task)
             local range = 2
             if #surface.find_entities_filtered{
               area={{safe_position.x-range, safe_position.y-range},{safe_position.x+range, safe_position.y+range}},
-              name="character",limit=1} == 0 then
+              name="player",limit=1} == 0 then
               surface.create_entity{name=name, position=safe_position, force = game.forces["player"]}
             end
           else
@@ -263,9 +262,8 @@ local function on_tick(event)
       local burner_steam = struct.burner.fluidbox[2] and struct.burner.fluidbox[2].amount or 0
       local generator_steam = (struct.generator.fluidbox and struct.generator.fluidbox[1]) and struct.generator.fluidbox[1].amount or 0
       -- buffer transfer to stop stutter
-      local to_transfer = math.max(0, math.min(burner_steam, struct.generator.fluidbox.get_capacity(1) - generator_steam)) / 2
-
-      if to_transfer > 1 then
+      local to_transfer = math.min(burner_steam, struct.generator.fluidbox.get_capacity(1) - generator_steam)
+      if to_transfer > 0 then
         struct.burner.fluidbox[2] = {name = "steam", amount = burner_steam - to_transfer, temperature = 165}
         struct.generator.fluidbox[1] = {name = "steam", amount = generator_steam + to_transfer, temperature = 165}
       end
@@ -275,8 +273,6 @@ end
 
 script.on_event(defines.events.on_built_entity, on_entity_created)
 script.on_event(defines.events.on_robot_built_entity, on_entity_created)
-script.on_event(defines.events.script_raised_built, on_entity_created)
-script.on_event(defines.events.script_raised_revive, on_entity_created)
 
 script.on_event(defines.events.on_player_rotated_entity, on_player_rotated_entity)
 
@@ -288,22 +284,42 @@ script.on_event(defines.events.on_tick, on_tick)
 
 local function on_configuration_changed(data)
     global.version = global.version or 0
-
-    if global.version < 000312 then
-      for _, force in pairs(game.forces) do
-        if force.technologies["toolbelt"].researched then
-          force.technologies["toolbelt-2"].researched = true
+    if data.mod_changes and data.mod_changes["aai-industry"] then
+        if global.version ~= version then
+            if global.version < 000101 then
+                -- find and fix offshore pumps
+                for _, surface in pairs(game.surfaces) do
+                    for _, entity in pairs(surface.find_entities_filtered{name="offshore-pump"}) do
+                      offshore_pump_setup(entity)
+                    end
+                end
+            end
+            if global.version < 000104 then
+                -- Collect and existing burner generators
+                for _, surface in pairs(game.surfaces) do
+                    for _, entity in pairs(surface.find_entities_filtered{name="burner-turbine"}) do
+                      burner_turbine_setup(entity)
+                    end
+                end
+            end
+            global.version = version
         end
-      end
     end
 
     -- enable any recipes that should be unlocked.
     -- mainly required for entity-update-externals as a migration file won't work
     for _, force in pairs(game.forces) do
-      force.reset_technology_effects()
+      for _, tech in pairs(force.technologies) do
+        if tech.researched then
+          for _, effect in pairs(tech.effects) do
+            if effect.type == "unlock-recipe" and force.recipes[effect.recipe] then
+              force.recipes[effect.recipe].enabled = true
+            end
+          end
+        end
+      end
     end
 
-    global.version = version
 end
 
 script.on_configuration_changed(on_configuration_changed)
@@ -325,19 +341,19 @@ local function init_crash_sequence()
     end
 
     local create_list = {
+      {names = {"rock-small"}, count = 30, radius = 5},
       {names = {"rock-small"}, count = 30, radius = 10},
       {names = {"rock-small"}, count = 30, radius = 20},
-      {names = {"rock-small"}, count = 30, radius = 40},
-      {names = {"big-remnants"}, count = 5, radius = 15},
-      {names = {"medium-remnants"}, count = 10, radius = 25},
-      {names = {"small-remnants"}, count = 15, radius = 50},
-      {names = {"aai-big-ship-wreck-1", "massive-explosion"}, count = 1, radius = 10},
-      {names = {"aai-big-ship-wreck-2", "big-explosion"}, count = 1, radius = 10},
-      {names = {"aai-big-ship-wreck-3"}, count = 3, radius = 10},
-      {names = {"aai-medium-ship-wreck-1", "medium-explosion"}, count = 3, radius = 25},
-      {names = {"aai-medium-ship-wreck-2"}, count = 3, radius = 25},
-      {names = {"aai-small-ship-wreck"}, count = 30, radius = 50},
-      {names = {"fire-flame-on-tree"}, count = 25, radius = 15, min_radius = 5},
+      {names = {"big-remnants"}, count = 5, radius = 12},
+      {names = {"medium-remnants"}, count = 10, radius = 16},
+      {names = {"small-remnants"}, count = 15, radius = 20},
+      {names = {"aai-big-ship-wreck-1", "massive-explosion"}, count = 1, radius = 5},
+      {names = {"aai-big-ship-wreck-2", "big-explosion"}, count = 1, radius = 5},
+      {names = {"aai-big-ship-wreck-3"}, count = 1, radius = 5},
+      {names = {"aai-medium-ship-wreck-1", "medium-explosion"}, count = 1, radius = 10},
+      {names = {"aai-medium-ship-wreck-2"}, count = 1, radius = 10},
+      {names = {"aai-small-ship-wreck"}, count = 30, radius = 20},
+      {names = {"fire-flame-on-tree"}, count = 15, radius = 15, min_radius = 5},
       {names = {"dead-dry-hairy-tree", "fire-flame-on-tree", "fire-flame-on-tree"}, count = 10, radius = 20, min_radius = 5}
     }
     local containers = {}
@@ -353,10 +369,10 @@ local function init_crash_sequence()
           else
             local entity = surface.create_entity{name=name, position=safe_position, force = game.forces["player"]}
             if name == "aai-big-ship-wreck-1" then
-                entity.insert({name = "burner-assembling-machine"})
+                entity.insert({name = "steel-axe"})
             end
             if name == "aai-big-ship-wreck-2" then
-                entity.insert({name = "iron-plate", count = 6})
+                entity.insert({name = "stone-brick", count = 4})
             end
             if name == "aai-big-ship-wreck-3" then
                 entity.insert({name = "motor", count = 1})
@@ -384,8 +400,6 @@ end
 
 local function on_init()
 
-  global.version = version
-
   global.tick_tasks = {}
   global.tick_tasks_next_id = 1
 
@@ -411,12 +425,12 @@ local function on_init()
 end
 
 script.on_init(on_init)
---[[
+
 local function on_player_created(event)
     local player = event and game.players[event.player_index]
     if player and player.color.a == 0.5 then
       player.color = {r=math.random()*255, g=math.random()*255, b=math.random()*255, a = 0.6}
     end
 end
-]]
+
 script.on_event(defines.events.on_player_created, on_player_created)

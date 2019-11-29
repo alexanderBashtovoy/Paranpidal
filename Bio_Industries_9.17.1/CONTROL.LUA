@@ -1,4 +1,4 @@
---Bio_Industries Version   2.6.16
+--Bio_Industries Version   0.17.2
 
 local QC_Mod = false
 require ("util")
@@ -164,7 +164,6 @@ local function On_Config_Change()
 	end
 
 	
-
 	-- Global Prospect Chance
 	if global.prospect_chance == nil then
 		global.prospect_chance = 0
@@ -808,7 +807,7 @@ local function Solar_Mat (event, surface)
 			  
 			local create_sm_pole = surface.create_entity({name = sm_pole_name, position = {position.x + 0.5, position.y + 0.5}, force = force})
 			local create_sm_panel = surface.create_entity({name = sm_panel_name, position = {position.x + 0.5, position.y + 0.5}, force = force})
-			  
+
 			create_sm_pole.minable = false
 			create_sm_pole.destructible = false
 			create_sm_panel.minable = false
@@ -993,7 +992,7 @@ if QC_Mod == true then
 	iteminsert{name="automation-science-pack", count=500}
 	iteminsert{name="logistic-science-pack", count=500}
 	iteminsert{name="chemical-science-pack", count=500}
-	iteminsert{name="utility-science-pack", count=500}
+	iteminsert{name="high-tech-science-pack", count=500}
 	iteminsert{name="pipe", count=50}
 	iteminsert{name="iron-gear-wheel", count=50}
 	iteminsert{name="pellet-coke", count=50}	

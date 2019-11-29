@@ -1,17 +1,16 @@
-require ("__KaoExtended__/config")
+require ("../config")
 if not KaoExtended then KaoExtended = {} end
 KaoExtended.getTech = function(name)
 	return data.raw["technology"][name]
 end
 KaoExtended.NewTechnology = function(Iname, pre, Iorder, Iunit)
 	if pre == nil then pre = {} end
-	if Iunit == nil then Iunit = {count = 50, ingredients = { {"automation-science-pack", 1} }, time = 15} end
+	if Iunit == nil then Iunit = {count = 50, ingredients = { {"science-pack-1", 1} }, time = 15} end
 	if Iorder == nil then Iorder = "z-z" end
 	data:extend({
 		{ type = "technology",
 		name = Iname,
-		icon = "__KaoExtended__/graphics/advsci-component-3.png",
-		icon_size = 32,
+		icon = "__KaoExtended__/graphics/advtech3.png",
 		prerequisites = pre,
 		effects = {},
 		unit = Iunit,

@@ -3,7 +3,7 @@ data:extend({
     type = "item",
     name = "solid-zinc-oxide",
     icon = "",
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
 	subgroup = "",
     order = "",
     stack_size = 
@@ -13,7 +13,7 @@ data:extend({
     name = "solid-pvc",
     icon = "__PCP__/graphics/icons/solid-polyvinyl-chloride.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
 	--subgroup = "",
     --order = "",
     stack_size = 1
@@ -23,7 +23,7 @@ data:extend({
     name = "solid-abs",
     icon = "__PCP__/graphics/icons/solid-acrylonitrile-butadiene-styrene.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
 	--subgroup = "",
     --order = "",
     stack_size = 1
@@ -33,7 +33,7 @@ data:extend({
     name = "solid-pmma",
     icon = "__PCP__/graphics/icons/solid-polymethyl-methacrylate.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
 	--subgroup = "",
     --order = "",
     stack_size = 100
@@ -43,7 +43,7 @@ data:extend({
     name = "solid-pc",
     icon = "__PCP__/graphics/icons/solid-polycarbonate.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
 	--subgroup = "",
     --order = "",
     stack_size = 100
@@ -53,7 +53,7 @@ data:extend({
     name = "solid-ammonium-sulphate",
     icon = "__PCP__/graphics/icons/solid-ammonium-sulphate.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
 	--subgroup = "",
     --order = "",
     stack_size = 100
@@ -63,7 +63,7 @@ data:extend({
     name = "solid-sodium-nitrate",
     icon = "__PCP__/graphics/icons/solid-sodium-nitrate.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
 	--subgroup = "",
     --order = "",
     stack_size = 100
@@ -73,7 +73,7 @@ data:extend({
 	name = "solid-bisphenol-a",
 	icon = "__PCP__/graphics/icons/solid-bisphenol-a.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-main-inventory"},
 	--subgroup = "",
 	--order = "",
 	stack_size =100
@@ -83,7 +83,7 @@ data:extend({
     name = "catalyst-metal-cyan",
     icon = "__PCP__/graphics/icons/catalyst-metal-cyan.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
 	subgroup = "petrochem-raw",
     order = "e[catalyst-metal-cyan]",
     stack_size = 100
@@ -96,7 +96,7 @@ data:extend({
     name = "chemical-turret",
     icon = "__base__/graphics/icons/flamethrower-turret.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "b[turret]-c[chemical-turret]",
     place_result = "chemical-turret",
@@ -107,7 +107,7 @@ data:extend({
     name = "chemical-suit",
     icon = "__base__/graphics/icons/heavy-armor.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     resistances =
     {
       {
@@ -141,7 +141,7 @@ data:extend({
     name = "plastic-flooring",
     icon = "__base__/graphics/icons/concrete.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "terrain",
     order = "b[plastic-flooring]-a[plain]",
     stack_size = 100,
@@ -157,7 +157,7 @@ data:extend({
     name = "plastic-gate",
     icon = "__base__/graphics/icons/gate.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-quickbar"},
     subgroup = "defensive-structure",
     order = "a[wall]-b[plastic-gate]",
     place_result = "plastic-gate",

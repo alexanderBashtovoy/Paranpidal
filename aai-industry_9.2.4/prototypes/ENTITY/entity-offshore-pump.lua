@@ -148,7 +148,7 @@ local offshore_pump_output = {
     usage_priority = "secondary-input",
     emissions = 0.01 / 2.5
   },
-  energy_usage = "3MW",
+  energy_usage = "30kW",
   --pumping_speed = 200, -- limited by offshore section
   pumping_speed = 10000, -- limited by offshore section
   vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },

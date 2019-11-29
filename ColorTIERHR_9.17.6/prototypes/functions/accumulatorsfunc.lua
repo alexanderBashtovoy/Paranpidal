@@ -2,7 +2,7 @@ function baseACCUMULATORS(base_picture)
 	return
 	{
 	
-			filename = ColorTIER_path.."/graphics/low-res/entity/accumulator/"..base_picture..".png",
+			filename = ColorTIER_path.."/graphics/entity/accumulator/"..base_picture..".png",
 			priority = "extra-high",
 			width = 66,
 			height = 94,
@@ -32,7 +32,7 @@ function xtraACCUMULATORSnorepeat(mask_layer)
 	return
 	{
 
-			filename = ColorTIER_path.."/graphics/low-res/entity/accumulator/"..mask_layer..".png",
+			filename = ColorTIER_path.."/graphics/entity/accumulator/"..mask_layer..".png",
 			priority = "extra-high",
 			width = 66,
 			height = 94,
@@ -57,7 +57,7 @@ function xtraACCUMULATORS(extra_layer)
 	return
 	{
 
-			filename = ColorTIER_path.."/graphics/low-res/entity/accumulator/"..extra_layer..".png",
+			filename = ColorTIER_path.."/graphics/entity/accumulator/"..extra_layer..".png",
 			priority = "extra-high",
 			width = 66,
 			height = 94,

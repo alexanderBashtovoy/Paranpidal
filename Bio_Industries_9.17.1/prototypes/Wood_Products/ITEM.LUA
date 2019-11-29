@@ -102,7 +102,7 @@ data:extend({
 		subgroup = "energy-pipe-distribution",
 		order = "a[pipe]-1a[pipe]",
 		place_result = "bi-wood-pipe",
-		fuel_value = "2MJ",
+		fuel_value = "10MJ",
 		fuel_category = "chemical",
 		stack_size = 100
 	},
@@ -117,7 +117,7 @@ data:extend({
 		subgroup = "energy-pipe-distribution",
 		order = "a[pipe]-1b[pipe-to-ground]",
 		place_result = "bi-pipe-to-ground-wood",
-		fuel_value = "4MJ",  --DrD
+		fuel_value = "50MJ",
 		fuel_category = "chemical",
 		stack_size = 50
 	},

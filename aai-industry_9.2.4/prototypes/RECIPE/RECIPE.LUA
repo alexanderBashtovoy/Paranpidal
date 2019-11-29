@@ -1,5 +1,4 @@
 local util = require("data-util")
---[[
 data:extend({{
     type = "recipe",
     name = "stone-tablet",
@@ -12,52 +11,24 @@ data:extend({{
     results= { {type="item", name="stone-tablet", amount=4} },
 }})
 util.allow_productivity("stone-tablet")
-]]
-
---- From DrD
-data:extend({{
-    type = "recipe",
-    name = "burner-filter-inserter",
-	category = "crafting",
-	
-	normal = {
-	  enabled = false,
-      energy_required = 1,
-      ingredients = {
-      {type="item", name="burner-inserter", amount=1},
-      {type="item", name="basic-circuit-board", amount=4}
-      },
-    results = { {type="item", name="burner-filter-inserter", amount=1} },
-    },
-	expensive = {
-	  enabled = false,
-      energy_required = 1,
-      ingredients = {
-      {type="item", name="burner-inserter", amount=1},
-      {type="item", name="basic-circuit-board", amount=8}
-      },
-    results = { {type="item", name="burner-filter-inserter", amount=1} },
-    },
-}})
---- END from DrD
 
 data:extend({{
     type = "recipe",
     name = "motor",
     category = "crafting",
     normal = {
-      energy_required = 1,
+      energy_required = 0.6,
       ingredients = {
-        {type="item", name="iron-plate", amount=6},
-        {type="item", name="iron-gear-wheel", amount=4}
+        {type="item", name="iron-plate", amount=2},
+        {type="item", name="iron-gear-wheel", amount=1}
       },
       results= { {type="item", name="motor", amount=1} },
     },
     expensive = {
-      energy_required = 1,
+      energy_required = 0.6,
       ingredients = {
-        {type="item", name="iron-plate", amount=10},
-        {type="item", name="iron-gear-wheel", amount=6}
+        {type="item", name="iron-plate", amount=2},
+        {type="item", name="iron-gear-wheel", amount=1}
       },
       results= { {type="item", name="motor", amount=1} },
     }
@@ -69,27 +40,26 @@ data:extend({{
     name = "electric-motor",
     category = "crafting",
     normal = {
-      enabled = true,
-      energy_required = 1.5,
+      enabled = false,
+      energy_required = 0.8,
       ingredients = {
         {type="item", name="motor", amount=1},
-        {type="item", name="copper-cable", amount=4}
+        {type="item", name="copper-cable", amount=6}
       },
       results= { {type="item", name="electric-motor", amount=1} },
     },
     expensive = {
-      enabled = true,
-      energy_required = 1.5,
+      enabled = false,
+      energy_required = 0.8,
       ingredients = {
         {type="item", name="motor", amount=1},
-        {type="item", name="copper-cable", amount=6}
+        {type="item", name="copper-cable", amount=10}
       },
       results= { {type="item", name="electric-motor", amount=1} },
     }
 }})
 util.allow_productivity("electric-motor")
 
---[[
 data:extend({{
     type = "recipe",
     name = "small-iron-electric-pole",
@@ -114,15 +84,13 @@ data:extend({{
       results= { {type="item", name="small-iron-electric-pole", amount=1}, },
     },
 }})
-]]
 
---[[
 data:extend({{
     type = "recipe",
     name = "concrete-wall",
     category = "crafting",
     enabled = false,
-    energy_required = 1,
+    energy_required = 0.25,
     normal = {
       ingredients =
       {
@@ -146,7 +114,7 @@ data:extend({{
     name = "steel-wall",
     category = "crafting",
     enabled = false,
-    energy_required = 2,
+    energy_required = 1,
     normal = {
       ingredients =
       {
@@ -165,20 +133,18 @@ data:extend({{
     },
 }})
 
-]]
-
 data:extend({{
     type = "recipe",
     name = "burner-lab",
     category = "crafting",
     enabled = true,
-    energy_required = 5,
+    energy_required = 0.5,
     normal = {
       ingredients =
       {
         {type="item", name="motor", amount=10},
-        {type="item", name="copper-plate", amount=50},
-        {type="item", name="stone-brick", amount=10},
+        {type="item", name="copper-plate", amount=10},
+        {type="item", name="stone-brick", amount=5},
       },
       results= { {type="item", name="burner-lab", amount=1}, },
     },
@@ -186,8 +152,8 @@ data:extend({{
       ingredients =
       {
         {type="item", name="motor", amount=20},
-        {type="item", name="copper-plate", amount=75},
-        {type="item", name="stone-brick", amount=20},
+        {type="item", name="copper-plate", amount=20},
+        {type="item", name="stone-brick", amount=10},
       },
       results= { {type="item", name="burner-lab", amount=1}, },
     },
@@ -199,23 +165,23 @@ data:extend({{
     category = "crafting",
     normal = {
       enabled = false,
-      energy_required = 5,
+      energy_required = 1,
       ingredients =
       {
-        {type="item", name="electric-motor", amount=8},
-        {type="item", name="iron-gear-wheel", amount=10},
-        {type="item", name="stone-furnace", amount=2},
+        {type="item", name="electric-motor", amount=4},
+        {type="item", name="iron-gear-wheel", amount=5},
+        {type="item", name="stone-furnace", amount=1},
       },
       results= { {type="item", name="burner-turbine", amount=1}, },
     },
     expensive = {
       enabled = false,
-      energy_required = 5,
+      energy_required = 1,
       ingredients =
       {
-        {type="item", name="electric-motor", amount=16},
-        {type="item", name="iron-gear-wheel", amount=20},
-        {type="item", name="stone-furnace", amount=2},
+        {type="item", name="electric-motor", amount=8},
+        {type="item", name="iron-gear-wheel", amount=10},
+        {type="item", name="stone-furnace", amount=1},
       },
       results= { {type="item", name="burner-turbine", amount=1}, },
     },
@@ -227,21 +193,21 @@ data:extend({{
     category = "crafting",
     normal = {
       enabled = false,
-      energy_required = 5,
+      energy_required = 0.5,
       ingredients = {
-        {type="item", name="iron-plate", amount=24},
-        {type="item", name="stone-brick", amount=10},
-        {type="item", name="motor", amount=4},
+        {type="item", name="iron-plate", amount=8},
+        {type="item", name="stone-brick", amount=4},
+        {type="item", name="motor", amount=1},
       },
       results= { {type="item", name="burner-assembling-machine", amount=1} },
     },
     expensive = {
       enabled = false,
-      energy_required = 5,
+      energy_required = 0.5,
       ingredients = {
-        {type="item", name="iron-plate", amount=40},
-        {type="item", name="stone-brick", amount=20},
-        {type="item", name="motor", amount=8},
+        {type="item", name="iron-plate", amount=16},
+        {type="item", name="stone-brick", amount=16},
+        {type="item", name="motor", amount=4},
       },
       results= { {type="item", name="burner-assembling-machine", amount=1} },
     }

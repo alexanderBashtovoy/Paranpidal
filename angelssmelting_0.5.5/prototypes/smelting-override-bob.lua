@@ -341,6 +341,7 @@ data:extend(
 	},
 }
 )
+OV.add_prereq( "alloy-processing-1", "angels-bronze-smelting-1" )
 OV.disable_recipe({ "bronze-alloy" })
 angelsmods.functions.allow_productivity("angels-plate-bronze")
 

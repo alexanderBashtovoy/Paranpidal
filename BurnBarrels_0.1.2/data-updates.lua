@@ -1,3 +1,72 @@
+-- require("assemblers")
+
+-- data.raw.item["empty-barrel"].type = "item" 
+-- data.raw.item["empty-barrel"].name = "empty-barrel" 
+-- data.raw.item["empty-barrel"].icon = "__base__/graphics/icons/fluid/barreling/empty-barrel.png" 
+-- data.raw.item["empty-barrel"].icon_size = 32 
+-- data.raw.item["empty-barrel"].flags[1] = "goes-to-main-inventory" 
+-- data.raw.item["empty-barrel"].subgroup = "intermediate-product" 
+-- data.raw.item["empty-barrel"].order = "d[empty-barrel]" 
+-- data.raw.item["empty-barrel"].stack_size = 10 
+
+-- data.raw.item["crude-oil-barrel"].type = "item" 
+-- data.raw.item["crude-oil-barrel"].name = "crude-oil-barrel" 
+-- data.raw.item["crude-oil-barrel"].localised_name[1] = "item-name.filled-barrel" 
+-- data.raw.item["crude-oil-barrel"].localised_name[2][1] = "fluid-name.crude-oil" 
+-- data.raw.item["crude-oil-barrel"].icons[1].icon = "__base__/graphics/icons/fluid/barreling/empty-barrel.png" 
+-- data.raw.item["crude-oil-barrel"].icons[2].icon = "__base__/graphics/icons/fluid/barreling/barrel-side-mask.png" 
+-- data.raw.item["crude-oil-barrel"].icons[2].tint.r = 0 
+-- data.raw.item["crude-oil-barrel"].icons[2].tint.g = 0 
+-- data.raw.item["crude-oil-barrel"].icons[2].tint.b = 0 
+-- data.raw.item["crude-oil-barrel"].icons[2].tint.a = 0.75 
+-- data.raw.item["crude-oil-barrel"].icons[3].icon = "__base__/graphics/icons/fluid/barreling/barrel-hoop-top-mask.png" 
+-- data.raw.item["crude-oil-barrel"].icons[3].tint.r = 0.5 
+-- data.raw.item["crude-oil-barrel"].icons[3].tint.g = 0.5 
+-- data.raw.item["crude-oil-barrel"].icons[3].tint.b = 0.5 
+-- data.raw.item["crude-oil-barrel"].icons[3].tint.a = 0.75 
+-- data.raw.item["crude-oil-barrel"].icon_size = 32 
+-- data.raw.item["crude-oil-barrel"].flags[1] = "goes-to-main-inventory" 
+-- data.raw.item["crude-oil-barrel"].subgroup = "fill-barrel" 
+-- data.raw.item["crude-oil-barrel"].order = "b[crude-oil-barrel]" 
+-- data.raw.item["crude-oil-barrel"].stack_size = 10 
+
+
+-- data.raw.fluid["crude-oil"].type = "fluid" 
+-- data.raw.fluid["crude-oil"].name = "crude-oil" 
+-- data.raw.fluid["crude-oil"].default_temperature = 25 
+-- data.raw.fluid["crude-oil"].heat_capacity = "0.1KJ" 
+-- data.raw.fluid["crude-oil"].base_color.r = 0 
+-- data.raw.fluid["crude-oil"].base_color.g = 0 
+-- data.raw.fluid["crude-oil"].base_color.b = 0 
+-- data.raw.fluid["crude-oil"].flow_color.r = 0.5 
+-- data.raw.fluid["crude-oil"].flow_color.g = 0.5 
+-- data.raw.fluid["crude-oil"].flow_color.b = 0.5 
+-- data.raw.fluid["crude-oil"].max_temperature = 100 
+-- data.raw.fluid["crude-oil"].icon = "__base__/graphics/icons/fluid/crude-oil.png" 
+-- data.raw.fluid["crude-oil"].icon_size = 32 
+-- data.raw.fluid["crude-oil"].pressure_to_speed_ratio = 0.4 
+-- data.raw.fluid["crude-oil"].flow_to_energy_ratio = 0.59 
+-- data.raw.fluid["crude-oil"].order = "a[fluid]-b[crude-oil]" 
+
+-- data.raw.recipe["fill-crude-oil-barrel"].ingredients[1].type = "fluid" 
+-- data.raw.recipe["fill-crude-oil-barrel"].ingredients[1].name = "crude-oil" 
+-- data.raw.recipe["fill-crude-oil-barrel"].ingredients[1].amount = 50 
+-- data.raw.recipe["fill-crude-oil-barrel"].ingredients[2].type = "item" 
+-- data.raw.recipe["fill-crude-oil-barrel"].ingredients[2].name = "empty-barrel" 
+-- data.raw.recipe["fill-crude-oil-barrel"].ingredients[2].amount = 1 
+-- data.raw.recipe["fill-crude-oil-barrel"].results[1].type = "item" 
+-- data.raw.recipe["fill-crude-oil-barrel"].results[1].name = "crude-oil-barrel" 
+-- data.raw.recipe["fill-crude-oil-barrel"].results[1].amount = 1 
+-- data.raw.recipe["fill-crude-oil-barrel"].hide_from_stats = true 
+-- data.raw.recipe["fill-crude-oil-barrel"].allow_decomposition = false 
+
+-- local item = data.raw.item["solid-fuel"]
+-- item.fuel_category = "chemical" 
+-- item.fuel_value = "25MJ"
+-- item.fuel_acceleration_multiplier = 1.2
+
+
+
 function get_item_fuel (item_name)
   local fuel = nil
   for i, p_t in pairs (data.raw) do
@@ -133,3 +202,32 @@ for i, v in pairs (data.raw) do
     end
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

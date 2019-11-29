@@ -1,3 +1,4 @@
+local tick_adjust = 2/1.8
 local blank = {
   filename = "__aai-industry__/graphics/blank.png",
   priority = "high",
@@ -44,14 +45,14 @@ local burner_turbine = {
     pipe_connections = {},
     filter = "steam"
   },
-  energy_consumption = "1MW",
+  energy_consumption = "2MW",
   energy_source =
   {
     type = "burner",
     fuel_category = "chemical",
-    effectivity = 0.25, --0.35
+    effectivity = 0.45 / tick_adjust,
     fuel_inventory_size = 4,
-    emissions_per_second_per_watt = 6 * 1e-05, -- emissions = 0.5 / 3,
+    emissions = 0.1 / 3,
     smoke =
     {
       {
@@ -104,8 +105,7 @@ local layers = {
         shift = util.by_pixel(0, -10),
         scale = 0.5
       }
-    }
-	--[[,
+    },
     {
       filename = "__aai-industry__/graphics/entity/burner-turbine/burner-turbine-shadow.png",
       priority = "extra-high",
@@ -123,9 +123,6 @@ local layers = {
         draw_as_shadow = true,
       }
     }
-	
-	]]
-	
   }
 }
 burner_turbine.structure = {}
@@ -201,7 +198,7 @@ local burner_turbine_generator = {
   healing_per_tick = 10000,
   corpse = "big-remnants",
   dying_explosion = "medium-explosion",
-  effectivity = 1, -- fix for exactly 1 fluid per tick
+  effectivity = tick_adjust+0.01, -- fix for exactly 1 fluid per tick
   order="z",
   fluid_usage_per_tick = 1,
   maximum_temperature = 165,
@@ -223,8 +220,7 @@ local burner_turbine_generator = {
     type = "electric",
     --usage_priority = "terciary", -- bugs when accumilators are linked
     usage_priority = "secondary-output",
-    render_no_network_icon = false,
-	emissions_per_second_per_watt = 0,
+    render_no_network_icon = false
   },
   horizontal_animation = { layers = { blank }, },
   vertical_animation = { layers = { blank }, },

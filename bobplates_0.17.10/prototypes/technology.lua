@@ -3,7 +3,6 @@ data:extend(
   {
     type = "technology",
     name = "electrolysis-1",
-	hidden=true, --DrD
     icon = "__bobplates__/graphics/icons/technology/electrolysis.png",
     icon_size = 128,
     prerequisites =
@@ -18,6 +17,14 @@ data:extend(
       {
         type = "unlock-recipe",
         recipe = "water-electrolysis"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "bob-small-storage-tank"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "bob-small-inline-storage-tank"
       },
     },
     unit =
@@ -35,7 +42,6 @@ data:extend(
   {
     type = "technology",
     name = "electrolysis-2",
-		hidden=true, --DrD
     icon = "__bobplates__/graphics/icons/technology/electrolysis.png",
     icon_size = 128,
     prerequisites =
@@ -368,7 +374,6 @@ data:extend(
     prerequisites =
     {
     },
---[[DrD
     effects =
     {
       {
@@ -380,7 +385,6 @@ data:extend(
         recipe = "bob-liquid-air"
       },
     },
-]]	
     unit =
     {
       count = 30,
@@ -392,7 +396,7 @@ data:extend(
     },
     order = "d-c-a1"
   },
---[[ DrD
+
   {
     type = "technology",
     name = "air-compressor-2",
@@ -618,7 +622,7 @@ data:extend(
     },
     order = "d-c-b4"
   },
-]] --DrD
+
 
   {
     type = "technology",

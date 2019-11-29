@@ -1,4 +1,4 @@
-require("prototypes.globals")
+local DLL = require("prototypes.globals")
 require("prototypes.functions")
 
 -- electric large lamp

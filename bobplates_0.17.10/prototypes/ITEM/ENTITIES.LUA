@@ -3,7 +3,6 @@ data:extend(
   {
     type = "item",
     name = "electrolyser",
-hidden=true, --DrD
     icon = "__bobplates__/graphics/icons/electrolyser.png",
     icon_size = 32,
     subgroup = "production-machine",
@@ -164,6 +163,28 @@ hidden=true, --DrD
     stack_size = 50
   },
 
+
+  {
+    type = "item",
+    name = "bob-small-inline-storage-tank",
+    icon = "__bobplates__/graphics/icons/small-storage-tank.png",
+    icon_size = 32,
+    subgroup = "bob-storage",
+    order = "b[fluid]-a[storage-tank-0a]",
+    place_result = "bob-small-inline-storage-tank",
+    stack_size = 50
+  },
+
+  {
+    type = "item",
+    name = "bob-small-storage-tank",
+    icon = "__bobplates__/graphics/icons/small-storage-tank.png",
+    icon_size = 32,
+    subgroup = "bob-storage",
+    order = "b[fluid]-a[storage-tank-0b]",
+    place_result = "bob-small-storage-tank",
+    stack_size = 50
+  },
 
   {
     type = "item",

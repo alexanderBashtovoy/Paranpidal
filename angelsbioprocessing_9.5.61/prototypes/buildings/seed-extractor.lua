@@ -5,7 +5,7 @@ data:extend(
     name = "seed-extractor",
     icon = "__angelsbioprocessing__/graphics/icons/seed-extractor.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-quickbar"},
     subgroup = "bio-processing-buildings-b",
     order = "a",
     place_result = "seed-extractor",

@@ -22,7 +22,7 @@ local SpaceXTechs = {
 "ftl-propulsion",
 }
 
-if data.raw.tool["advanced-logistic-science-pack"] then
+if data.raw.tool["logistic-science-pack"] then
 
 	table.insert(SpaceXTechs, "ftl-theory-D")
 
@@ -32,17 +32,17 @@ if data.raw.tool["advanced-logistic-science-pack"] then
 		type = "technology",
 		name = "ftl-theory-D",
 		icon = "__SpaceMod__/graphics/technology/ftl.png",	
-		icon_size = 128,
+		icon_size = 64,
 		prerequisites = {"ftl-theory-C"},
 		unit =
 		{
 		count = 100000 * researchCost,
 		ingredients =
 		{
-			{"automation-science-pack", 2},
-			{"logistic-science-pack", 2},
-			{"chemical-science-pack", 1},
-			{"production-science-pack", 1},
+			{"science-pack-1", 2},
+			{"science-pack-2", 2},
+			{"science-pack-3", 1},
+			{"logistic-science-pack", 1},
 		},
 		time = 120
 		},
@@ -51,18 +51,18 @@ if data.raw.tool["advanced-logistic-science-pack"] then
 	}
 	)
 
-	bobmods.lib.tech.add_science_pack("space-assembly", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("space-construction", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("space-casings", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("protection-fields", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("fusion-reactor", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("space-thrusters", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("fuel-cells", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("habitation", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("life-support-systems", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("spaceship-command", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("astrometrics", "advanced-logistic-science-pack", 1)
-	bobmods.lib.tech.add_science_pack("ftl-propulsion", "advanced-logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("space-assembly", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("space-construction", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("space-casings", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("protection-fields", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("fusion-reactor", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("space-thrusters", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("fuel-cells", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("habitation", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("life-support-systems", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("spaceship-command", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("astrometrics", "logistic-science-pack", 1)
+	bobmods.lib.tech.add_science_pack("ftl-propulsion", "logistic-science-pack", 1)
 
 
     data.raw.technology["ftl-theory-A"].unit.count = 200000 * researchCost

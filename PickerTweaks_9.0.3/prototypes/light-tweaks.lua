@@ -54,17 +54,17 @@ if settings.startup['picker-enhanced-lights'].value ~= 'default' then
         }
     }
 
-    for _, character in pairs(data.raw['character']) do
-        if character.light then
-            character.light = {round, cones[settings.startup['picker-enhanced-lights'].value]}
+    for _, player in pairs(data.raw['player']) do
+        if player.light then
+            player.light = {round, cones[settings.startup['picker-enhanced-lights'].value]}
         end
     end
 end --))
 
 --((Brighter Lights toggle)) --
 if settings.startup['picker-brighter-lights-player'].value then
-    for _, character in pairs(data.raw['character']) do
-        character.light = {
+    for _, player in pairs(data.raw['player']) do
+        player.light = {
             {
                 intensity = 0.9,
                 size = 150

@@ -343,7 +343,7 @@ data:extend({
 			filename = "__Orbital Ion Cannon__/graphics/IonBeam.png",
 			priority = "low",
 			width = 110,
-			height = 1280,
+			height = 1871,
 			frame_count = 1,
 			animation_speed = 0.01,
 			line_length = 1,

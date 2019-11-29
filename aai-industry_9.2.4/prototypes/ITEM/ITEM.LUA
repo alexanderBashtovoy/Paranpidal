@@ -1,17 +1,14 @@
 data:extend({
-  --[[
   {
     type = "item",
     name = "stone-tablet",
     icon = "__aai-industry__/graphics/icons/stone-tablet.png",
     icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "raw-material",
     order = "a[wood]-b[stone-tablet]",
     stack_size = 100,
   },
-  ]]
-
   {
     type = "item",
     name = "motor",
@@ -25,7 +22,7 @@ data:extend({
       }
     },
     icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "g[engine-unit]-a[motor]",
     stack_size = 50,
@@ -43,31 +40,27 @@ data:extend({
       }
     },
     icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "g[engine-unit]-b[electric-motor]",
     stack_size = 50,
   },
-  
-  --[[  
   {
     type = "item",
     name = "small-iron-electric-pole",
     icon = "__aai-industry__/graphics/icons/small-iron-electric-pole.png",
     icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-quickbar"},
     subgroup = "energy-pipe-distribution",
     order = "a[energy]-a[small-electric-pole]",
     place_result = "small-iron-electric-pole",
     stack_size = 50
   },
-  ]]
-  
- --[[ {
+  {
     type = "item",
     name = "concrete-wall",
     flags = {
-      
+      "goes-to-quickbar"
     },
     icon = "__aai-industry__/graphics/icons/concrete-wall.png",
     icon_size = 32,
@@ -80,7 +73,7 @@ data:extend({
     type = "item",
     name = "steel-wall",
     flags = {
-      
+      "goes-to-quickbar"
     },
     icon = "__aai-industry__/graphics/icons/steel-wall.png",
     icon_size = 32,
@@ -89,9 +82,6 @@ data:extend({
     stack_size = 50,
     subgroup = "defensive-structure",
   },
-  
-  ]]
-  
   {
     type = "item",
     name = "burner-lab",
@@ -119,23 +109,10 @@ data:extend({
     name = "burner-turbine",
     icon = "__aai-industry__/graphics/icons/burner-turbine.png",
     icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-quickbar"},
     subgroup = "energy",
     order = "a-a",
     place_result = "burner-turbine",
-    stack_size = 50
-  },
-  
-  -- Burner filter Inserter  ---From DRD
-  {
-    type = "item",
-    name = "burner-filter-inserter",
-    icon = "__aai-industry__/graphics/icons/burner-filter-inserter.png",
-    icon_size = 32,
-    --flags = {},
-	subgroup = "bob-logistic-tier-0",
-    order = "d[inserter]-1[burner-filter-inserter]",
-    place_result = "burner-filter-inserter",
     stack_size = 50
   },
 })

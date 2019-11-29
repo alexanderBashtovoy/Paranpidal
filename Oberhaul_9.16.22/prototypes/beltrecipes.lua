@@ -2,19 +2,16 @@
 if data.raw.recipe["fast-underground-belt"].normal then
 data.raw.recipe["express-underground-belt"].normal.ingredients = {
     {"underground-belt",4},
-    {"bronze-alloy",10},
-    {"steel-gear-wheel",20},
+    {"iron-gear-wheel",20},
 }
 data.raw.recipe["fast-underground-belt"].expensive.ingredients = {
     {"underground-belt",4},
-    {"bronze-alloy",15},
-    {"steel-gear-wheel",40},
+    {"iron-gear-wheel",40},
 }
 else
 data.raw.recipe["fast-underground-belt"].ingredients = {
     {"underground-belt",4},
-    {"bronze-alloy",10},	
-    {"steel-gear-wheel",20},
+    {"iron-gear-wheel",20},
 }
 end
 if mods.bobplates then

@@ -18,7 +18,7 @@ if mods["aai-industry"] then
     end
     util.allow_productivity("motor")
     util.allow_productivity("electric-motor")
-    --data.raw.item["vehicle-fuel"].stack_size = 50
+    data.raw.item["vehicle-fuel"].stack_size = 50
     data.raw.recipe["flying-robot-frame"].normal.ingredients = 
     {
           {"electric-engine-unit", 2},
@@ -33,11 +33,11 @@ data.raw.technology["omega-drill"].prerequisites = { "bob-logistics-4", "bob-dri
 data.raw.technology["omega-drill"].unit = {
       count = 300,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-	{"chemical-science-pack", 1},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+	{"science-pack-3", 1},
 	{"production-science-pack", 1},
-	{"utility-science-pack", 1}
+	{"high-tech-science-pack", 1}
       },
       time = 30
 }
@@ -76,10 +76,10 @@ bobmods.lib.recipe.add_ingredient("rocket-silo",{"refined-concrete",1000})
 end
 if mods["bobplates"] then
 data.raw.technology["nitinol-processing"].unit.ingredients = {
-	  {"automation-science-pack", 1},
-	  {"logistic-science-pack", 1},
-	  {"chemical-science-pack", 1},
-          {"utility-science-pack", 1}}
+	  {"science-pack-1", 1},
+	  {"science-pack-2", 1},
+	  {"science-pack-3", 1},
+          {"logistic-science-pack", 1}}
 end
 
 data:extend({

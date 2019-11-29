@@ -422,41 +422,16 @@ data:extend({
 		always_show_made_in = true,
 		allow_decomposition = false,
 		allow_as_intermediate = false,
-		energy_required = 3,
+		energy_required = 1,
 		ingredients = 
 		{
-			 {type="item", name="bi-woodpulp", amount=4},
+			 {type="item", name="bi-woodpulp", amount=3},
 		},
 		result = "resin",
 		result_count = 1,
 
 	},
 	
-	-- Wood - Press Wood
-	{
-		type = "recipe",
-		name = "bi_recipe_press_wood",
-		icon = "__Bio_Industries__/graphics/icons/bi_wood_resin_pulp.png",
-		icon_size = 32,
-		--category = "crafting-machine",
-		subgroup = "bio-bio-farm-raw",
-		order = "a[bi]-a-c[bi-press_wood]",
-		energy_required = 2,	
-		enabled = false,
-		always_show_made_in = true,
-		allow_decomposition = false,
-		allow_as_intermediate = false,
-		ingredients =
-		{
-			{type="item", name="bi-woodpulp", amount=4},
-			{type="item", name="resin", amount=1},
-		},
-		results=
-		{
-			{type="item", name="wood", amount=2}
-		},
-
-	},
 
 	-- ASH --
 	{
@@ -684,7 +659,7 @@ data:extend({
 		normal =
 		{
 			enabled = false,
-			energy_required = 8,
+			energy_required = 3,
 			ingredients = 
 			{
 			  {"iron-plate",10},
@@ -697,7 +672,7 @@ data:extend({
 		expensive =
 		{
 			enabled = false,
-			energy_required = 10,
+			energy_required = 5,
 			ingredients = 
 			{
 			  {"iron-plate",12},
@@ -1096,3 +1071,5 @@ data:extend({
 	  
 	  
 })
+
+

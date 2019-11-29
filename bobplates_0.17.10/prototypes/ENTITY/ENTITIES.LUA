@@ -869,7 +869,7 @@ data:extend(
 }
 )
 
---[[ --DrD
+
 circuit_connector_definitions["bob-small-storage-tank"] = circuit_connector_definitions.create
 (
   universal_connector_template,
@@ -1109,9 +1109,7 @@ data:extend(
     circuit_connector_sprites = circuit_connector_definitions["bob-small-storage-tank"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance
   },
-]]
-data:extend(
-{
+
   {
     type = "furnace",
     name = "void-pump",

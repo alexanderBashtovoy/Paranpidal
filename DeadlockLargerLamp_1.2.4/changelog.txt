@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.5
+Date: 01. 06. 2019
+  Changes:
+    - Added a lamp colours pass in data-final-fixes, so that other mods which add/change lamp colours are supported more generally (e.g. Six Bit Lamps).
+    - The optional dependency on Dectorio was removed because it is now covered by the above change.
+    - Squeak Through has been marked as incompatible. The special measures to fix its problems were removed. The incompatibility flag will be taken off once it stops breaking other mods.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.4
 Date: 18. 05. 2019
   Changes:

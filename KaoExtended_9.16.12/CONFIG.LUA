@@ -6,14 +6,14 @@ amount = 6
 amount_automation = 2
 
 -- amount of resource multiple (also config in RSO mod)
-oreMultiple = 4
+oreMultiple = 4.4
 
 -- vanilla resource spawn over angels mod and RSO (may cause error on RSO mod ignore it!)
-KaoExtended.vanillaOverAngels = false
+KaoExtended.vanillaOverAngels = true
 
 	-- override coal resource
 	KaoExtended.spawnVanillaCoal = true
-	KaoExtended.spawnVanillaStone = false
+	KaoExtended.spawnVanillaStone = true
 	KaoExtended.spawnVanillaIron = false
 	KaoExtended.spawnVanillaCopper = false
 	
@@ -28,7 +28,7 @@ KaoExtended.vanillaOverAngels = false
 KaoExtended.MoreSlagProcessing = true
 
 
--- lower power(nerf) of Quantum module(God)
+-- lower power of Quantum module(God)
 KaoExtended.OPGodModule = false
 
 -- this setting will make every recipe can use productivity module
@@ -40,7 +40,7 @@ KaoExtended.HarderElectronicsAndModule = true
 
 -- will add "Sturture Components" to craft nearly every machine in game
 KaoExtended.HarderSturcture = true
-KaoExtended.SilverBateryEverywhere = false
+	KaoExtended.SilverBateryEverywhere = false
 KaoExtended.expendEngineRecipe = true
 KaoExtended.HarderAdditionComponent = false
 

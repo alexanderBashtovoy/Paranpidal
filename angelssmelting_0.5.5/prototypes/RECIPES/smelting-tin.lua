@@ -244,7 +244,7 @@ data:extend(
 	},
     results=
     {
-      {type="item", name="angels-wire-tin", amount=8}, -- 16 DrD
+      {type="item", name="angels-wire-tin", amount=16},
     },
 	icons = {
 		{

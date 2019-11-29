@@ -1,4 +1,4 @@
-require ("__KaoExtended__/config")
+require ("../config")
 if not KaoExtended then KaoExtended = {} end
 if not KaoExtended.item then KaoExtended.item = {} end
 if not KaoExtended.recipe then KaoExtended.recipe = {} end

@@ -5,7 +5,7 @@
     name = "nutrient-extractor",
     icon = "__angelsbioprocessing__/graphics/icons/nutrient-extractor.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-quickbar"},
     subgroup = "bio-processing-buildings-b",
     order = "a",
     place_result = "nutrient-extractor",

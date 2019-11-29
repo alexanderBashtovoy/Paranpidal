@@ -19,7 +19,7 @@ data:extend(
 data.raw.item["electrolyser"].subgroup = "bob-electrolyser-machine"
 
 
-function bob_chemical_plant_fluid_boxes()
+function bob_electrolyser_fluid_boxes()
   return {
     {
       production_type = "input",
@@ -35,6 +35,23 @@ function bob_chemical_plant_fluid_boxes()
       base_level = -1,
       pipe_connections = {{ type="input", position = {1, -2} }}
     },
+--[[
+    {
+      production_type = "input",
+      pipe_covers = pipecoverspictures(),
+      base_area = 10,
+      height = 2,
+      base_level = -1,
+      pipe_connections =
+      {
+        { type="input-output", position = {-1, -2} },
+        { type="input-output", position = {1, -2} },
+
+        { type="input-output", position = {-2, -1} },
+        { type="input-output", position = {2, -1} },
+      }
+    },
+]]--
     {
       production_type = "output",
       pipe_covers = pipecoverspictures(),
@@ -58,7 +75,6 @@ data:extend(
     name = "electrolyser-2",
     icon = "__bobassembly__/graphics/icons/electrolyser-2.png",
     icon_size = 32,
-    
     subgroup = "bob-electrolyser-machine",
     order = "e[electrolyser-2]",
     place_result = "electrolyser-2",
@@ -69,7 +85,6 @@ data:extend(
     name = "electrolyser-3",
     icon = "__bobassembly__/graphics/icons/electrolyser-3.png",
     icon_size = 32,
-    
     subgroup = "bob-electrolyser-machine",
     order = "e[electrolyser-3]",
     place_result = "electrolyser-3",
@@ -80,7 +95,6 @@ data:extend(
     name = "electrolyser-4",
     icon = "__bobassembly__/graphics/icons/electrolyser-4.png",
     icon_size = 32,
-    
     subgroup = "bob-electrolyser-machine",
     order = "e[electrolyser-4]",
     place_result = "electrolyser-4",
@@ -95,7 +109,7 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"electrolyser", 2},
+      {"electrolyser", 1},
       {"plastic-bar", 10},
       {"steel-plate", 10},
       {"advanced-circuit", 5},
@@ -111,7 +125,7 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"electrolyser-2", 2},
+      {"electrolyser-2", 1},
       {"plastic-bar", 10},
       {"steel-plate", 10},
       {"iron-plate", 10},
@@ -128,7 +142,7 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"electrolyser-3", 2},
+      {"electrolyser-3", 1},
       {"plastic-bar", 10},
       {"steel-plate", 10},
       {"iron-plate", 10},
@@ -164,9 +178,9 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_second_per_watt = 3 / 750000
+      emissions_per_minute = 3
     },
-    fluid_boxes = bob_chemical_plant_fluid_boxes(),
+    fluid_boxes = bob_electrolyser_fluid_boxes(),
     animation =
     {
       north =
@@ -240,9 +254,9 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_second_per_watt = 2 / 750000
+      emissions_per_minute = 2
     },
-    fluid_boxes = bob_chemical_plant_fluid_boxes(),
+    fluid_boxes = bob_electrolyser_fluid_boxes(),
     animation =
     {
       north =
@@ -315,9 +329,9 @@ data:extend(
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_second_per_watt = 1 / 750000
+      emissions_per_minute = 1
     },
-    fluid_boxes = bob_chemical_plant_fluid_boxes(),
+    fluid_boxes = bob_electrolyser_fluid_boxes(),
     animation =
     {
       north =
@@ -369,7 +383,6 @@ data:extend(
 
   {
     type = "technology",
-	hidden = true, --DrD
     name = "electrolyser-2",
     icon = "__bobassembly__/graphics/icons/technology/electrolyser.png",
     icon_size = 128,
@@ -379,15 +392,13 @@ data:extend(
       "steel-processing",
       "advanced-electronics",
     },
-    --[[ DrD
-	effects =
+    effects =
     {
       {
         type = "unlock-recipe",
         recipe = "electrolyser-2"
       },
     },
-	]]
     unit =
     {
       count = 50,
@@ -398,13 +409,11 @@ data:extend(
       },
       time = 30
     },
-    upgrade = true,
     order = "d-e-a2"
   },
 
   {
     type = "technology",
-		hidden = true, --DrD
     name = "electrolyser-3",
     icon = "__bobassembly__/graphics/icons/technology/electrolyser.png",
     icon_size = 128,
@@ -413,7 +422,6 @@ data:extend(
       "electrolyser-2",
       "advanced-electronics-2",
     },
-	    --[[ DrD
     effects =
     {
       {
@@ -421,7 +429,6 @@ data:extend(
         recipe = "electrolyser-3"
       },
     },
-]]
     unit =
     {
       count = 75,
@@ -433,13 +440,11 @@ data:extend(
       },
       time = 30
     },
-    upgrade = true,
     order = "d-e-a3"
   },
 
   {
     type = "technology",
-		hidden = true, --DrD
     name = "electrolyser-4",
     icon = "__bobassembly__/graphics/icons/technology/electrolyser.png",
     icon_size = 128,
@@ -447,7 +452,6 @@ data:extend(
     {
       "electrolyser-3",
     },
-    --[[ DrD
     effects =
     {
       {
@@ -455,7 +459,6 @@ data:extend(
         recipe = "electrolyser-4"
       },
     },
-]]
     unit =
     {
       count = 100,
@@ -468,7 +471,6 @@ data:extend(
       },
       time = 30
     },
-    upgrade = true,
     order = "d-e-a4"
   },
 }

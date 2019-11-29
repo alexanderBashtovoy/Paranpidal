@@ -374,7 +374,7 @@ data:extend(
 	},
     results=
     {
-      {type="item", name="angels-wire-copper", amount=8}, -- 16 DrD
+      {type="item", name="angels-wire-copper", amount=16},
     },
 	icons = {
 		{

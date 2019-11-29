@@ -11,7 +11,9 @@ end)
 --script.on_configuration_changed(function()
 --	
 --end)
-
+function print(str)
+game.players[1].print(str)
+end
 
 
 
@@ -134,7 +136,7 @@ end)
 
 
 script.on_event({defines.events.on_entity_died,defines.events.on_player_mined_entity,defines.events.on_robot_mined_entity},function(event)
-		if (event.entity.type == "character"
+		if (event.entity.type == "player"
 		or event.entity.type == "car")
 		and global.shields[event.entity] then
 			global.shields[event.entity] = nil

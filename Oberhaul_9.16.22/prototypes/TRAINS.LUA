@@ -3,8 +3,8 @@ if mods.boblogistics then
 data.raw["cargo-wagon"]["cargo-wagon"].inventory_size = 20
 data.raw["cargo-wagon"]["bob-cargo-wagon-2"].inventory_size = 40
 data.raw["cargo-wagon"]["bob-cargo-wagon-3"].inventory_size = 60
---data.raw.recipe["bob-fluid-wagon-2"].hidden = true --DrD
---data.raw.recipe["bob-fluid-wagon-3"].hidden = true --DrD
+data.raw.recipe["bob-fluid-wagon-2"].hidden = true
+data.raw.recipe["bob-fluid-wagon-3"].hidden = true
 
 data.raw["cargo-wagon"]["bob-armoured-cargo-wagon"].inventory_size = 40
 data.raw["cargo-wagon"]["bob-armoured-cargo-wagon-2"].inventory_size = 60
@@ -14,7 +14,7 @@ data.raw["cargo-wagon"]["bob-armoured-cargo-wagon-2"].inventory_size = 60
 --data.raw["fluid-wagon"]["bob-armoured-fluid-wagon-2"].capacity = 75000
 
 data.raw["cargo-wagon"]["bob-armoured-cargo-wagon"].weight = 1000
-data.raw["cargo-wagon"]["bob-armoured-cargo-wagon-2"].weight = 1500 --DrD 1000
+data.raw["cargo-wagon"]["bob-armoured-cargo-wagon-2"].weight = 1000
 --data.raw["fluid-wagon"]["bob-armoured-fluid-wagon"].weight = 3000
 --data.raw["fluid-wagon"]["bob-armoured-fluid-wagon-2"].weight = 3000
 

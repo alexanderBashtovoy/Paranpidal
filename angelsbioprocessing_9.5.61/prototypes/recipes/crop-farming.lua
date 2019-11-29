@@ -582,7 +582,7 @@ data:extend(
     ingredients ={
 	  {type="item", name="desert-1-seed", amount=5},
 	  {type="item", name="solid-sand", amount=10},
-	  {type="fluid", name="water-saline", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {
@@ -624,7 +624,7 @@ data:extend(
     ingredients ={
 	  {type="item", name="desert-2-seed", amount=5},
 	  {type="item", name="solid-sand", amount=10},
-	  {type="fluid", name="water-saline", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {
@@ -666,7 +666,7 @@ data:extend(
     ingredients ={
 	  {type="item", name="desert-3-seed", amount=5},
 	  {type="item", name="solid-sand", amount=10},
-	  {type="fluid", name="water-saline", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {
@@ -712,7 +712,7 @@ data:extend(
 	  {type="item", name="desert-4-seed", amount=5},
 	  {type="item", name="solid-sand", amount=10},
       {type="item", name="solid-fertilizer", amount=1},
-	  {type="fluid", name="water-saline", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {
@@ -804,7 +804,7 @@ data:extend(
     ingredients ={
 	  {type="item", name="swamp-1-seed", amount=5},
 	  {type="item", name="solid-mud", amount=10},
-	  {type="fluid", name="water-viscous-mud", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {
@@ -846,7 +846,7 @@ data:extend(
     ingredients ={
 	  {type="item", name="swamp-2-seed", amount=5},
 	  {type="item", name="solid-mud", amount=10},
-	  {type="fluid", name="water-viscous-mud", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {
@@ -888,7 +888,7 @@ data:extend(
     ingredients ={
 	  {type="item", name="swamp-3-seed", amount=5},
 	  {type="item", name="solid-mud", amount=10},
-	  {type="fluid", name="water-viscous-mud", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {
@@ -934,7 +934,7 @@ data:extend(
 	  {type="item", name="swamp-4-seed", amount=5},
 	  {type="item", name="solid-mud", amount=10},
       {type="item", name="solid-fertilizer", amount=1},
-	  {type="fluid", name="water-viscous-mud", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {
@@ -980,7 +980,7 @@ data:extend(
 	  {type="item", name="swamp-5-seed", amount=5},
 	  {type="item", name="solid-mud", amount=10},
       {type="item", name="solid-fertilizer", amount=1},
-	  {type="fluid", name="water-viscous-mud", amount=50},
+	  {type="fluid", name="water", amount=50},
 	},
     results=
     {

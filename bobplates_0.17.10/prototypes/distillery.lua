@@ -205,7 +205,6 @@ data:extend(
   {
     type = "item",
     name = "bob-distillery",
-		hidden=true, --DrD
     icon = "__bobplates__/graphics/icons/distillery.png",
     icon_size = 32,
     subgroup = "production-machine",

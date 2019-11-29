@@ -614,14 +614,14 @@ data:extend(
       enabled = "false",
       energy_required = 4,
       ingredients ={{type="fluid", name="liquid-molten-solder", amount=40}},
-      results={{type="item", name="angels-solder", amount=3}}, --DrD 6
+      results={{type="item", name="angels-solder", amount=6}},
     },
     expensive =
     {
       enabled = "false",
       energy_required = 4,
       ingredients ={{type="fluid", name="liquid-molten-solder", amount=50 * intermediatemulti}},
-      results={{type="item", name="angels-solder", amount=3}}, --DrD 6
+      results={{type="item", name="angels-solder", amount=6}},
     },
     icons = {
       {
@@ -650,7 +650,7 @@ data:extend(
     },
     results=
     {
-      {type="item", name="angels-solder", amount=8}, -- 12 DrD
+      {type="item", name="angels-solder", amount=12},
     },
     icons = {
       {

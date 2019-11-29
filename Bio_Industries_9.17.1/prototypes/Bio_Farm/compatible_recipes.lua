@@ -51,7 +51,6 @@ if not data.raw.item["resin"] then
 			name = "resin",
 			icon = "__Bio_Industries__/graphics/icons/bi_resin.png",
 			icon_size = 32,
-			--flags = {},
 			subgroup = "bio-bio-farm-raw",
 			order = "a[bi]-a-b[bi-resin]",
 			stack_size = 200
@@ -64,12 +63,11 @@ if not data.raw.item["resin"] then
 			name = "bi_recipe_resin_wood",
 			icon = "__Bio_Industries__/graphics/icons/bi_resin_wood.png",
 			icon_size = 32,
-			--category = "crafting-machine",
 			subgroup = "bio-bio-farm-raw",
 			order = "a[bi]-a-b[bi-resin2]",
-			enabled = true, --DrD false 
+			enabled = false,
 			allow_as_intermediate = false,
-			energy_required = 4,
+			energy_required = 1,
 			ingredients = 
 			{
 				 {type="item", name="wood", amount=1}
@@ -98,13 +96,13 @@ data.raw.item["stone-crushed"].icon = "__Bio_Industries__/graphics/icons/crushed
  -- Pellet-Coke from Carbon - Bobs & Angels
 if data.raw.item["solid-carbon"] and mods["angelspetrochem"] then
 	
-	bobmods.lib.recipe.add_new_ingredient ("bi_recipe_pellete_coal_2", {type="item", name="solid-carbon", amount=5}) --DrD 8
+	bobmods.lib.recipe.add_new_ingredient ("bi_recipe_pellete_coal_2", {type="item", name="solid-carbon", amount=8})
 	data.raw.recipe["bi_recipe_pellete_coal_2"].icon = "__Bio_Industries__/graphics/icons/pellet_coke_a.png"
 	bobmods.lib.tech.add_recipe_unlock("bi-tech-coal-processing-2", "bi_recipe_pellete_coal_2")
 	
 elseif data.raw.item["carbon"] and mods["bobplates"] then
 
-	bobmods.lib.recipe.add_new_ingredient ("bi_recipe_pellete_coal_2", {type="item", name="carbon", amount=6}) --DrD 8
+	bobmods.lib.recipe.add_new_ingredient ("bi_recipe_pellete_coal_2", {type="item", name="carbon", amount=8})
 	data.raw.recipe["bi_recipe_pellete_coal_2"].icon = "__Bio_Industries__/graphics/icons/pellet_coke_b.png"
 	bobmods.lib.tech.add_recipe_unlock("bi-tech-coal-processing-2", "bi_recipe_pellete_coal_2")
 		
@@ -157,17 +155,6 @@ if data.raw.item.glass  then
 	bobmods.lib.recipe.replace_ingredient("bi_recipe_bio_farm", "copper-cable", "glass")
 end
 
---[[
---- Bio Drill Updates
-if data.raw.item["steel-gear-wheel"]  and data.raw.recipe["bi_recipe_drill_mk2"] then
-	thxbob.lib.recipe.replace_ingredient("bi_recipe_drill_mk2", "steel-plate", "steel-gear-wheel")
-end
-
-if data.raw.item["titanium-plate"]  and data.raw.recipe["bi_recipe_drill_mk3"] then
-	thxbob.lib.recipe.replace_ingredient("bi_recipe_drill_mk3", "advanced-circuit", "titanium-plate")
-end
-
-]]
 
 --- Adding in some recipe's to use up Wood Pulp (Ash and Charcoal) and Crushed Stone
 if mods["angelsrefining"] then 
@@ -186,7 +173,7 @@ data:extend({
 			ingredients =
 			{
 				{type="fluid", name="water-purified", amount=100},
-				{type="item", name="stone-crushed", amount=70}, --DrD 90
+				{type="item", name="stone-crushed", amount=90},
 				{type="item", name="bi-charcoal", amount=30},
 			},
 			results=
@@ -210,7 +197,7 @@ data:extend({
 			ingredients =
 			{
 				{type="fluid", name="water-saline", amount=50},
-				{type="item", name="stone-crushed", amount=40}, --DrD 90
+				{type="item", name="stone-crushed", amount=90},
 				{type="item", name="bi-ash", amount=40},
 			},
 			results=

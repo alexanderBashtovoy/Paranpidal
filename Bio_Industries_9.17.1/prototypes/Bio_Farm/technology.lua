@@ -40,10 +40,6 @@ data:extend({
 			{
 				type = "unlock-recipe",
 				recipe = "bi_recipe_resin_pulp"
-			},	
-			{
-				type = "unlock-recipe",
-				recipe = "bi_recipe_press_wood"
 			},				
 		},
 		prerequisites = {"optics"},

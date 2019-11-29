@@ -43,16 +43,16 @@ for i = 1,6 do
   recipe.energy_required = nil
 
   recipe.normal = {
-    energy_required = 2,
-    ingredients = {{ type="fluid", name = 'mineral-sludge', amount = 50 }},
-    results = {{type = "item", name = "angels-ore" .. i, amount = 3, probability=0.9}},
+    energy_required = 4,
+    ingredients = {{ type="fluid", name = 'mineral-sludge', amount = 25 }},
+    results = {{type = "item", name = "angels-ore" .. i, amount = 1 }},
     enabled = false
   }
 
   recipe.expensive = {
-    energy_required = 4,
+    energy_required = 8,
     ingredients = {{ type="fluid", name = 'mineral-sludge', amount = 50 }},
-    results = {{type = "item", name = "angels-ore" .. i, amount = 3, probability=0.8}},
+    results = {{type = "item", name = "angels-ore" .. i, amount = 1 }},
     enabled = false
   }
 end
@@ -95,7 +95,7 @@ data.raw.recipe["coolant-used-filtration-1"].ingredients =
 }
 data.raw.recipe["coolant-used-filtration-1"].results =
 {	  
-    {type="fluid", name="liquid-coolant", amount=97, temperature = 25}, --DrD 99
+    {type="fluid", name="liquid-coolant", amount=99, temperature = 25},
     {type="item", name="filter-frame", amount=1},
 }
 data.raw.recipe["coolant-used-filtration-2"].ingredients =
@@ -105,7 +105,7 @@ data.raw.recipe["coolant-used-filtration-2"].ingredients =
 }
 data.raw.recipe["coolant-used-filtration-2"].results =
 {
-    {type="fluid", name="liquid-coolant", amount=99, temperature = 25}, --DrD 100
+    {type="fluid", name="liquid-coolant", amount=100, temperature = 25},
     {type="item", name="filter-ceramic-used", amount=1},
 }
 data.raw.recipe["coolant-cool-200"].hidden = true

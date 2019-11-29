@@ -4,7 +4,7 @@ data:extend({
     name = "air-filtering",
     icon = "__air-filtering-patched__/graphics/technology/air-filtering-mk1.png",
     icon_size = "64",
-    prerequisites = {"steel-processing", "electronics", "automation"},
+    prerequisites = {"plastics", "steel-processing", "electronics", "automation"},
     effects =
     {
       {
@@ -22,9 +22,10 @@ data:extend({
     },
     unit =
     {
-      count = 200,
+      count = 150,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
       },
       time = 30
     },
@@ -48,7 +49,8 @@ data:extend({
       count = 300,
       ingredients = {
         {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1}
       },
       time = 60
     },
@@ -73,7 +75,8 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
+        {"chemical-science-pack", 2},
+        {"production-science-pack", 1}
       },
       time = 60
     },
@@ -98,7 +101,7 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
+        {"chemical-science-pack", 2},
         {"production-science-pack", 2}
       },
       time = 75
@@ -175,9 +178,11 @@ data:extend({
     },
     unit =
     {
-      count = 400,
+      count = 150,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1}
       },
       time = 30
     },
@@ -200,42 +205,13 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
-      },
-      time = 60
-    },
-    order = "d-a-a"
-  },
-  
-   {
-    type = "technology",
-    name = "advanced-air-filter-recycling-2",
-    icon = "__air-filtering-patched__/graphics/technology/advanced-air-filter-recycling-2.png",
-    icon_size = "64",
-    prerequisites = {"advanced-air-filter-recycling", "air-filtering-mk2"},
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "advanced-air-filter-recycling-2"
-      }
-    },
-    unit =
-    {
-      count = 500,
-      ingredients = {
         {"automation-science-pack", 2},
         {"logistic-science-pack", 2},
-		{"chemical-science-pack", 1},
+        {"chemical-science-pack", 2},
+        {"production-science-pack", 1}
       },
       time = 90
     },
     order = "d-a-a"
-	
-	
-	
-	
-	
   }
 })

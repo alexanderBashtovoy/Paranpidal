@@ -236,11 +236,6 @@ data:extend(
         type = "unlock-recipe",
         recipe = "carbon-separation-1"
       },
-	  
-	  {
-        type = "unlock-recipe",
-        recipe = "coke-purification-steam"  --DrD
-	  },
       {
         type = "unlock-recipe",
         recipe = "solid-coke-sulfur"
@@ -462,10 +457,6 @@ data:extend(
         type = "unlock-recipe",
         recipe = "gas-nitrogen-monoxide"
       },
-      { --DrD begin
-        type = "unlock-recipe",
-        recipe = "gas-nitrogen-monoxide-2"
-      },--DrD end
       {
         type = "unlock-recipe",
         recipe = "gas-nitrogen-dioxide"

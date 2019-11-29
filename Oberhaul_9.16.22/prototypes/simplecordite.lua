@@ -8,7 +8,6 @@ data:extend(
     type = "recipe",
     name = "nitroglycerin",
     category = "chemistry",
-	subgroup = "petrochem-solids-2",	--DrD
     enabled = "false",
     energy_required = 1.5,
     ingredients =
@@ -23,6 +22,6 @@ data:extend(
     subgroup = "fluid",
     icon = "__bobwarfare__/graphics/icons/nitroglycerin.png",
     icon_size = 32,
-    order = "d"
+    order = "b[fluid-chemistry]-b[nitroglycerin]"
   },
 })

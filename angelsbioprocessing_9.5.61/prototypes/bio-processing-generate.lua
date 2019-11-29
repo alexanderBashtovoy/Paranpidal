@@ -1,4 +1,4 @@
-	angelsmods.functions.make_void("wood", "bio")
+	angelsmods.functions.make_void("raw-wood", "bio")
 
 	angelsmods.functions.make_void("algae-green", "bio")
 	angelsmods.functions.make_void("algae-brown", "bio")

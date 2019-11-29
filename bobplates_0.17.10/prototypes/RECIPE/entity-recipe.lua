@@ -23,7 +23,6 @@ data:extend(
     enabled = "false",
     ingredients = 
     {
-	  {"stone-furnace", 1}, --DrD
       {"stone-brick", 5},
     },
     result = "mixing-furnace"
@@ -36,7 +35,6 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-	  {"steel-furnace", 1}, --DrD
       {"steel-plate", 6},
       {"stone-brick", 10}
     },
@@ -64,7 +62,6 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-	  {"steel-furnace", 1}, --DrD
       {"steel-plate", 6},
       {"stone-brick", 10},
       {"pipe", 5},
@@ -234,6 +231,32 @@ data:extend(
     result = "water-pump-4"
   },
 
+
+  {
+    type = "recipe",
+    name = "bob-small-inline-storage-tank",
+    energy_required = 2,
+    enabled = "false",
+    ingredients =
+    {
+      {"iron-plate", 3},
+      {"pipe", 1},
+    },
+    result = "bob-small-inline-storage-tank"
+  },
+
+  {
+    type = "recipe",
+    name = "bob-small-storage-tank",
+    energy_required = 2,
+    enabled = "false",
+    ingredients =
+    {
+      {"iron-plate", 3},
+      {"pipe", 2},
+    },
+    result = "bob-small-storage-tank"
+  },
 
   {
     type = "recipe",

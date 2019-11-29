@@ -27,10 +27,9 @@ if data.raw['item']['electric-engine-unit'] then
 end
 
 -- bobs wooden board, now uses stone so call it insulating-board
---[[if data.raw['item']['wooden-board'] then
+if data.raw['item']['wooden-board'] then
 	data.raw['item']['wooden-board'].localised_name = { "basic-insulating-board"}
 end
-]]
 
 data.raw['item']["offshore-pump"].place_result = "offshore-pump"
 data.raw['item']["offshore-pump"].icon = "__aai-industry__/graphics/icons/offshore-pump.png"

@@ -4,7 +4,7 @@
 -- 5dim Stack changes
 if settings.startup["5d-change-stack"] and settings.startup["5d-change-stack"].value then
    if data.raw.item["wood"] then
-      data.raw.item["wood"].stack_size = math.max(210, data.raw.item['raw-wood'].stack_size)
+      data.raw.item["wood"].stack_size = math.max(210, data.raw.item["wood"].stack_size)
    end
 end
 
@@ -16,10 +16,7 @@ if BI.Settings.BI_Game_Tweaks_Recipe then
 	--- Stone Wall
 	bobmods.lib.recipe.add_new_ingredient ("stone-wall", {type="item", name="iron-stick", amount=1})
 
-	-- Make Steel Axe use Iron Axe as an upgrade
-	bobmods.lib.recipe.remove_ingredient ("steel-axe", "iron-stick")
-	bobmods.lib.recipe.add_new_ingredient ("steel-axe", {type="item", name="iron-axe", amount=1})
-	
+
 	--- Rail (Remove Stone and Add Crushed Stone)
 	if data.raw.item["stone-crushed"] then
 		bobmods.lib.recipe.remove_ingredient ("rail", "stone")
@@ -36,11 +33,11 @@ end
 ---- Game Tweaks ---- Tree
 if BI.Settings.BI_Game_Tweaks_Tree then
 	
-		--- Trees Give Random 1 - 6 Raw Wood.
+		--- Trees Give Random 1 - 6 Wood.
 	for _, tree in pairs(data.raw["tree"]) do
    --CHECK FOR SINGLE RESULTS
 		if tree.minable and tree.minable.result then
-		  --CHECK FOR VANILLA TREES RAW WOOD x 4
+		  --CHECK FOR VANILLA TREES WOOD x 4
 		  if tree.minable.result == "wood" and tree.minable.count == 4 then
 			 tree.minable = {mining_particle = "wooden-particle", mining_time = 1.5, results = {{type = "item", name = "wood", amount_min = 1, amount_max = 6}}}
 		  end
@@ -48,7 +45,7 @@ if BI.Settings.BI_Game_Tweaks_Tree then
 		  --CHECK FOR RESULTS TABLE
 		  if tree.minable and tree.minable.results then
 			 for k, results in pairs(tree.minable.results) do
-				--CHECK FOR RESULT RAW-WOOD x 4
+				--CHECK FOR RESULT WOOD x 4
 				if results.name == "wood" and results.amount == 4 then
 				   results.amount = nil
 				   results.amount_min = 1
@@ -68,27 +65,29 @@ if BI.Settings.BI_Game_Tweaks_Player then
 		data.raw.player.player.loot_pickup_distance = 5 -- default 2
 	end	
 
-	--- Run Speed
-	if data.raw.player.player.running_speed < 0.15 then
-		data.raw.player.player.running_speed = 0.25 -- default 0.15
-	end	
-
 	if data.raw.player.player.build_distance < 20 then -- Vanilla 6
 		data.raw.player.player.build_distance = 20
 	end
+	
 	if data.raw.player.player.drop_item_distance < 20 then -- Vanilla 6
 		data.raw.player.player.drop_item_distance = 20
 	end
+	
 	if data.raw.player.player.reach_distance < 20 then -- Vanilla 6
 		data.raw.player.player.reach_distance = 20
 	end
-	if data.raw.player.player.item_pickup_distance < 4 then -- Vanilla 1
-		data.raw.player.player.item_pickup_distance = 4
-	end
-	if data.raw.player.player.reach_resource_distance <  4 then -- Vanilla 2.7
-		data.raw.player.player.reach_resource_distance = 4
-	end
 
+	if data.raw.player.player.item_pickup_distance < 6 then -- Vanilla 1
+		data.raw.player.player.item_pickup_distance = 6
+	end
+	
+	if data.raw.player.player.reach_resource_distance <  6 then -- Vanilla 2.7
+		data.raw.player.player.reach_resource_distance = 6
+	end
+		
+	if data.raw.player.player.resource_reach_distance and data.raw.player.player.resource_reach_distance <  6 then -- Vanilla 2.7
+		data.raw.player.player.resource_reach_distance = 6
+	end
 
 end	
 	

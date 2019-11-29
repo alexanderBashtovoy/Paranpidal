@@ -43,7 +43,7 @@ function on_tick()
       local pollution = math.min (surface.get_pollution(position), max_pollution)
       if pollution > 0 then
         local color = (pollution/max_pollution) * 0.3
-        local alpha = (pollution/max_pollution) * 0.8 -- 0.8 is pretty hard
+        local alpha = (pollution/max_pollution) * 0.6 -- 0.8 is pretty hard
         rendering.draw_rectangle{
           color={r=color, g=color, b=color, a=alpha},      
           filled=true,      

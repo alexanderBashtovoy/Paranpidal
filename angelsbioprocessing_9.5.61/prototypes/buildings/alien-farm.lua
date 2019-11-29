@@ -5,7 +5,7 @@ data:extend(
     name = "angels-alien-farm",
     icon = "__angelsbioprocessing__/graphics/icons/alien-farm.png",
     icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-quickbar"},
     subgroup = "bio-processing-buildings-a",
     order = "a",
     place_result = "angels-alien-farm",

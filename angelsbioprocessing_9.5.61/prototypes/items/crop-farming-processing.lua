@@ -6,7 +6,7 @@ data:extend(
 	name = "solid-beans",
 	icon = "__angelsbioprocessing__/graphics/icons/solid-beans.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-main-inventory"},
 	subgroup = "bio-processor-temperate",
 	order = "a",
 	stack_size = 500
@@ -16,7 +16,7 @@ data:extend(
 	name = "solid-corn",
 	icon = "__angelsbioprocessing__/graphics/icons/solid-corn.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-main-inventory"},
 	subgroup = "bio-processor-temperate",
 	order = "b",
 	stack_size = 500
@@ -26,7 +26,7 @@ data:extend(
 	name = "solid-leafs",
 	icon = "__angelsbioprocessing__/graphics/icons/solid-leafs.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-main-inventory"},
 	subgroup = "bio-processor-temperate",
 	order = "c",
 	stack_size = 500
@@ -36,7 +36,7 @@ data:extend(
 	name = "solid-nuts",
 	icon = "__angelsbioprocessing__/graphics/icons/solid-nuts.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-main-inventory"},
 	subgroup = "bio-processor-temperate",
 	order = "d",
 	stack_size = 500
@@ -46,7 +46,7 @@ data:extend(
 	name = "solid-pips",
 	icon = "__angelsbioprocessing__/graphics/icons/solid-pips.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-main-inventory"},
 	subgroup = "bio-processor-temperate",
 	order = "e",
 	stack_size = 500
@@ -56,7 +56,7 @@ data:extend(
 	name = "solid-fruit",
 	icon = "__angelsbioprocessing__/graphics/icons/solid-fruit.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-main-inventory"},
 	subgroup = "bio-processor-temperate",
 	order = "f",
 	stack_size = 500
@@ -105,7 +105,7 @@ data:extend(
 	name = "solid-flour",
 	icon = "__angelsbioprocessing__/graphics/icons/solid-flour.png",
 	icon_size = 32,
-	--flags = {},
+	flags = {"goes-to-main-inventory"},
 	subgroup = "bio-processor-temperate",
 	order = "g",
 	stack_size = 500

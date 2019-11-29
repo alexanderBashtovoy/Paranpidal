@@ -7,5 +7,5 @@
   "homepage": "",
   "description": "Adds a copy of every electric pole, including modded ones, with integrated lamp.",
   "factorio_version": "0.17",
-	"dependencies": ["base >= 0.17.41", "OpteraLib", "?ShinyBobGFX >= 0.17.0", "?ShinyBob_Icons >= 0.17.0", "?aai-industry"]
+	"dependencies": ["base >= 0.17.41", "OpteraLib >= 0.1.7", "?ShinyBobGFX >= 0.17.0", "?ShinyBob_Icons >= 0.17.0", "?aai-industry >= 0.3.0"]
 }

@@ -60,13 +60,3 @@ if settings.startup["coppermine-bob-module-expensive-module-combination"].value 
   bobmods.lib.tech.add_recipe_unlock("module-merging", "module-combining-case")
   bobmods.lib.tech.add_recipe_unlock("module-merging", "module-combining-solder")
 end
---upd by DrD
-
-if data.raw.item["advanced-circuit"] then
-  bobmods.lib.recipe.replace_ingredient("speed-module-3", "processing-unit", "advanced-circuit")
-  bobmods.lib.recipe.replace_ingredient("effectivity-module-3", "processing-unit", "advanced-circuit")
-  bobmods.lib.recipe.replace_ingredient("productivity-module-3", "processing-unit", "advanced-circuit")
-  bobmods.lib.recipe.replace_ingredient("pollution-clean-module-3", "processing-unit", "advanced-circuit")
-  bobmods.lib.recipe.replace_ingredient("pollution-create-module-3", "processing-unit", "advanced-circuit")
-end
-

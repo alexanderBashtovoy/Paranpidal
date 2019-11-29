@@ -56,9 +56,9 @@ local function process_explosion_tile(pos, explosion_index, current_radius)
 				explosion_animation = "big-explosion"
 				if entity.health > 500 then explosion_animation = "big-artillery-explosion" end
 				global.explosion_schedule[explosion_index].damage_remaining = global.explosion_schedule[explosion_index].damage_remaining - entity.health
-				entity.damage(999999, "character", "explosion")
+				entity.damage(999999, "player", "explosion")
 			else				
-				entity.damage(global.explosion_schedule[explosion_index].damage_remaining, "character", "explosion")
+				entity.damage(global.explosion_schedule[explosion_index].damage_remaining, "player", "explosion")
 				global.explosion_schedule[explosion_index].damage_remaining = global.explosion_schedule[explosion_index].damage_remaining - entity.health				
 			end
 		end
@@ -105,7 +105,7 @@ local function create_explosion_schedule(entity)
 		end	
 		
 	end
-	entity.die("character")
+	entity.die("player")
 end
 
 script.on_event(defines.events.on_entity_damaged, function(event)

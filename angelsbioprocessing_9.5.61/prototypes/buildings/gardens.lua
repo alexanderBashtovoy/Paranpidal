@@ -5,7 +5,7 @@ data:extend(
     name = "temperate-garden",
     icon = "__angelsbioprocessing__/graphics/icons/temperate-garden.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "farming-gardens",
     order = "a",
     stack_size = 200
@@ -94,7 +94,7 @@ data:extend(
     name = "desert-garden",
     icon = "__angelsbioprocessing__/graphics/icons/desert-garden.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "farming-gardens",
     order = "b",
     stack_size = 200
@@ -176,7 +176,7 @@ data:extend(
     name = "swamp-garden",
     icon = "__angelsbioprocessing__/graphics/icons/swamp-garden.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "farming-gardens",
     order = "c",
     stack_size = 200

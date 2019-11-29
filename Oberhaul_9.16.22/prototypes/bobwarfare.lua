@@ -88,17 +88,17 @@ data.raw.technology["uranium-ammo"].unit =
 {
       count = 200,
       ingredients = {
-	  {"automation-science-pack", 1},
-	  {"logistic-science-pack", 1},
-	  {"chemical-science-pack", 1},
+	  {"science-pack-1", 1},
+	  {"science-pack-2", 1},
+	  {"science-pack-3", 1},
 	  {"military-science-pack",1}
 	  },
       time = 30
 }
 data.raw.technology["bob-power-armor-3"].unit.ingredients = {
-	  {"automation-science-pack", 1},
-	  {"logistic-science-pack", 1},
-	  {"chemical-science-pack", 1},
+	  {"science-pack-1", 1},
+	  {"science-pack-2", 1},
+	  {"science-pack-3", 1},
           {"military-science-pack", 1},
           {"production-science-pack", 1}}
 
@@ -132,10 +132,9 @@ data:extend({
 })
 bobmods.lib.tech.add_recipe_unlock("fusion-reactor-equipment", "ober-portable-solar")
 end
---[[
+
 data.raw.technology["power-armor-2"].unit.ingredients = {
-	  {"automation-science-pack", 1},
-	  {"logistic-science-pack", 1},
-	  {"chemical-science-pack", 1},
+	  {"science-pack-1", 1},
+	  {"science-pack-2", 1},
+	  {"science-pack-3", 1},
           {"military-science-pack", 1}}
-]]

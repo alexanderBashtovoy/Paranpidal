@@ -1,0 +1,10 @@
+data.raw["underground-belt"]["fast-underground-belt"].max_distance = data.raw["underground-belt"]["fast-underground-belt"].max_distance + 1
+data.raw["underground-belt"]["express-underground-belt"].max_distance = data.raw["underground-belt"]["express-underground-belt"].max_distance + 2
+data.raw["underground-belt"]["green-underground-belt"].max_distance = data.raw["underground-belt"]["green-underground-belt"].max_distance + 3
+data.raw["underground-belt"]["purple-underground-belt"].max_distance = data.raw["underground-belt"]["purple-underground-belt"].max_distance + 4
+
+if data.raw.item["fast-subterranean-belt"] then
+	table.insert(data.raw.recipe["subterranean-belt"].ingredients, {"alt-underground-belt", 4})
+	table.insert(data.raw.recipe["fast-subterranean-belt"].ingredients, {"fast-alt-underground-belt", 4})
+	table.insert(data.raw.recipe["express-subterranean-belt"].ingredients, {"express-alt-underground-belt", 4})
+end

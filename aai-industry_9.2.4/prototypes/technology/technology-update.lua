@@ -22,8 +22,7 @@ util.tech_add_prerequisites("chemical-processing-1", "basic-fluid-handling")
 util.tech_add_prerequisites("bob-drills-1", "electric-mining")
 util.tech_add_prerequisites("bob-area-drills-1", "electric-mining")
 util.tech_add_prerequisites("bob-pumpjacks-1", "basic-fluid-handling")
-util.tech_add_prerequisites("bob-boiler-2", "steam-power")
-util.tech_add_prerequisites("bob-steam-engine-2", "steam-power")
+util.tech_add_prerequisites("bob-boiler-1", "steam-power")
 util.tech_add_prerequisites("steam-engine-generator-1", "steam-power")
 util.tech_add_prerequisites("gas-canisters", "fluid-handling")
 
@@ -44,9 +43,9 @@ util.tech_add_prerequisites("water-treatment", "basic-fluid-handling")
 util.tech_add_prerequisites("oil-gas-extraction", "basic-fluid-handling")
 util.tech_add_prerequisites("slag-processing-1", "basic-fluid-handling")
 
-util.tech_add_prerequisites("chemical-processing-1", "basic-chemistry") --DrD
-
--- util.tech_lock_recipes(    "fuel-processing",  {        "fuel-processor"})
+util.tech_lock_recipes(
+    "fuel-processing",  {
+        "fuel-processor"})
 
 util.tech_lock_recipes(
     "basic-automation",  {
@@ -58,8 +57,7 @@ util.tech_lock_recipes(
         "inserter"})
 
 util.tech_lock_recipes(
---    "automation-2",  { --DrD
-    "express-inserters",  {
+    "automation-2",  {
         "fast-inserter"})
 
 if data.raw.technology["bob-logistics-0"] and data.raw.recipe["basic-transport-belt"] then
@@ -67,8 +65,7 @@ if data.raw.technology["bob-logistics-0"] and data.raw.recipe["basic-transport-b
     data.raw.technology["basic-logistics"].localised_name = {"technology-name.basic-logistics-1"}
     util.tech_lock_recipes(
         "basic-logistics",  {
-            "basic-transport-belt",
-			"iron-chest"})  -- DrD
+            "basic-transport-belt"})
 
     data.raw.technology["bob-logistics-0"].localised_name = {"technology-name.basic-logistics-2"}
     data.raw.technology["bob-logistics-0"].prerequisites = {"basic-logistics"}
@@ -89,20 +86,14 @@ util.tech_lock_recipes(
     "logistics",  {
         "underground-belt",
         "splitter"})
-		
-util.tech_lock_recipes(
-    "military",  {
-        "light-armor"})		 -- DrD
 
 util.tech_lock_recipes(
     "electricity",  {
-        --"electric-motor",
+        "electric-motor",
         "burner-turbine",
         "inserter",
-        --"small-electric-pole",
-        --"small-iron-electric-pole"
-		"burner-filter-inserter"
-		})
+        "small-electric-pole",
+        "small-iron-electric-pole"})
 
 if data.raw.recipe["basic-circuit-board"] then -- bobs
   util.tech_lock_recipes(
@@ -113,8 +104,7 @@ else
   util.tech_lock_recipes(
       "electricity",  {
           "electronic-circuit",
-          "electronic-circuit-stone"
-		  })
+          "electronic-circuit-stone"})
 end
 
 
@@ -126,8 +116,6 @@ util.tech_lock_recipes(
     "radar",  {
         "radar"})
 
---[[
-
 util.tech_lock_recipes(
     "radar",  {
         "radar"})
@@ -135,7 +123,6 @@ util.tech_lock_recipes(
 util.tech_lock_recipes(
     "radar",  {
         "radar"})
-]]
 
 util.tech_lock_recipes(
     "basic-fluid-handling",  {
@@ -143,14 +130,9 @@ util.tech_lock_recipes(
         "pipe-to-ground",
         "copper-pipe",
         "copper-pipe-to-ground",
-        --"stone-pipe",
-        --"stone-pipe-to-ground",
-        --"offshore-pump",
-		
-		"pipe-elbow", -- Flow Control pipes
-		"pipe-junction",-- Flow Control pipes
-		"pipe-straight",-- Flow Control pipes
-		
+        "stone-pipe",
+        "stone-pipe-to-ground",
+        "offshore-pump",
         "bob-valve"})
 
 util.tech_lock_recipes(
@@ -170,13 +152,13 @@ util.tech_lock_recipes(
     "electric-mining",  {
         "electric-mining-drill"})
 
---util.tech_lock_recipes(
---    "concrete-walls",  {
---        "concrete-wall"})
+util.tech_lock_recipes(
+    "concrete-walls",  {
+        "concrete-wall"})
 
---util.tech_lock_recipes(
---    "steel-walls",  {
---        "steel-wall"})
+util.tech_lock_recipes(
+    "steel-walls",  {
+        "steel-wall"})
 
 util.tech_lock_recipes(
     "circuit-network",  {

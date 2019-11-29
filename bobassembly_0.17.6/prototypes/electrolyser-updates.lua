@@ -4,7 +4,7 @@ if settings.startup["bobmods-assembly-electrolysers"].value and
   data.raw["recipe-category"]["electrolysis"]
 then
 
--- data.raw["assembling-machine"]["electrolyser"].next_upgrade = "electrolyser-2" --DrD
+data.raw["assembling-machine"]["electrolyser"].next_upgrade = "electrolyser-2"
 
 if data.raw.item["glass"] then
   bobmods.lib.recipe.replace_ingredient("electrolyser-2", "plastic-bar", "glass")
@@ -13,7 +13,10 @@ else
   bobmods.lib.tech.add_prerequisite("electrolyser-2", "plastics")
 end
 
---if data.raw.item["stone-pipe"] then  bobmods.lib.recipe.replace_ingredient("electrolyser-2", "pipe", "stone-pipe") end
+if data.raw.item["stone-pipe"] then
+  bobmods.lib.recipe.replace_ingredient("electrolyser-2", "pipe", "stone-pipe")
+end
+
 
 
 if data.raw.item["invar-alloy"] then

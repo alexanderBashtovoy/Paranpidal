@@ -4,7 +4,7 @@ data:extend({
     name = "assembly-robot",
     icon = "__SpaceMod__/graphics/icons/assembly-robot.png",
 	icon_size = 37,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "p[assembly-robot]",
     stack_size = 50
@@ -14,7 +14,7 @@ data:extend({
     name = "drydock-assembly",
     icon = "__SpaceMod__/graphics/icons/drydock-assembly.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "q[drydock-assembly]",
     stack_size = 1
@@ -24,7 +24,7 @@ data:extend({
     name = "drydock-structural",
     icon = "__SpaceMod__/graphics/icons/drydock-structural.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "r[drydock-structural]",
     stack_size = 1
@@ -34,7 +34,7 @@ data:extend({
     name = "fusion-reactor",
     icon = "__SpaceMod__/graphics/icons/fusion-reactor.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "s[fusion-reactor]",
     stack_size = 1
@@ -44,7 +44,7 @@ data:extend({
     name = "hull-component",
     icon = "__SpaceMod__/graphics/icons/hull-component.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "t[hull-component]",
     stack_size = 1
@@ -54,7 +54,7 @@ data:extend({
     name = "protection-field",
     icon = "__SpaceMod__/graphics/icons/protection-field.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "u[protection-field]",
     stack_size = 1
@@ -64,7 +64,7 @@ data:extend({
     name = "space-thruster",
     icon = "__SpaceMod__/graphics/icons/space-thruster.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "v[space-thruster]",
     stack_size = 1
@@ -74,7 +74,7 @@ data:extend({
     name = "fuel-cell",
     icon = "__SpaceMod__/graphics/icons/fuel-cell.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "w[fuel-cell]",
     stack_size = 1
@@ -84,7 +84,7 @@ data:extend({
     name = "habitation",
     icon = "__SpaceMod__/graphics/icons/habitation.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "x[habitation]",
     stack_size = 1
@@ -94,7 +94,7 @@ data:extend({
     name = "life-support",
     icon = "__SpaceMod__/graphics/icons/life-support.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "y[life-support]",
     stack_size = 1
@@ -104,7 +104,7 @@ data:extend({
     name = "command",
     icon = "__SpaceMod__/graphics/icons/command.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "z-a[command]",
     stack_size = 1
@@ -114,7 +114,7 @@ data:extend({
     name = "astrometrics",
     icon = "__SpaceMod__/graphics/icons/astrometrics.png",
 	icon_size = 32,
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "z-b[astrometrics]",
     stack_size = 1
@@ -124,7 +124,7 @@ data:extend({
     name = "ftl-drive",
     icon = "__SpaceMod__/graphics/icons/ftl-drive.png",
 	icon_size = 32,	
-    --flags = {},
+    flags = {"goes-to-main-inventory"},
     subgroup = "intermediate-product",
     order = "z-c[ftl-drive]",
     stack_size = 1
@@ -134,7 +134,7 @@ data:extend({
     name = "spacex-combinator",
     icon = "__SpaceMod__/graphics/icons/spacex-combinator.png",
     icon_size = 32,
-    flags = {  },
+    flags = { "goes-to-quickbar" },
     subgroup = "circuit-network",
     place_result = "spacex-combinator",
     order = "c[combinators]-dd[spacex-combinator]",

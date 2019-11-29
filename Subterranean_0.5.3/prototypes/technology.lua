@@ -1,10 +1,9 @@
-local path = "__Subterranean__/graphics/technology"
 data:extend({
 
       {
          type = "technology",
          name = "subterranean-logistics-1",
-         icon = path .. "/logistics.png",
+         icon = "__Subterranean__/graphics/technology/logistics.png",
          prerequisites = {"logistics"},
          effects =
             {
@@ -16,7 +15,7 @@ data:extend({
          unit =
             {
                count = 50,
-               ingredients = {{"automation-science-pack", 1}},
+               ingredients = {{"science-pack-1", 1}},
                time = 15
             },
          order = "a-f-a",
@@ -25,7 +24,7 @@ data:extend({
       {
          type = "technology",
          name = "subterranean-logistics-2",
-         icon = path .. "/logistics.png",
+         icon = "__Subterranean__/graphics/technology/logistics.png",
          prerequisites = {"logistics-2", "steel-processing", "subterranean-logistics-1"},
          effects =
             {
@@ -37,7 +36,7 @@ data:extend({
          unit =
             {
                count = 80,
-               ingredients = {{"logistic-science-pack", 1},{"automation-science-pack",1}},
+               ingredients = {{"science-pack-2", 1},{"science-pack-1",1}},
                time = 30
             },
          order = "a-f-a",
@@ -46,7 +45,7 @@ data:extend({
       {
          type = "technology",
          name = "subterranean-logistics-3",
-         icon = path .. "/logistics.png",
+         icon = "__Subterranean__/graphics/technology/logistics.png",
          prerequisites = {"logistics-3","oil-processing","subterranean-logistics-2"},
          effects =
             {
@@ -58,7 +57,7 @@ data:extend({
          unit =
             {
                count = 150,
-               ingredients = {{"logistic-science-pack", 1}, {"automation-science-pack",1}},
+               ingredients = {{"science-pack-2", 1}, {"science-pack-1",1}},
                time = 30
             },
          order = "a-f-a",
@@ -67,7 +66,7 @@ data:extend({
       {
          type = "technology",
          name = "subterranean-liquid-logistics",
-         icon = path .. "/liquid-logistics.png",
+         icon = "__Subterranean__/graphics/technology/liquid-logistics.png",
          prerequisites = {"oil-processing","steel-processing"},
          effects =
             {
@@ -79,7 +78,7 @@ data:extend({
          unit =
             {
                count = 170,
-               ingredients = {{"automation-science-pack", 1},{"logistic-science-pack",2}},
+               ingredients = {{"science-pack-3", 1},{"science-pack-2",2}},
                time = 30
             },
          order = "a-f-a",

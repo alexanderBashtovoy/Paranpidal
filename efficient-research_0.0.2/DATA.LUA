@@ -14,8 +14,8 @@ data:extend{
       count_formula = "25*L+75",
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"science-pack-1", 1},
+        {"science-pack-2", 1}
       },
       time = 45
     },
@@ -37,8 +37,8 @@ data:extend{
       count_formula = "25*L+100",
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"science-pack-1", 1},
+        {"science-pack-2", 1}
       },
       time = 45
     },
@@ -60,9 +60,9 @@ data:extend{
       count_formula = "100*L-450",
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1}
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1}
       },
       time = 45
     },
@@ -84,9 +84,9 @@ data:extend{
       count_formula = "500",
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1}
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1}
       },
       time = 45
     },
@@ -108,9 +108,9 @@ data:extend{
       count_formula = "500",
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1},
         {"production-science-pack", 1}
       },
       time = 45
@@ -133,11 +133,11 @@ data:extend{
       count_formula = "100*L-1200",
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+        {"science-pack-3", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"high-tech-science-pack", 1}
       },
       time = 45
     },
